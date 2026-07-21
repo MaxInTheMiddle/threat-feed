@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIGNAL // maxarmstrong.io threat feed</title>
+<meta name="description" content="Live aggregated cybersecurity signal — BleepingComputer, The Hacker News, Dark Reading, CISA, Krebs on Security, r/cybersecurity, r/netsec, r/sysadmin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0F14;
+    --panel:#111820;
+    --panel-2:#0E141B;
+    --border:#212B35;
+    --border-soft:#1A222B;
+    --text:#E7EDF3;
+    --text-dim:#8B98A6;
+    --text-faint:#5A6672;
+    --amber:#FFB92E;
+    --amber-dim:#8A661F;
+    --teal:#3FC1B0;
+    --red:#E5484D;
+    --font-display:'Space Grotesk', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+    --font-body:'Inter', sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{background:var(--bg);}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(255,185,46,0.05), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 0%, rgba(63,193,176,0.05), transparent 60%);
+  }
+  a{color:inherit;}
+  ::selection{background:var(--amber); color:#111;}
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead{
+    position:relative;
+    border-bottom:1px solid var(--border);
+    padding:22px clamp(16px,4vw,40px) 0;
+    overflow:hidden;
+  }
+  .sweep-track{
+    position:absolute; top:0; left:0; right:0; height:2px;
+    background:var(--border-soft);
+    overflow:hidden;
+  }
+  .sweep-track::after{
+    content:'';
+    position:absolute; top:0; left:-20%; width:20%; height:100%;
+    background:linear-gradient(90deg, transparent, var(--amber), transparent);
+    animation:sweep 5s linear infinite;
+  }
+  @keyframes sweep{
+    0%{left:-20%;}
+    100%{left:100%;}
+  }
+  .masthead-row{
+    display:flex; align-items:flex-end; justify-content:space-between;
+    flex-wrap:wrap; gap:14px; padding-bottom:18px;
+  }
+  .brand{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  .brand-mark{
+    font-family:var(--font-mono); font-size:12px; letter-spacing:.14em;
+    color:var(--amber); border:1px solid var(--amber-dim); padding:3px 7px;
+    border-radius:3px; text-transform:uppercase;
+  }
+  .brand h1{
+    font-family:var(--font-display); font-weight:700;
+    font-size:clamp(22px,3vw,30px); letter-spacing:-0.01em;
+  }
+  .brand h1 span{color:var(--text-dim); font-weight:500;}
+  .tagline{
+    font-family:var(--font-mono); font-size:12px; color:var(--text-faint);
+    max-width:460px;
+  }
+  .status-line{
+    font-family:var(--font-mono); font-size:12px; color:var(--text-dim);
+    display:flex; align-items:center; gap:10px; white-space:nowrap;
+  }
+  .dot{
+    width:7px; height:7px; border-radius:50%; background:var(--teal);
+    box-shadow:0 0 0 3px rgba(63,193,176,0.15);
+    animation:pulse 2.2s ease-in-out infinite;
+  }
+  .dot.busy{background:var(--amber); box-shadow:0 0 0 3px rgba(255,185,46,0.15);}
+  .dot.down{background:var(--red); box-shadow:0 0 0 3px rgba(229,72,77,0.15); animation:none;}
+  @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:.35;}}
+
+  /* ---------- CONTROLS ---------- */
+  .controls{
+    padding:16px clamp(16px,4vw,40px);
+    border-bottom:1px solid var(--border);
+    background:var(--panel-2);
+    display:flex; flex-direction:column; gap:12px;
+    position:sticky; top:0; z-index:20;
+    backdrop-filter:blur(8px);
+    background:rgba(14,20,27,0.92);
+  }
+  .chip-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    font-family:var(--font-mono); font-size:12px; letter-spacing:.02em;
+    padding:6px 11px; border:1px solid var(--border); border-radius:20px;
+    background:var(--panel); color:var(--text-dim); cursor:pointer;
+    display:flex; align-items:center; gap:7px;
+    transition:border-color .15s, color .15s, background .15s;
+    user-select:none;
+  }
+  .chip:hover{border-color:var(--text-faint); color:var(--text);}
+  .chip .swatch{width:7px; height:7px; border-radius:2px; flex:none;}
+  .chip.active{
+    background:rgba(255,185,46,0.08); border-color:var(--amber); color:var(--amber);
+  }
+  .chip .count{color:var(--text-faint); font-size:11px;}
+  .chip.active .count{color:var(--amber-dim);}
+
+  .util-row{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;}
+  .search-wrap{
+    display:flex; align-items:center; gap:8px;
+    border:1px solid var(--border); border-radius:6px; padding:8px 12px;
+    background:var(--panel); flex:1; min-width:220px; max-width:420px;
+  }
+  .search-wrap input{
+    background:none; border:none; outline:none; color:var(--text);
+    font-family:var(--font-mono); font-size:13px; width:100%;
+  }
+  .search-wrap input::placeholder{color:var(--text-faint);}
+  .search-wrap svg{flex:none; opacity:.5;}
+  .right-controls{display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+  select, .btn{
+    font-family:var(--font-mono); font-size:12px; color:var(--text-dim);
+    background:var(--panel); border:1px solid var(--border); border-radius:6px;
+    padding:8px 10px; cursor:pointer; outline:none;
+  }
+  select:hover, .btn:hover{border-color:var(--text-faint); color:var(--text);}
+  .btn.primary{border-color:var(--amber-dim); color:var(--amber);}
+  .btn.primary:hover{border-color:var(--amber);}
+  .btn svg{vertical-align:-2px; margin-right:5px;}
+  .spin{animation:spin 0.9s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  /* ---------- LAYOUT ---------- */
+  .layout{
+    display:grid; grid-template-columns:1fr 280px; gap:0;
+    max-width:1320px; margin:0 auto;
+  }
+  @media (max-width:900px){ .layout{grid-template-columns:1fr;} .side{order:-1;} }
+
+  .feed{padding:22px clamp(16px,4vw,32px); display:flex; flex-direction:column; gap:12px;}
+
+  .empty, .loading-msg{
+    font-family:var(--font-mono); font-size:13px; color:var(--text-faint);
+    padding:40px 10px; text-align:center; border:1px dashed var(--border); border-radius:8px;
+  }
+
+  /* ---------- CARD ---------- */
+  .card{
+    display:flex; gap:14px;
+    background:var(--panel); border:1px solid var(--border); border-radius:8px;
+    padding:16px 16px 16px 0; overflow:hidden;
+    text-decoration:none; color:inherit;
+    transition:border-color .15s, transform .15s;
+    position:relative;
+  }
+  .card:hover{border-color:var(--text-faint);}
+  .card:hover .headline{color:var(--amber);}
+  .card-bar{width:4px; flex:none; align-self:stretch; border-radius:2px 0 0 2px;}
+  .card-body{flex:1; min-width:0; display:flex; flex-direction:column; gap:6px;}
+  .card-meta{
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    font-family:var(--font-mono); font-size:11px; color:var(--text-faint);
+  }
+  .src-tag{
+    font-weight:600; letter-spacing:.03em; padding:2px 7px; border-radius:3px;
+    font-size:10.5px; text-transform:uppercase;
+  }
+  .headline{
+    font-family:var(--font-display); font-weight:600; font-size:16.5px;
+    line-height:1.3; color:var(--text); transition:color .15s;
+  }
+  .snippet{
+    font-size:13.5px; color:var(--text-dim); line-height:1.55;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  }
+  .card-foot{
+    font-family:var(--font-mono); font-size:11px; color:var(--text-faint);
+    display:flex; align-items:center; gap:6px;
+  }
+  .card-foot svg{opacity:.6;}
+
+  /* ---------- SIDEBAR ---------- */
+  .side{
+    padding:22px clamp(16px,4vw,24px) 22px 8px;
+    display:flex; flex-direction:column; gap:16px;
+  }
+  .panel{
+    background:var(--panel); border:1px solid var(--border); border-radius:8px;
+    padding:16px;
+  }
+  .panel h2{
+    font-family:var(--font-mono); font-size:11px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--text-faint); margin-bottom:12px;
+  }
+  .src-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:7px 0; border-bottom:1px solid var(--border-soft);
+    font-family:var(--font-mono); font-size:12px;
+  }
+  .src-row:last-child{border-bottom:none;}
+  .src-name{display:flex; align-items:center; gap:8px; color:var(--text-dim);}
+  .src-name .swatch{width:7px; height:7px; border-radius:2px;}
+  .src-state{color:var(--text-faint); font-size:11px;}
+  .src-state.ok{color:var(--teal);}
+  .src-state.err{color:var(--red);}
+  .about-txt{font-size:12.5px; color:var(--text-dim); line-height:1.6;}
+  .about-txt b{color:var(--text);}
+  footer{
+    text-align:center; font-family:var(--font-mono); font-size:11px;
+    color:var(--text-faint); padding:30px 20px 40px; border-top:1px solid var(--border);
+    max-width:1320px; margin:0 auto;
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="sweep-track"></div>
+  <div class="masthead-row">
+    <div>
+      <div class="brand">
+        <span class="brand-mark">SIGINT</span>
+        <h1>maxarmstrong.io</h1>
+      </div>
+      <p class="tagline">Live signal, clustered from 7 sources.</p>
+    </div>
+    <div class="status-line">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">SYNCING…</span>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="chip-row" id="sourceChips"></div>
+  <div class="util-row">
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="searchBox" type="text" placeholder="filter by keyword, CVE, actor…">
+    </div>
+    <div class="right-controls">
+      <select id="sortSelect">
+        <option value="new">Sort: Newest</option>
+        <option value="source">Sort: By source</option>
+      </select>
+      <button class="btn primary" id="refreshBtn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+        Refresh
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <main class="feed" id="feed">
+    <div class="loading-msg">Pulling signal from sources…</div>
+  </main>
+
+  <aside class="side">
+    <div class="panel">
+      <h2>Channel status</h2>
+      <div id="sourceStatusList"></div>
+    </div>
+    <div class="panel">
+      <h2>About this feed</h2>
+      <p class="about-txt">
+        <b>maxarmstrong.io/feed</b> pulls live RSS from the sources Max actually reads day to day: BleepingComputer, The Hacker News, Dark Reading, and Krebs on Security — plus the top posts of the week from r/cybersecurity, r/netsec, and r/sysadmin. Everything renders client-side, refreshed on demand.
+      </p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  BUILT FOR maxarmstrong.io — NOT AFFILIATED WITH ANY LISTED SOURCE — ALL ARTICLES LINK OUT TO ORIGINAL PUBLISHER
+</footer>
+
+<script>
+(function(){
+  const SOURCES = [
+    { id:'bleepingcomputer', name:'BleepingComputer', color:'#FFB92E', rss:'https://www.bleepingcomputer.com/feed/' },
+    { id:'thn', name:'The Hacker News', color:'#3FC1B0', rss:'https://feeds.feedburner.com/TheHackersNews' },
+    { id:'darkreading', name:'Dark Reading', color:'#E5484D', rss:'https://www.darkreading.com/rss.xml' },
+    { id:'krebs', name:'Krebs on Security', color:'#D98CD9', rss:'https://krebsonsecurity.com/feed/' },
+    { id:'r-cybersecurity', name:'r/cybersecurity', color:'#FF7A45', rss:'https://www.reddit.com/r/cybersecurity/top/.rss?t=week' },
+    { id:'r-netsec', name:'r/netsec', color:'#7FD1FF', rss:'https://www.reddit.com/r/netsec/top/.rss?t=week' },
+    { id:'r-sysadmin', name:'r/sysadmin', color:'#C9E86B', rss:'https://www.reddit.com/r/sysadmin/top/.rss?t=week' },
+  ];
+  const PROXY = 'https://api.rss2json.com/v1/api.json?rss_url=';
+  const sourceMap = Object.fromEntries(SOURCES.map(s=>[s.id,s]));
+
+  let allItems = [];
+  let activeSource = 'all';
+  let sortMode = 'new';
+  let query = '';
+  const sourceState = {}; // id -> 'ok' | 'err' | 'pending'
+
+  const feedEl = document.getElementById('feed');
+  const chipsEl = document.getElementById('sourceChips');
+  const statusListEl = document.getElementById('sourceStatusList');
+  const statusDot = document.getElementById('statusDot');
+  const statusText = document.getElementById('statusText');
+  const refreshBtn = document.getElementById('refreshBtn');
+
+  function stripHtml(html){
+    const d = document.createElement('div');
+    d.innerHTML = html || '';
+    return (d.textContent || d.innerText || '').replace(/\s+/g,' ').trim();
+  }
+
+  function timeAgo(dateStr){
+    const t = new Date(dateStr).getTime();
+    if(isNaN(t)) return '';
+    const diff = Math.max(0, Date.now() - t);
+    const m = Math.floor(diff/60000);
+    if(m < 1) return 'just now';
+    if(m < 60) return m + 'm ago';
+    const h = Math.floor(m/60);
+    if(h < 24) return h + 'h ago';
+    const d = Math.floor(h/24);
+    return d + 'd ago';
+  }
+
+  function stamp(dateStr){
+    const dt = new Date(dateStr);
+    if(isNaN(dt.getTime())) return '';
+    return dt.toISOString().slice(11,19).replace(/:/g,'') + 'Z';
+  }
+
+  async function fetchSource(src){
+    sourceState[src.id] = 'pending';
+    renderSourceStatus();
+    try{
+      const res = await fetch(PROXY + encodeURIComponent(src.rss));
+      if(!res.ok) throw new Error('bad response');
+      const data = await res.json();
+      if(data.status !== 'ok' || !Array.isArray(data.items)) throw new Error('bad feed');
+      sourceState[src.id] = 'ok';
+      return data.items.map(it => ({
+        title: stripHtml(it.title),
+        link: it.link,
+        desc: stripHtml(it.description || it.content || '').slice(0,220),
+        date: it.pubDate,
+        sourceId: src.id
+      }));
+    }catch(e){
+      sourceState[src.id] = 'err';
+      return [];
+    }
+  }
+
+  async function loadAll(){
+    statusDot.className = 'dot busy';
+    statusText.textContent = 'SYNCING…';
+    refreshBtn.querySelector('svg').classList.add('spin');
+    feedEl.innerHTML = '<div class="loading-msg">Pulling signal from ' + SOURCES.length + ' sources…</div>';
+
+    const results = await Promise.all(SOURCES.map(fetchSource));
+    allItems = results.flat().filter(it => it.title && it.link);
+    allItems.sort((a,b) => new Date(b.date) - new Date(a.date));
+
+    renderChips();
+    renderSourceStatus();
+    render();
+
+    refreshBtn.querySelector('svg').classList.remove('spin');
+    const okCount = SOURCES.filter(s => sourceState[s.id] === 'ok').length;
+    if(okCount === SOURCES.length){
+      statusDot.className = 'dot';
+      statusText.textContent = 'LIVE · last sync ' + new Date().toLocaleTimeString();
+    } else if(okCount === 0){
+      statusDot.className = 'dot down';
+      statusText.textContent = 'ALL SOURCES UNREACHABLE';
+    } else {
+      statusDot.className = 'dot busy';
+      statusText.textContent = okCount + '/' + SOURCES.length + ' sources OK';
+    }
+  }
+
+  function renderChips(){
+    const counts = {};
+    allItems.forEach(it => counts[it.sourceId] = (counts[it.sourceId]||0)+1);
+    let html = '<div class="chip' + (activeSource==='all'?' active':'') + '" data-src="all">All <span class="count">' + allItems.length + '</span></div>';
+    SOURCES.forEach(s => {
+      html += '<div class="chip' + (activeSource===s.id?' active':'') + '" data-src="' + s.id + '">' +
+        '<span class="swatch" style="background:' + s.color + '"></span>' + s.name +
+        ' <span class="count">' + (counts[s.id]||0) + '</span></div>';
+    });
+    chipsEl.innerHTML = html;
+    chipsEl.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        activeSource = chip.getAttribute('data-src');
+        renderChips();
+        render();
+      });
+    });
+  }
+
+  function renderSourceStatus(){
+    statusListEl.innerHTML = SOURCES.map(s => {
+      const st = sourceState[s.id] || 'pending';
+      const label = st === 'ok' ? 'online' : st === 'err' ? 'unreachable' : 'checking…';
+      const cls = st === 'ok' ? 'ok' : st === 'err' ? 'err' : '';
+      return '<div class="src-row"><span class="src-name"><span class="swatch" style="background:' + s.color + '"></span>' + s.name + '</span>' +
+        '<span class="src-state ' + cls + '">' + label + '</span></div>';
+    }).join('');
+  }
+
+  function render(){
+    let items = allItems.filter(it => activeSource === 'all' || it.sourceId === activeSource);
+    if(query.trim()){
+      const q = query.trim().toLowerCase();
+      items = items.filter(it => it.title.toLowerCase().includes(q) || it.desc.toLowerCase().includes(q));
+    }
+    if(sortMode === 'source'){
+      items = [...items].sort((a,b) => sourceMap[a.sourceId].name.localeCompare(sourceMap[b.sourceId].name) || new Date(b.date)-new Date(a.date));
+    } else {
+      items = [...items].sort((a,b) => new Date(b.date) - new Date(a.date));
+    }
+
+    if(items.length === 0){
+      feedEl.innerHTML = '<div class="empty">No signal matches these filters. Try clearing the search or picking another channel.</div>';
+      return;
+    }
+
+    feedEl.innerHTML = items.slice(0, 120).map(it => {
+      const src = sourceMap[it.sourceId];
+      return '<a class="card" href="' + it.link + '" target="_blank" rel="noopener noreferrer">' +
+        '<span class="card-bar" style="background:' + src.color + '"></span>' +
+        '<span class="card-body">' +
+          '<span class="card-meta">' +
+            '<span class="src-tag" style="color:' + src.color + '; background:' + src.color + '1a;">' + src.name + '</span>' +
+            '<span>RECV ' + stamp(it.date) + '</span>' +
+            '<span>' + timeAgo(it.date) + '</span>' +
+          '</span>' +
+          '<span class="headline">' + it.title + '</span>' +
+          (it.desc ? '<span class="snippet">' + it.desc + '</span>' : '') +
+          '<span class="card-foot">' +
+            '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
+            'open transmission' +
+          '</span>' +
+        '</span>' +
+      '</a>';
+    }).join('');
+  }
+
+  document.getElementById('searchBox').addEventListener('input', e => { query = e.target.value; render(); });
+  document.getElementById('sortSelect').addEventListener('change', e => { sortMode = e.target.value; render(); });
+  refreshBtn.addEventListener('click', loadAll);
+
+  renderChips();
+  renderSourceStatus();
+  loadAll();
+})();
+</script>
+</body>
+</html>
