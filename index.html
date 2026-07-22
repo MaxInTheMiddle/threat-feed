@@ -433,9 +433,34 @@
   const refreshBtn = document.getElementById('refreshBtn');
 
   function stripHtml(html){
-    const d = document.createElement('div');
-    d.innerHTML = html || '';
-    return (d.textContent || d.innerText || '').replace(/\s+/g,' ').trim();
+    // DOMParser produces a fully detached document that is never attached
+    // to the page's browsing context, so <img>/<svg>/etc inside untrusted
+    // feed content cannot fire onerror/onload or otherwise execute.
+    // (Do NOT do this with document.createElement('div').innerHTML = html —
+    // that node belongs to the live document and WILL run those handlers.)
+    const doc = new DOMParser().parseFromString(html || '', 'text/html');
+    return (doc.body.textContent || '').replace(/\s+/g,' ').trim();
+  }
+
+  function escapeHtml(str){
+    // Belt-and-suspenders: even if stripHtml ever had a bug, nothing
+    // interpolated into an innerHTML template can become a tag/attribute.
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function safeUrl(url){
+    // Only allow http/https links out. Blocks javascript:, data:, etc.
+    // that a malicious/compromised feed item could otherwise supply.
+    try{
+      const u = new URL(url, location.href);
+      if(u.protocol === 'http:' || u.protocol === 'https:') return u.href;
+    }catch(e){}
+    return '#';
   }
 
   function timeAgo(dateStr){
@@ -555,7 +580,7 @@
 
     feedEl.innerHTML = items.slice(0, 120).map(it => {
       const src = sourceMap[it.sourceId];
-      return '<a class="card" href="' + it.link + '" target="_blank" rel="noopener noreferrer">' +
+      return '<a class="card" href="' + escapeHtml(safeUrl(it.link)) + '" target="_blank" rel="noopener noreferrer">' +
         '<span class="card-bar" style="background:' + src.color + '"></span>' +
         '<span class="card-body">' +
           '<span class="card-meta">' +
@@ -563,8 +588,8 @@
             '<span>RECV ' + stamp(it.date) + '</span>' +
             '<span>' + timeAgo(it.date) + '</span>' +
           '</span>' +
-          '<span class="headline">' + it.title + '</span>' +
-          (it.desc ? '<span class="snippet">' + it.desc + '</span>' : '') +
+          '<span class="headline">' + escapeHtml(it.title) + '</span>' +
+          (it.desc ? '<span class="snippet">' + escapeHtml(it.desc) + '</span>' : '') +
           '<span class="card-foot">' +
             '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
             'open transmission' +
