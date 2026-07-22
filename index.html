@@ -64,13 +64,29 @@
     100%{left:100%;}
   }
   .masthead-row{
+    position:relative; z-index:2;
     display:flex; align-items:flex-end; justify-content:space-between;
     flex-wrap:wrap; gap:14px; padding-bottom:18px;
   }
+  #matrixRain{
+    position:absolute; top:0; left:0; width:100%; height:100%;
+    z-index:0; opacity:0.16; pointer-events:none;
+  }
+  .type-cursor{
+    display:inline-block; color:var(--teal); font-family:var(--font-mono);
+    margin-left:1px; animation:blink 1s steps(1) infinite;
+  }
+  @keyframes blink{0%,49%{opacity:1;} 50%,100%{opacity:0;}}
+  .visit-counter{
+    font-family:var(--font-mono); font-size:11px; color:var(--text-faint);
+    border:1px solid var(--border); border-radius:20px; padding:4px 10px;
+    letter-spacing:.06em;
+  }
+  .visit-counter #visitCount{color:var(--teal); font-weight:600;}
   .brand{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
   .brand-mark{
     font-family:var(--font-mono); font-size:12px; letter-spacing:.14em;
-    color:var(--amber); border:1px solid var(--amber-dim); padding:3px 7px;
+    color:#3FC15E; border:1px solid #1E6B34; padding:3px 7px;
     border-radius:3px; text-transform:uppercase;
   }
   .brand h1{
@@ -233,15 +249,17 @@
 
 <header class="masthead">
   <div class="sweep-track"></div>
+  <canvas id="matrixRain"></canvas>
   <div class="masthead-row">
     <div>
       <div class="brand">
-        <span class="brand-mark">SIGINT</span>
+        <span class="brand-mark">RSS</span>
         <h1>maxarmstrong.io</h1>
       </div>
-      <p class="tagline">Live signal, clustered from 7 sources.</p>
+      <p class="tagline"><span id="typedLine"></span><span class="type-cursor">▌</span></p>
     </div>
     <div class="status-line">
+      <span class="visit-counter" id="visitCounter">VISITORS <span id="visitCount">···</span></span>
       <span class="dot" id="statusDot"></span>
       <span id="statusText">SYNCING…</span>
     </div>
@@ -292,6 +310,98 @@
 </footer>
 
 <script>
+// ---------- matrix rain (masthead easter egg) ----------
+(function(){
+  const canvas = document.getElementById('matrixRain');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const chars = 'アイウエオカキクケコサシスセソ01337BEEFDEADH4CK';
+  let cols, drops, w, h;
+
+  function size(){
+    const rect = canvas.parentElement.getBoundingClientRect();
+    w = canvas.width = rect.width;
+    h = canvas.height = rect.height;
+    cols = Math.floor(w / 16);
+    drops = new Array(cols).fill(0).map(() => Math.random() * -40);
+  }
+  size();
+  window.addEventListener('resize', size);
+
+  function draw(){
+    ctx.fillStyle = 'rgba(11,15,20,0.15)';
+    ctx.fillRect(0, 0, w, h);
+    ctx.font = '14px "IBM Plex Mono", monospace';
+    for(let i = 0; i < cols; i++){
+      const ch = chars[Math.floor(Math.random() * chars.length)];
+      const y = drops[i] * 16;
+      ctx.fillStyle = y < 16 ? '#C9F5C9' : '#2FD16B';
+      ctx.fillText(ch, i * 16, y);
+      if(y > h && Math.random() > 0.975) drops[i] = 0;
+      drops[i]++;
+    }
+    setTimeout(() => requestAnimationFrame(draw), 110);
+  }
+  draw();
+})();
+
+// ---------- typed hacker-phrase line ----------
+(function(){
+  const el = document.getElementById('typedLine');
+  if(!el) return;
+  const phrases = [
+    'I am the master vibecoder',
+    'Computer, make me a live RSS feed',
+    'Live signal, clustered from sources',
+    "sudo rm -rf / #don't drink and root",
+    'Don\u2019t forget an IR retainer',
+    'Microsoft updated office…',
+    'It\u2019s always DNS',
+    'I restarted my computer already',
+    'Accessing the mainframe',
+  ];
+  for(let j = phrases.length - 1; j > 0; j--){
+    const k = Math.floor(Math.random() * (j + 1));
+    [phrases[j], phrases[k]] = [phrases[k], phrases[j]];
+  }
+  let p = 0, i = 0, deleting = false;
+
+  function tick(){
+    const full = phrases[p];
+    if(!deleting){
+      i++;
+      el.textContent = full.slice(0, i);
+      if(i === full.length){
+        deleting = true;
+        setTimeout(tick, 2600);
+        return;
+      }
+    } else {
+      i--;
+      el.textContent = full.slice(0, i);
+      if(i === 0){
+        deleting = false;
+        p = (p + 1) % phrases.length;
+      }
+    }
+    setTimeout(tick, deleting ? 45 : 75);
+  }
+  tick();
+})();
+
+// ---------- visit counter ----------
+(function(){
+  const el = document.getElementById('visitCount');
+  if(!el) return;
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/maxarmstrong-io-site-visits-v1')
+    .then(r => r.json())
+    .then(data => {
+      const n = parseInt(data.value, 10);
+      el.textContent = isNaN(n) ? '—' : n.toLocaleString();
+    })
+    .catch(() => { el.textContent = '—'; });
+})();
+
 (function(){
   const SOURCES = [
     { id:'bleepingcomputer', name:'BleepingComputer', color:'#FFB92E', rss:'https://www.bleepingcomputer.com/feed/' },
