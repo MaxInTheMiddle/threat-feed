@@ -8,7 +8,7 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.rss2json.com https://countapi.mileshilliard.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.rss2json.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'">
 <meta name="description" content="Live aggregated cybersecurity news from BleepingComputer, The Hacker News, Dark Reading, CISA, Krebs on Security, r/cybersecurity, r/netsec, r/sysadmin.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,12 +82,6 @@
     margin-left:1px; animation:blink 1s steps(1) infinite;
   }
   @keyframes blink{0%,49%{opacity:1;} 50%,100%{opacity:0;}}
-  .visit-counter{
-    font-family:var(--font-mono); font-size:11px; color:var(--text-faint);
-    border:1px solid var(--border); border-radius:20px; padding:4px 10px;
-    letter-spacing:.06em;
-  }
-  .visit-counter #visitCount{color:var(--teal); font-weight:600;}
   .brand{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
   .brand-mark{
     font-family:var(--font-mono); font-size:12px; letter-spacing:.14em;
@@ -264,7 +258,6 @@
       <p class="tagline"><span id="typedLine"></span><span class="type-cursor">▌</span></p>
     </div>
     <div class="status-line">
-      <span class="visit-counter" id="visitCounter">VISITORS COUNTER <span id="visitCount">···</span></span>
       <span class="dot" id="statusDot"></span>
       <span id="statusText">SYNCING…</span>
     </div>
@@ -363,19 +356,6 @@
     if(i < full.length) setTimeout(tick, 65);
   }
   tick();
-})();
-
-// ---------- visit counter ----------
-(function(){
-  const el = document.getElementById('visitCount');
-  if(!el) return;
-  fetch('https://countapi.mileshilliard.com/api/v1/hit/maxarmstrong-io-site-visits-v1')
-    .then(r => r.json())
-    .then(data => {
-      const n = parseInt(data.value, 10);
-      el.textContent = isNaN(n) ? '—' : n.toLocaleString();
-    })
-    .catch(() => { el.textContent = '—'; });
 })();
 
 (function(){
