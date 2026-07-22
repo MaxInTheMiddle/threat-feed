@@ -8,6 +8,7 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.rss2json.com https://countapi.mileshilliard.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'">
 <meta name="description" content="Live aggregated cybersecurity news from BleepingComputer, The Hacker News, Dark Reading, CISA, Krebs on Security, r/cybersecurity, r/netsec, r/sysadmin.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -463,7 +464,7 @@
       if(data.status !== 'ok' || !Array.isArray(data.items)) throw new Error('bad feed');
       sourceState[src.id] = 'ok';
       return data.items.map(it => ({
-        title: stripHtml(it.title),
+        title: stripHtml(it.title).slice(0, 200),
         link: it.link,
         desc: stripHtml(it.description || it.content || '').slice(0,220),
         date: it.pubDate,
