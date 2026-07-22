@@ -349,46 +349,17 @@
   draw();
 })();
 
-// ---------- typed hacker-phrase line ----------
+// ---------- typed line (types once, no cycling) ----------
 (function(){
   const el = document.getElementById('typedLine');
   if(!el) return;
-  const phrases = [
-    'I am the master vibecoder',
-    'Computer, make me a live RSS feed',
-    'Live signal, clustered from sources',
-    "sudo rm -rf / #don't drink and root",
-    'Don\u2019t forget an IR retainer',
-    'Microsoft updated office…',
-    'It\u2019s always DNS',
-    'I restarted my computer already',
-    'Accessing the mainframe',
-  ];
-  for(let j = phrases.length - 1; j > 0; j--){
-    const k = Math.floor(Math.random() * (j + 1));
-    [phrases[j], phrases[k]] = [phrases[k], phrases[j]];
-  }
-  let p = 0, i = 0, deleting = false;
+  const full = 'Fetching feeds...';
+  let i = 0;
 
   function tick(){
-    const full = phrases[p];
-    if(!deleting){
-      i++;
-      el.textContent = full.slice(0, i);
-      if(i === full.length){
-        deleting = true;
-        setTimeout(tick, 2600);
-        return;
-      }
-    } else {
-      i--;
-      el.textContent = full.slice(0, i);
-      if(i === 0){
-        deleting = false;
-        p = (p + 1) % phrases.length;
-      }
-    }
-    setTimeout(tick, deleting ? 45 : 75);
+    i++;
+    el.textContent = full.slice(0, i);
+    if(i < full.length) setTimeout(tick, 65);
   }
   tick();
 })();
