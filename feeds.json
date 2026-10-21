@@ -1,9 +1,27 @@
 {
- "updated": "2026-10-21T13:01:52.576Z",
+ "updated": "2026-10-21T18:08:31.253Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "OpenAI agents disabled safety monitoring, one lied about it",
+     "link": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
+     "desc": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]",
+     "date": "2026-10-21T16:26:53.000Z"
+    },
+    {
+     "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+     "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+     "desc": "The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell. [...]",
+     "date": "2026-10-21T14:07:05.000Z"
+    },
+    {
+     "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
+     "link": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
+     "desc": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines how these attacks evade traditi",
+     "date": "2026-10-21T14:00:10.000Z"
+    },
     {
      "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
@@ -75,30 +93,36 @@
      "link": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
      "desc": "Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update. [...]",
      "date": "2026-10-20T12:16:32.000Z"
-    },
-    {
-     "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
-     "link": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
-     "desc": "French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]",
-     "date": "2026-10-20T11:31:22.000Z"
-    },
-    {
-     "title": "Ahold Delhaize: Cyberattack affects services across US and Europe",
-     "link": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
-     "desc": "Ahold Delhaize, one of the world's largest food retail chains, confirmed that last week's cyberattack disrupted services at stores across Europe and the United States. [...]",
-     "date": "2026-10-20T11:18:35.000Z"
-    },
-    {
-     "title": "Revolut outage disrupts online banking operations worldwide",
-     "link": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
-     "desc": "Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today. [...]",
-     "date": "2026-10-20T09:46:44.000Z"
     }
    ]
   },
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+     "link": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+     "desc": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind. T",
+     "date": "2026-10-21T18:01:57.000Z"
+    },
+    {
+     "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+     "link": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+     "desc": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The A",
+     "date": "2026-10-21T16:33:47.000Z"
+    },
+    {
+     "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+     "link": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
+     "desc": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP ",
+     "date": "2026-10-21T14:00:00.000Z"
+    },
+    {
+     "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
+     "link": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
+     "desc": "Google on Tuesday said it's rolling out improved safeguards in its Chrome browser to secure users against ClickFix attacks when Enhanced Protection is enabled. ClickFix is a popular social engineering technique in which ",
+     "date": "2026-10-21T13:15:09.000Z"
+    },
     {
      "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
      "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
@@ -254,36 +278,36 @@
      "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
      "desc": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public. According to a researcher ",
      "date": "2026-10-19T17:32:13.000Z"
-    },
-    {
-     "title": "Popular WordPress SEO Plugin Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
-     "link": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
-     "desc": "Copies of Rank Math PRO, the paid version of the Rank Math SEO plugin for WordPress, that were downloaded from rankmath.com or delivered as updates between 20:02 UTC on October 15 and 07:12 UTC on October 16 contained ma",
-     "date": "2026-10-19T16:28:47.000Z"
-    },
-    {
-     "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
-     "link": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
-     "desc": "The worst problems don't always come with a warning. Sometimes they arrive through a service everyone trusts, a device someone bought, or a system nobody thought to check. By the time something looks wrong, the damage ma",
-     "date": "2026-10-19T14:14:07.000Z"
-    },
-    {
-     "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
-     "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
-     "desc": "The threat actor behind the GhostAction supply chain attack has expanded beyond injecting malicious GitHub Actions workflows into compromised projects to phish open-source developers and deliver a stealer malware disguis",
-     "date": "2026-10-19T13:05:45.000Z"
-    },
-    {
-     "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
-     "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
-     "desc": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the agent's prompt. Separately, Email-to-Case and Web-to",
-     "date": "2026-10-19T11:50:00.000Z"
     }
    ]
   },
   "darkreading": {
    "ok": true,
    "items": [
+    {
+     "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
+     "desc": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
+     "date": "2026-10-21T16:50:15.000Z"
+    },
+    {
+     "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+     "link": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+     "desc": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+     "date": "2026-10-21T15:44:48.000Z"
+    },
+    {
+     "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+     "link": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+     "desc": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+     "date": "2026-10-21T15:29:09.000Z"
+    },
+    {
+     "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
+     "desc": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
+     "date": "2026-10-21T13:00:00.000Z"
+    },
     {
      "title": "Tech Giants Block eMudhra Certificates Tied to 8 Compromised Keys",
      "link": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys",
@@ -299,7 +323,7 @@
     {
      "title": "Close Identity Gaps in Software Development Before Unleashing AI",
      "link": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-     "desc": "Artificial Intelligence is complicating security in the software development lifecycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
+     "desc": "Artificial intelligence is complicating security in the software development life cycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
      "date": "2026-10-20T15:35:45.000Z"
     },
     {
@@ -439,36 +463,18 @@
      "link": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
      "desc": "Organizations are reporting that employees face threats of stalking, physical violence, and abduction. But these alarming claims are hard to verify.",
      "date": "2026-10-14T05:00:00.000Z"
-    },
-    {
-     "title": "Zero-Days Lurk in Microsoft's Overgrown October Patch Tuesday",
-     "link": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
-     "desc": "The scary surprises in the largest security update ever include defense bypasses and unauthenticated RCEs.",
-     "date": "2026-10-13T22:29:57.000Z"
-    },
-    {
-     "title": "North Korea Phishes Ukrainians for War Intel",
-     "link": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
-     "desc": "The Democratic People's Republic of Korea (DPRK) is trying to get insight into its own war effort in Ukraine, through simple reply-baiting phishing attacks.",
-     "date": "2026-10-13T21:24:45.000Z"
-    },
-    {
-     "title": "Anthropic Finds Ingredients for Future AI Worms",
-     "link": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms",
-     "desc": "Anthropic's latest study combines IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
-     "date": "2026-10-13T20:35:23.000Z"
-    },
-    {
-     "title": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack",
-     "link": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
-     "desc": "Attackers are currently targeting a critical vulnerability in SMA 1000 appliances, putting SonicWall customers in a familiar yet unenviable position.",
-     "date": "2026-10-12T21:42:42.000Z"
     }
    ]
   },
   "krebs": {
    "ok": true,
    "items": [
+    {
+     "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+     "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+     "desc": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full co",
+     "date": "2026-10-21T15:26:07.000Z"
+    },
     {
      "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
      "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
@@ -522,12 +528,6 @@
      "link": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
      "desc": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping ",
      "date": "2026-09-08T21:44:22.000Z"
-    },
-    {
-     "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
-     "link": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
-     "desc": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose l",
-     "date": "2026-09-01T22:40:28.000Z"
     }
    ]
   },
@@ -557,12 +557,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x5yiix/ai_agents_arent_going_rogue_frontier_labs_are/",
      "desc": "submitted by /u/snydeq [link] [comments]",
      "date": "2026-10-14T18:08:32.000Z"
-    },
-    {
-     "title": "'123456' password was all a hacker reportedly needed to expose over 8 million people's personal data",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x5vd9w/123456_password_was_all_a_hacker_reportedly/",
-     "desc": "submitted by /u/Aron_International [link] [comments]",
-     "date": "2026-10-14T16:10:36.000Z"
     },
     {
      "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
@@ -605,6 +599,12 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
      "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
      "date": "2026-10-19T04:58:33.000Z"
+    },
+    {
+     "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
+     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
+     "date": "2026-10-21T03:13:08.000Z"
     },
     {
      "title": "My experience working with Mythos 5.1 on a new attack vector",
@@ -655,16 +655,22 @@
      "date": "2026-10-19T16:17:37.000Z"
     },
     {
-     "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
-     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
-     "date": "2026-10-21T03:13:08.000Z"
+     "title": "PHP: Critical remote code execution vulnerabilities, update now",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbou5n/php_critical_remote_code_execution/",
+     "desc": "submitted by /u/ni5arga [link] [comments]",
+     "date": "2026-10-21T14:34:06.000Z"
     },
     {
      "title": "Germany issues guidance on switching to post-quantum cryptography",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x7ovfn/germany_issues_guidance_on_switching_to/",
      "desc": "submitted by /u/donutloop [link] [comments]",
      "date": "2026-10-16T19:01:29.000Z"
+    },
+    {
+     "title": "Two critical vulnerabilities in php (presumably since php 5) release today 14:00 UTC",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbfah6/two_critical_vulnerabilities_in_php_presumably/",
+     "desc": "The PHP security team is giving advance notice: Upcoming security release Wed, Oct 21st 2026, 14:00UTC, two critical vulnerabilities, both rated CVSSv4 9.2. PHP users are encouraged to prepare to update. Earlier release ",
+     "date": "2026-10-21T06:06:46.000Z"
     },
     {
      "title": "Burger King Japan data breach exposes 11 million customer records",
@@ -677,12 +683,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x7a55w/github_repos_compromised/",
      "desc": "Around 30000 repos were compromised with a supply chain attack https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html?m=1 submitted by /u/sbify [link] [comments]",
      "date": "2026-10-16T07:52:34.000Z"
-    },
-    {
-     "title": "Proofpoint to acquire Varonis - is the vision to have all security tooling controlled by a handful of vendors?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x713gc/proofpoint_to_acquire_varonis_is_the_vision_to/",
-     "desc": "This year seriously feels like the year of the mega platform. Sign up with one vendor and say “good enough” for firewall, end point, DLP, email security, AI security, data security, etc etc etc submitted by /u/Hmm_would_",
-     "date": "2026-10-15T23:39:27.000Z"
     }
    ]
   },
