@@ -1,0 +1,698 @@
+{
+ "updated": "2026-10-21T07:16:15.409Z",
+ "sources": {
+  "bleepingcomputer": {
+   "ok": true,
+   "items": [
+    {
+     "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
+     "link": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
+     "desc": "A threat actor breached TeamUpdraft's website, a developer of popular WordPress backup and security plugins, potentially compromising UpdraftCentral connection keys that can send commands to connected websites. [...]",
+     "date": "2026-10-21T01:01:50.000Z"
+    },
+    {
+     "title": "Mozilla, Google, Apple block compromised eMudhra CA certificates",
+     "link": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
+     "desc": "Certificate authority eMudhra revoked eight compromised intermediate certificates after researchers found their private keys were so weak that anyone could recover them almost instantly and use them to forge trusted cert",
+     "date": "2026-10-21T00:46:42.000Z"
+    },
+    {
+     "title": "PHP warns admins of two critical flaws, emergency patches coming tomorrow",
+     "link": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
+     "desc": "The PHP security team is warning administrators to prepare for emergency security updates tomorrow to address two critical vulnerabilities, as information about the flaws has reportedly leaked ahead of their scheduled di",
+     "date": "2026-10-20T20:56:43.000Z"
+    },
+    {
+     "title": "Zeabur shutting down after second security breach in two months",
+     "link": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
+     "desc": "Development platform Zeabur has disclosed details of a cybersecurity incident in which an attacker used leaked internal credentials stored in plaintext to compromise its infrastructure and steal over 3.2 million environm",
+     "date": "2026-10-20T19:33:02.000Z"
+    },
+    {
+     "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
+     "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/",
+     "desc": "OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages. [...]",
+     "date": "2026-10-20T18:11:03.000Z"
+    },
+    {
+     "title": "DHS bans DeepSeek products across US federal civilian agencies",
+     "link": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
+     "desc": "The U.S. Department of Homeland Security (DHS) is ordering federal civilian agencies to stop using DeepSeek products and remove them from government systems. [...]",
+     "date": "2026-10-20T14:19:05.000Z"
+    },
+    {
+     "title": "CJIS v6.1 Compliance: 5 Practical Priorities for Agencies",
+     "link": "https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/",
+     "desc": "CJIS v6.1 requires agencies to maintain strong authentication, account security, and audit controls while demonstrating ongoing compliance. Specops outlines five practical priorities covering MFA, account management, pas",
+     "date": "2026-10-20T13:51:00.000Z"
+    },
+    {
+     "title": "Hacker gets 8 years for stealing $3.3 million from taxpayers",
+     "link": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
+     "desc": "A Nigerian national was sentenced to eight years in prison for his involvement in a series of spearphishing attacks targeting US tax preparation businesses since 2019. [...]",
+     "date": "2026-10-20T13:18:36.000Z"
+    },
+    {
+     "title": "Windows Server 2025 gets support for quick machine recovery",
+     "link": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
+     "desc": "Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update. [...]",
+     "date": "2026-10-20T12:16:32.000Z"
+    },
+    {
+     "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
+     "link": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
+     "desc": "French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]",
+     "date": "2026-10-20T11:31:22.000Z"
+    },
+    {
+     "title": "Ahold Delhaize: Cyberattack affects services across US and Europe",
+     "link": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
+     "desc": "Ahold Delhaize, one of the world's largest food retail chains, confirmed that last week's cyberattack disrupted services at stores across Europe and the United States. [...]",
+     "date": "2026-10-20T11:18:35.000Z"
+    },
+    {
+     "title": "Revolut outage disrupts online banking operations worldwide",
+     "link": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
+     "desc": "Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today. [...]",
+     "date": "2026-10-20T09:46:44.000Z"
+    },
+    {
+     "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+     "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+     "desc": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]",
+     "date": "2026-10-19T21:49:48.000Z"
+    },
+    {
+     "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
+     "link": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+     "desc": "Some downloads of the Rank Math PRO WordPress plugin from the vendor's official website carried malware that planted hidden backdoors in a supply-chain attack last week. [...]",
+     "date": "2026-10-19T21:24:51.000Z"
+    },
+    {
+     "title": "Hackers hijack AOMEI update servers to secretly spread malware",
+     "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
+     "desc": "Hackers reportedly compromised AOMEI's servers to distribute malware through a built-in promotional feature in its backup software, briefly tampering with configuration files before restoring them to their original state",
+     "date": "2026-10-19T19:40:58.000Z"
+    }
+   ]
+  },
+  "thn": {
+   "ok": true,
+   "items": [
+    {
+     "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
+     "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
+     "desc": "PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described. Security researchers at w",
+     "date": "2026-10-21T04:57:50.000Z"
+    },
+    {
+     "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
+     "link": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+     "desc": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20. An intermediate CA signs the certificates that webs",
+     "date": "2026-10-20T17:09:53.000Z"
+    },
+    {
+     "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+     "link": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+     "desc": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution. The vulnerability, tracke",
+     "date": "2026-10-20T15:38:52.000Z"
+    },
+    {
+     "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+     "link": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+     "desc": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The activity relates to CVE-2026-0257 (CVSS score: 7.8",
+     "date": "2026-10-20T15:32:27.000Z"
+    },
+    {
+     "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
+     "link": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+     "desc": "A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen because the operators left their control panels open on ",
+     "date": "2026-10-20T14:07:17.000Z"
+    },
+    {
+     "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
+     "link": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
+     "desc": "The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia's student protest movement, was infected with NSO Group's Pegasus spyware in 2026, the Citizen Lab said on October 19. ",
+     "date": "2026-10-20T12:59:44.000Z"
+    },
+    {
+     "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
+     "link": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+     "desc": "WhatsApp's help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no longer delete their accounts, even though WhatsApp's ",
+     "date": "2026-10-20T11:41:06.000Z"
+    },
+    {
+     "title": "What Security Teams Can Do To Tame Wild Code",
+     "link": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
+     "desc": "A sales manager builds an AI-assisted workflow to route leads. It connects to customer records, summarizes inbound requests, and posts updates to a shared channel. The workflow saves time, reduces manual work, and soon b",
+     "date": "2026-10-20T11:33:04.000Z"
+    },
+    {
+     "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+     "link": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+     "desc": "Go 1.27.3 and Go 1.26.10, released on October 20, make Go's certificate verifier reject any certificate chain that passes through one of eight intermediate certificate authority keys. Programs built on the new release wi",
+     "date": "2026-10-20T11:32:59.000Z"
+    },
+    {
+     "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+     "link": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+     "desc": "The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member states of the North Atlantic Treaty Organization (NATO)",
+     "date": "2026-10-20T11:06:25.000Z"
+    },
+    {
+     "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+     "link": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+     "desc": "ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a securi",
+     "date": "2026-10-20T10:56:08.000Z"
+    },
+    {
+     "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
+     "link": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
+     "desc": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a bu",
+     "date": "2026-10-20T08:21:29.000Z"
+    },
+    {
+     "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+     "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+     "desc": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks. The high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4",
+     "date": "2026-10-20T07:11:45.000Z"
+    },
+    {
+     "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
+     "link": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
+     "desc": "A U.S. court on Monday granted the U.S. government's request to detain a former OpenAI engineer accused of planting a recording device in an executive conference room at the company's San Francisco office to allegedly st",
+     "date": "2026-10-20T05:53:16.000Z"
+    },
+    {
+     "title": "Hackers Use New ROMULUS ClickFix Platform to Deliver LegionLoader and Other Malware",
+     "link": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
+     "desc": "Cybersecurity researchers have disclosed details of a ClickFix delivery platform called ROMULUS that's being used to distribute malware such as Legion Loader. According to Forescout Research - Vedere Labs, ROMULUS is aki",
+     "date": "2026-10-20T04:05:58.000Z"
+    },
+    {
+     "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+     "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+     "desc": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public. According to a researcher ",
+     "date": "2026-10-19T17:32:13.000Z"
+    },
+    {
+     "title": "Popular WordPress SEO Plugin Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
+     "link": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
+     "desc": "Copies of Rank Math PRO, the paid version of the Rank Math SEO plugin for WordPress, that were downloaded from rankmath.com or delivered as updates between 20:02 UTC on October 15 and 07:12 UTC on October 16 contained ma",
+     "date": "2026-10-19T16:28:47.000Z"
+    },
+    {
+     "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+     "link": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+     "desc": "The worst problems don't always come with a warning. Sometimes they arrive through a service everyone trusts, a device someone bought, or a system nobody thought to check. By the time something looks wrong, the damage ma",
+     "date": "2026-10-19T14:14:07.000Z"
+    },
+    {
+     "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+     "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+     "desc": "The threat actor behind the GhostAction supply chain attack has expanded beyond injecting malicious GitHub Actions workflows into compromised projects to phish open-source developers and deliver a stealer malware disguis",
+     "date": "2026-10-19T13:05:45.000Z"
+    },
+    {
+     "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
+     "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
+     "desc": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the agent's prompt. Separately, Email-to-Case and Web-to",
+     "date": "2026-10-19T11:50:00.000Z"
+    },
+    {
+     "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
+     "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+     "desc": "A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for A",
+     "date": "2026-10-19T10:06:40.000Z"
+    },
+    {
+     "title": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers",
+     "link": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
+     "desc": "A flaw in Broadcom's Wi-Fi setup software lets an attacker within radio range run code as root on Broadcom-based routers, without the network password or any pairing step, security researcher Quentin Kaiser disclosed on ",
+     "date": "2026-10-19T06:29:44.000Z"
+    },
+    {
+     "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+     "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+     "desc": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said. Console is OpenCode's optional ",
+     "date": "2026-10-19T06:07:08.000Z"
+    },
+    {
+     "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
+     "link": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
+     "desc": "ConnectWise on Saturday said it has disabled seven ConnectWise application identities as it continues its investigation into an incident in which unknown threat actors obtained unauthorized access to the application iden",
+     "date": "2026-10-18T08:23:02.000Z"
+    },
+    {
+     "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
+     "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+     "desc": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package, named \"imgdecode,\" was uploaded to the package regis",
+     "date": "2026-10-17T11:11:56.000Z"
+    },
+    {
+     "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+     "link": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+     "desc": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyK",
+     "date": "2026-10-17T06:16:46.000Z"
+    },
+    {
+     "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
+     "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+     "desc": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its",
+     "date": "2026-10-16T17:48:45.000Z"
+    },
+    {
+     "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
+     "link": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+     "desc": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup prog",
+     "date": "2026-10-16T16:43:39.000Z"
+    },
+    {
+     "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
+     "link": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+     "desc": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversar",
+     "date": "2026-10-16T16:16:44.000Z"
+    },
+    {
+     "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
+     "link": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
+     "desc": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, sp",
+     "date": "2026-10-16T14:03:04.000Z"
+    }
+   ]
+  },
+  "darkreading": {
+   "ok": true,
+   "items": [
+    {
+     "title": "Tech Giants Block eMudhra Certificates Tied to 8 Compromised Keys",
+     "link": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys",
+     "desc": "Google, Mozilla, Apple, the Go project and others moved swiftly to block the affected certificates from the Indian CA, though it's unclear how the keys were compromised.",
+     "date": "2026-10-20T21:45:47.000Z"
+    },
+    {
+     "title": "Ex-OpenAI Engineer Detained After Planting Secret Recorder at HQ",
+     "link": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties",
+     "desc": "The perp, who has Saudi ties, was arrested for allegedly bugging an OpenAI conference room, highlighting a preventable insider threat vector.",
+     "date": "2026-10-20T19:16:49.000Z"
+    },
+    {
+     "title": "Close Identity Gaps in Software Development Before Unleashing AI",
+     "link": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
+     "desc": "Artificial Intelligence is complicating security in the software development lifecycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
+     "date": "2026-10-20T15:35:45.000Z"
+    },
+    {
+     "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
+     "desc": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
+     "date": "2026-10-20T14:36:05.000Z"
+    },
+    {
+     "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
+     "link": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+     "desc": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare links.",
+     "date": "2026-10-19T21:13:41.000Z"
+    },
+    {
+     "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
+     "link": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+     "desc": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
+     "date": "2026-10-19T19:55:01.000Z"
+    },
+    {
+     "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+     "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+     "desc": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
+     "date": "2026-10-19T19:19:33.000Z"
+    },
+    {
+     "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
+     "link": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
+     "desc": "Copyright takedown requests tied to OnlyFans and other adult content creators are revealing how attackers exploit vulnerable university and government websites to manipulate search results. UpGuard's Greg Pollock explain",
+     "date": "2026-10-19T14:28:11.000Z"
+    },
+    {
+     "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
+     "link": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
+     "desc": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+     "date": "2026-10-19T14:00:00.000Z"
+    },
+    {
+     "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+     "link": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+     "desc": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
+     "date": "2026-10-16T20:34:37.000Z"
+    },
+    {
+     "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
+     "link": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
+     "desc": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
+     "date": "2026-10-16T19:49:30.000Z"
+    },
+    {
+     "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
+     "link": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
+     "desc": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
+     "date": "2026-10-16T19:22:12.000Z"
+    },
+    {
+     "title": "Enterprise AI Enters Risk Management Phase as Security Concerns Rise",
+     "link": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+     "desc": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution.",
+     "date": "2026-10-16T19:13:59.000Z"
+    },
+    {
+     "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
+     "link": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
+     "desc": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
+     "date": "2026-10-16T18:37:50.000Z"
+    },
+    {
+     "title": "When Your Ransomware Negotiator Works for the Other Side",
+     "link": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
+     "desc": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
+     "date": "2026-10-16T14:00:00.000Z"
+    },
+    {
+     "title": "When AI Agents Commit Breaches, Humans May Not Be Held Liable",
+     "link": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
+     "desc": "As agents escape containment and access external systems, responsibility remains human. Accountability, however, is much less settled.",
+     "date": "2026-10-16T13:00:00.000Z"
+    },
+    {
+     "title": "SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape",
+     "link": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
+     "desc": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
+     "date": "2026-10-15T22:10:08.000Z"
+    },
+    {
+     "title": "F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud",
+     "link": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
+     "desc": "Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.",
+     "date": "2026-10-15T21:55:07.000Z"
+    },
+    {
+     "title": "AI Slop Isn't Just for Social Media; It's Ruining Cyberattacks, Too",
+     "link": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
+     "desc": "Don't buy the hype! AI has been dumbing down cyberattacks, and serious threat actors are barely touching it.",
+     "date": "2026-10-15T20:43:20.000Z"
+    },
+    {
+     "title": "Vulnerability Management Isn't About the Score — It's About How It Applies to You",
+     "link": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
+     "desc": "Organizations need to move away from vendor-assigned, theoretical scores toward real exploit data specific to their environments.",
+     "date": "2026-10-15T15:17:18.000Z"
+    },
+    {
+     "title": "EU Grocers Pay a Steep Price for Unpatched Fridge Firmware",
+     "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
+     "desc": "Hundreds of stores lost millions of euros because they hired third parties to manage the outdated OT firmware running their cooling systems.",
+     "date": "2026-10-15T07:00:00.000Z"
+    },
+    {
+     "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+     "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+     "desc": "CVE-2026-104935, a high-severity authentication bypass + RCE vulnerability, was only partially discovered and patched in July, leaving an opening for threat actors to capitalize on.",
+     "date": "2026-10-14T21:20:13.000Z"
+    },
+    {
+     "title": "Yam Store: The Phishing Network Behind a Billion Messages",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
+     "desc": "A sprawling cybercrime marketplace supplied cloud infrastructure and phishing kits that helped fuel more than 1 billion phishing messages worldwide.",
+     "date": "2026-10-14T20:57:16.000Z"
+    },
+    {
+     "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
+     "link": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
+     "desc": "A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers, including SSH private keys, AWS credentials, and Claude 0Auth tokens.",
+     "date": "2026-10-14T20:09:42.000Z"
+    },
+    {
+     "title": "Russian Influence Operation Widely Targets Latin America",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/russian-influence-operation-targeting-latin-america",
+     "desc": "The AI-enabled operation used spoofed emails, fake government documents, and the creation of a local organization to target schools in Peru and Ecuador, among other efforts.",
+     "date": "2026-10-14T13:00:00.000Z"
+    },
+    {
+     "title": "Ransomware Gangs Embrace Physical Threats, Family Stalking?",
+     "link": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
+     "desc": "Organizations are reporting that employees face threats of stalking, physical violence, and abduction. But these alarming claims are hard to verify.",
+     "date": "2026-10-14T05:00:00.000Z"
+    },
+    {
+     "title": "Zero-Days Lurk in Microsoft's Overgrown October Patch Tuesday",
+     "link": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
+     "desc": "The scary surprises in the largest security update ever include defense bypasses and unauthenticated RCEs.",
+     "date": "2026-10-13T22:29:57.000Z"
+    },
+    {
+     "title": "North Korea Phishes Ukrainians for War Intel",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
+     "desc": "The Democratic People's Republic of Korea (DPRK) is trying to get insight into its own war effort in Ukraine, through simple reply-baiting phishing attacks.",
+     "date": "2026-10-13T21:24:45.000Z"
+    },
+    {
+     "title": "Anthropic Finds Ingredients for Future AI Worms",
+     "link": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms",
+     "desc": "Anthropic's latest study combines IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
+     "date": "2026-10-13T20:35:23.000Z"
+    },
+    {
+     "title": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack",
+     "link": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
+     "desc": "Attackers are currently targeting a critical vulnerability in SMA 1000 appliances, putting SonicWall customers in a familiar yet unenviable position.",
+     "date": "2026-10-12T21:42:42.000Z"
+    }
+   ]
+  },
+  "krebs": {
+   "ok": true,
+   "items": [
+    {
+     "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+     "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+     "desc": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually ",
+     "date": "2026-10-19T13:48:56.000Z"
+    },
+    {
+     "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+     "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+     "desc": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud a",
+     "date": "2026-10-14T14:22:49.000Z"
+    },
+    {
+     "title": "Microsoft Patches More Than 1,400 Security Flaws",
+     "link": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+     "desc": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was alre",
+     "date": "2026-10-13T23:24:53.000Z"
+    },
+    {
+     "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+     "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+     "desc": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved th",
+     "date": "2026-10-10T00:17:42.000Z"
+    },
+    {
+     "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
+     "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+     "desc": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. Kreb",
+     "date": "2026-10-07T13:48:45.000Z"
+    },
+    {
+     "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
+     "link": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+     "desc": "Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the sus",
+     "date": "2026-09-28T15:08:57.000Z"
+    },
+    {
+     "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
+     "link": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+     "desc": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in feder",
+     "date": "2026-09-25T21:44:40.000Z"
+    },
+    {
+     "title": "Data Broker Radaris Loses Domains in Privacy Fight",
+     "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+     "desc": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recent",
+     "date": "2026-09-16T18:14:22.000Z"
+    },
+    {
+     "title": "Microsoft Plugs Nearly 1,000 Security Holes",
+     "link": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+     "desc": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping ",
+     "date": "2026-09-08T21:44:22.000Z"
+    },
+    {
+     "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
+     "link": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+     "desc": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose l",
+     "date": "2026-09-01T22:40:28.000Z"
+    }
+   ]
+  },
+  "r-cybersecurity": {
+   "ok": true,
+   "items": [
+    {
+     "title": "The Internet goes on high alert after discovery of 8 compromised TLS certs",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb5m8v/the_internet_goes_on_high_alert_after_discovery/",
+     "desc": "submitted by /u/OkVast2122 [link] [comments]",
+     "date": "2026-10-20T22:03:58.000Z"
+    },
+    {
+     "title": "Russians locked out of bank accounts and apartments as Ukraine hits data centers",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9tp6l/russians_locked_out_of_bank_accounts_and/",
+     "desc": "submitted by /u/nbcnews [link] [comments]",
+     "date": "2026-10-19T10:54:37.000Z"
+    },
+    {
+     "title": "Bank of America had to bring in 1,000 contractors to patch all the bugs Mythos identified",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7p0cv/bank_of_america_had_to_bring_in_1000_contractors/",
+     "desc": "\"Bank of America recruited an additional 1,000 contractors to help patch all the vulnerabilities discovered by Anthropic’s Mythos model, the CEO said on Wednesday. Brian Moynihan, chairman and CEO at BoA, said during the",
+     "date": "2026-10-16T19:06:46.000Z"
+    },
+    {
+     "title": "AI agents aren’t ‘going rogue.’ Frontier labs are skipping security basics.",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x5yiix/ai_agents_arent_going_rogue_frontier_labs_are/",
+     "desc": "submitted by /u/snydeq [link] [comments]",
+     "date": "2026-10-14T18:08:32.000Z"
+    },
+    {
+     "title": "'123456' password was all a hacker reportedly needed to expose over 8 million people's personal data",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x5vd9w/123456_password_was_all_a_hacker_reportedly/",
+     "desc": "submitted by /u/Aron_International [link] [comments]",
+     "date": "2026-10-14T16:10:36.000Z"
+    },
+    {
+     "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
+     "desc": "submitted by /u/propublica_ [link] [comments]",
+     "date": "2026-10-19T11:42:21.000Z"
+    },
+    {
+     "title": "We’re the Firefox security team. Ask us anything about securing an open-source browser! (AMA)",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x6ov2q/were_the_firefox_security_team_ask_us_anything/",
+     "desc": "Hi r/cybersecurity. We’re the Firefox security team. Join us in 30 minutes for a live AMA: Tom: u/tomrittervg - Principal Security Engineer - 10 years at Mozilla Freddy: u/mozfreddyb - Engineering Manager, Firefox Applic",
+     "date": "2026-10-15T15:33:10.000Z"
+    },
+    {
+     "title": "Windows Defender now works in Linux, because why not",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x87lf2/windows_defender_now_works_in_linux_because_why/",
+     "desc": "submitted by /u/DeepCedarShadow [link] [comments]",
+     "date": "2026-10-17T11:09:34.000Z"
+    },
+    {
+     "title": "Israeli firm used online ads to run vast spy operation, researchers say",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x6uyy4/israeli_firm_used_online_ads_to_run_vast_spy/",
+     "desc": "submitted by /u/israelavila [link] [comments]",
+     "date": "2026-10-15T19:23:04.000Z"
+    },
+    {
+     "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
+     "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
+     "date": "2026-10-20T06:46:58.000Z"
+    },
+    {
+     "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
+     "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
+     "date": "2026-10-19T04:58:33.000Z"
+    },
+    {
+     "title": "My experience working with Mythos 5.1 on a new attack vector",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x8f595/my_experience_working_with_mythos_51_on_a_new/",
+     "desc": "I've applied to Anthropic CVP and received access to Mythos 5.1, with reduced guardrails (defense access). We already know by now it is good at finding vulnerabilities, but I was really interested in seeing if it was any",
+     "date": "2026-10-17T16:53:35.000Z"
+    },
+    {
+     "title": "EMudhra Intermediate CA Compromise",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
+     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
+     "date": "2026-10-20T18:51:51.000Z"
+    },
+    {
+     "title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7hirp/justice_department_announces_coordinated_actions/",
+     "desc": "submitted by /u/foodie_2598 [link] [comments]",
+     "date": "2026-10-16T14:20:17.000Z"
+    },
+    {
+     "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xao2jm/difficulty_spotting_cheaters_during_interviews/",
+     "desc": "I’m in the process of interviewing candidates for a Jr. security analyst role and am running into the dilemma that I don’t trust all the candidates. I’m getting individuals with resumes with garbage formats but somewhat ",
+     "date": "2026-10-20T10:01:32.000Z"
+    },
+    {
+     "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x67do0/palo_alto_networks_warns_of_panos_rce_flaw/",
+     "desc": "submitted by /u/Doug24 [link] [comments]",
+     "date": "2026-10-15T00:15:02.000Z"
+    },
+    {
+     "title": "What was the most useful certificate for your career?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x94za0/what_was_the_most_useful_certificate_for_your/",
+     "desc": "As mentioned in the title, I'm actually curious on what the most useful was in terms of: Learning new concepts and apply them to your job Advance in your career by opening more doors to better paying positions In the pas",
+     "date": "2026-10-18T14:46:04.000Z"
+    },
+    {
+     "title": "Anyone else feel like they’re just a glorified spreadsheet administrator at this point?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xa7x8b/anyone_else_feel_like_theyre_just_a_glorified/",
+     "desc": "I got into cybersecurity because I actually liked the technical side of things. Troubleshooting, figuring out how systems break, and stopping bad things from happening. Fast forward to today, & I swear 80% of my week is ",
+     "date": "2026-10-19T20:21:37.000Z"
+    },
+    {
+     "title": "Update from Krebs: Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xa19ua/update_from_krebs_feds_suspect_ransom_negotiator/",
+     "desc": "I know someone last week or so said the FBI grab on this guy was basically like a SWAT. But Krebs doesn't seem to think so. \"On October 9, KrebsOnSecurity broke the news that the FBI arrested a 54-year-old Canadian cyber",
+     "date": "2026-10-19T16:17:37.000Z"
+    },
+    {
+     "title": "Blocking the Entire Internet",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xauxhj/blocking_the_entire_internet/",
+     "desc": "Some members of my team are throwing around the idea of blocking the entire internet and whitelisting what we need. The idea kind of seems like a nightmare to me, having to allowlist potentially thousands of domains, API",
+     "date": "2026-10-20T15:19:02.000Z"
+    },
+    {
+     "title": "Germany issues guidance on switching to post-quantum cryptography",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7ovfn/germany_issues_guidance_on_switching_to/",
+     "desc": "submitted by /u/donutloop [link] [comments]",
+     "date": "2026-10-16T19:01:29.000Z"
+    },
+    {
+     "title": "Burger King Japan data breach exposes 11 million customer records",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7gc3w/burger_king_japan_data_breach_exposes_11_million/",
+     "desc": "submitted by /u/Doug24 [link] [comments]",
+     "date": "2026-10-16T13:32:32.000Z"
+    },
+    {
+     "title": "Github repos compromised",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7a55w/github_repos_compromised/",
+     "desc": "Around 30000 repos were compromised with a supply chain attack https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html?m=1 submitted by /u/sbify [link] [comments]",
+     "date": "2026-10-16T07:52:34.000Z"
+    },
+    {
+     "title": "Proofpoint to acquire Varonis - is the vision to have all security tooling controlled by a handful of vendors?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x713gc/proofpoint_to_acquire_varonis_is_the_vision_to/",
+     "desc": "This year seriously feels like the year of the mega platform. Sign up with one vendor and say “good enough” for firewall, end point, DLP, email security, AI security, data security, etc etc etc submitted by /u/Hmm_would_",
+     "date": "2026-10-15T23:39:27.000Z"
+    },
+    {
+     "title": "Major security vulnerability in Linux has just been published — CycleOS is already patched",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x6yqui/major_security_vulnerability_in_linux_has_just/",
+     "desc": "Update to my post from a few days ago. That thread got a lot more attention than I expected, so thanks to everyone who jumped in. Full disclosure is out now. PWN.AI published their writeup today on CVE-2026-99999, which ",
+     "date": "2026-10-15T21:54:01.000Z"
+    }
+   ]
+  },
+  "r-netsec": {
+   "ok": false,
+   "items": []
+  },
+  "r-sysadmin": {
+   "ok": false,
+   "items": []
+  }
+ }
+}
