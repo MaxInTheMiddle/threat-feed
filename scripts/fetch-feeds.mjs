@@ -62,3 +62,4 @@ if (JSON.stringify(sources) === JSON.stringify(previous.sources)) {
   await writeFile(OUT_FILE, JSON.stringify({ updated: new Date().toISOString(), sources }, null, 1) + '\n');
   console.log(`Wrote ${OUT_FILE}`);
 }
+ process.exit(0);
