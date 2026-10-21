@@ -8,7 +8,7 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.rss2json.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
 <meta name="description" content="Live aggregated cybersecurity news from BleepingComputer, The Hacker News, Dark Reading, CISA, Krebs on Security, r/cybersecurity, r/netsec, r/sysadmin.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -235,6 +235,7 @@
   .src-state{color:var(--text-faint); font-size:11px;}
   .src-state.ok{color:var(--teal);}
   .src-state.err{color:var(--red);}
+  .src-state.stale{color:var(--amber);}
   .about-txt{font-size:12.5px; color:var(--text-dim); line-height:1.6;}
   .about-txt b{color:var(--text);}
   footer{
@@ -297,7 +298,7 @@
     <div class="panel">
       <h2>About this feed</h2>
       <p class="about-txt">
-        <b>maxarmstrong.io</b> pulls live RSS from the sources I read daily: BleepingComputer, The Hacker News, Dark Reading, and Krebs on Security. Plus the top posts of the week from r/cybersecurity, r/netsec, and r/sysadmin. Everything renders client-side, refreshed on demand.
+        <b>maxarmstrong.io</b> pulls live RSS from the sources I read daily: BleepingComputer, The Hacker News, Dark Reading, and Krebs on Security. Plus the top posts of the week from r/cybersecurity, r/netsec, and r/sysadmin. Feeds are collected automatically every 30 minutes.
       </p>
     </div>
   </aside>
@@ -368,7 +369,9 @@
     { id:'r-netsec', name:'r/netsec', color:'#7FD1FF', rss:'https://www.reddit.com/r/netsec/top/.rss?t=week' },
     { id:'r-sysadmin', name:'r/sysadmin', color:'#C9E86B', rss:'https://www.reddit.com/r/sysadmin/top/.rss?t=week' },
   ];
-  const PROXY = 'https://api.rss2json.com/v1/api.json?rss_url=';
+  // feeds.json is written into the repo by the "Update feeds" GitHub Action
+  // (scripts/fetch-feeds.mjs), so the page only ever talks to its own origin.
+  const FEED_FILE = '/feeds.json';
   const sourceMap = Object.fromEntries(SOURCES.map(s=>[s.id,s]));
 
   let allItems = [];
@@ -434,36 +437,37 @@
     return dt.toISOString().slice(11,19).replace(/:/g,'') + 'Z';
   }
 
-  async function fetchSource(src){
-    sourceState[src.id] = 'pending';
-    renderSourceStatus();
-    try{
-      const res = await fetch(PROXY + encodeURIComponent(src.rss));
-      if(!res.ok) throw new Error('bad response');
-      const data = await res.json();
-      if(data.status !== 'ok' || !Array.isArray(data.items)) throw new Error('bad feed');
-      sourceState[src.id] = 'ok';
-      return data.items.map(it => ({
-        title: stripHtml(it.title).slice(0, 200),
-        link: it.link,
-        desc: stripHtml(it.description || it.content || '').slice(0,220),
-        date: it.pubDate,
-        sourceId: src.id
-      }));
-    }catch(e){
-      sourceState[src.id] = 'err';
-      return [];
-    }
-  }
-
   async function loadAll(){
     statusDot.className = 'dot busy';
     statusText.textContent = 'SYNCING…';
     refreshBtn.querySelector('svg').classList.add('spin');
     feedEl.innerHTML = '<div class="loading-msg">Pulling signal from ' + SOURCES.length + ' sources…</div>';
+    SOURCES.forEach(s => sourceState[s.id] = 'pending');
+    renderSourceStatus();
 
-    const results = await Promise.all(SOURCES.map(fetchSource));
-    allItems = results.flat().filter(it => it.title && it.link);
+    let data = null;
+    try{
+      const res = await fetch(FEED_FILE + '?t=' + Date.now(), { cache:'no-store' });
+      if(!res.ok) throw new Error('bad response');
+      data = await res.json();
+    }catch(e){ data = null; }
+
+    allItems = [];
+    SOURCES.forEach(src => {
+      const s = data && data.sources && data.sources[src.id];
+      const items = (s && Array.isArray(s.items)) ? s.items : [];
+      // 'stale' = the last collection run failed for this source, but we
+      // still have its items from an earlier successful run.
+      sourceState[src.id] = !s ? 'err' : s.ok ? 'ok' : (items.length ? 'stale' : 'err');
+      items.forEach(it => allItems.push({
+        title: stripHtml(it.title).slice(0, 200),
+        link: it.link,
+        desc: stripHtml(it.desc || '').slice(0, 220),
+        date: it.date,
+        sourceId: src.id
+      }));
+    });
+    allItems = allItems.filter(it => it.title && it.link);
     allItems.sort((a,b) => new Date(b.date) - new Date(a.date));
 
     renderChips();
@@ -472,9 +476,13 @@
 
     refreshBtn.querySelector('svg').classList.remove('spin');
     const okCount = SOURCES.filter(s => sourceState[s.id] === 'ok').length;
-    if(okCount === SOURCES.length){
+    const updated = data && data.updated ? timeAgo(data.updated) : '';
+    if(!data){
+      statusDot.className = 'dot down';
+      statusText.textContent = 'FEED FILE UNREACHABLE';
+    } else if(okCount === SOURCES.length){
       statusDot.className = 'dot';
-      statusText.textContent = 'LIVE · last sync ' + new Date().toLocaleTimeString();
+      statusText.textContent = 'LIVE · updated ' + updated;
     } else if(okCount === 0){
       statusDot.className = 'dot down';
       statusText.textContent = 'ALL SOURCES UNREACHABLE';
@@ -506,8 +514,8 @@
   function renderSourceStatus(){
     statusListEl.innerHTML = SOURCES.map(s => {
       const st = sourceState[s.id] || 'pending';
-      const label = st === 'ok' ? 'online' : st === 'err' ? 'unreachable' : 'checking…';
-      const cls = st === 'ok' ? 'ok' : st === 'err' ? 'err' : '';
+      const label = st === 'ok' ? 'online' : st === 'err' ? 'unreachable' : st === 'stale' ? 'stale' : 'checking…';
+      const cls = st === 'ok' ? 'ok' : st === 'err' ? 'err' : st === 'stale' ? 'stale' : '';
       return '<div class="src-row"><span class="src-name"><span class="swatch" style="background:' + s.color + '"></span>' + s.name + '</span>' +
         '<span class="src-state ' + cls + '">' + label + '</span></div>';
     }).join('');
