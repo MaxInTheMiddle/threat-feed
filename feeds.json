@@ -1,9 +1,27 @@
 {
- "updated": "2026-10-21T07:16:15.409Z",
+ "updated": "2026-10-21T13:01:52.576Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
+     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
+     "desc": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements. [...]",
+     "date": "2026-10-21T12:20:34.000Z"
+    },
+    {
+     "title": "Microsoft says October updates didn’t actually fix VPN issues",
+     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
+     "desc": "Microsoft says it mistakenly flagged a bug causing Always On VPN connection issues as fixed in the October 2026 Windows 11 cumulative updates. [...]",
+     "date": "2026-10-21T10:14:53.000Z"
+    },
+    {
+     "title": "CISA: SafePay ransomware hit over 600 critical infrastructure orgs",
+     "link": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
+     "desc": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...]",
+     "date": "2026-10-21T08:36:24.000Z"
+    },
     {
      "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
      "link": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
@@ -75,24 +93,6 @@
      "link": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
      "desc": "Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today. [...]",
      "date": "2026-10-20T09:46:44.000Z"
-    },
-    {
-     "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
-     "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
-     "desc": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]",
-     "date": "2026-10-19T21:49:48.000Z"
-    },
-    {
-     "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
-     "link": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
-     "desc": "Some downloads of the Rank Math PRO WordPress plugin from the vendor's official website carried malware that planted hidden backdoors in a supply-chain attack last week. [...]",
-     "date": "2026-10-19T21:24:51.000Z"
-    },
-    {
-     "title": "Hackers hijack AOMEI update servers to secretly spread malware",
-     "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
-     "desc": "Hackers reportedly compromised AOMEI's servers to distribute malware through a built-in promotional feature in its backup software, briefly tampering with configuration files before restoring them to their original state",
-     "date": "2026-10-19T19:40:58.000Z"
     }
    ]
   },
@@ -100,10 +100,70 @@
    "ok": true,
    "items": [
     {
+     "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
+     "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
+     "desc": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting organizations in Asia and Africa since mid-2025. \"The",
+     "date": "2026-10-21T12:05:00.000Z"
+    },
+    {
+     "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
+     "link": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
+     "desc": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now arrive fluent, personalized, and unique to each reci",
+     "date": "2026-10-21T11:53:34.000Z"
+    },
+    {
+     "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
+     "link": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html",
+     "desc": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says. PHP w",
+     "date": "2026-10-21T10:36:53.000Z"
+    },
+    {
+     "title": "The Harness Is the Hard Part of Agentic Pentesting",
+     "link": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
+     "desc": "An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little setup. Sure, the model writes the attacks. But everything that makes those attacks safe to run against production an",
+     "date": "2026-10-21T10:32:40.000Z"
+    },
+    {
+     "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
+     "link": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
+     "desc": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher found. Exit relays are the last hop in a Tor circuit,",
+     "date": "2026-10-21T10:30:27.000Z"
+    },
+    {
      "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
      "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
-     "desc": "PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described. Security researchers at w",
-     "date": "2026-10-21T04:57:50.000Z"
+     "desc": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory. PHP will ship an out",
+     "date": "2026-10-21T09:05:17.000Z"
+    },
+    {
+     "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
+     "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
+     "desc": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites. Te",
+     "date": "2026-10-21T09:01:12.000Z"
+    },
+    {
+     "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
+     "link": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
+     "desc": "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using DeepSeek implementations,\" under a Department of Ho",
+     "date": "2026-10-21T08:04:17.000Z"
+    },
+    {
+     "title": "State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web",
+     "link": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
+     "desc": "State Bank of India has identified 3,897 customer records containing personal information in a set of about 375,000 records available on the dark web, and it does not yet know where the data came from. The state-owned ba",
+     "date": "2026-10-21T07:44:22.000Z"
+    },
+    {
+     "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
+     "link": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that",
+     "date": "2026-10-21T07:26:49.000Z"
+    },
+    {
+     "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
+     "link": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
+     "desc": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by Russian cybersecurity firm Solar, the activity has been attributed to ",
+     "date": "2026-10-21T06:05:15.000Z"
     },
     {
      "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
@@ -218,66 +278,6 @@
      "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
      "desc": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the agent's prompt. Separately, Email-to-Case and Web-to",
      "date": "2026-10-19T11:50:00.000Z"
-    },
-    {
-     "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
-     "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
-     "desc": "A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for A",
-     "date": "2026-10-19T10:06:40.000Z"
-    },
-    {
-     "title": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers",
-     "link": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
-     "desc": "A flaw in Broadcom's Wi-Fi setup software lets an attacker within radio range run code as root on Broadcom-based routers, without the network password or any pairing step, security researcher Quentin Kaiser disclosed on ",
-     "date": "2026-10-19T06:29:44.000Z"
-    },
-    {
-     "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
-     "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
-     "desc": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said. Console is OpenCode's optional ",
-     "date": "2026-10-19T06:07:08.000Z"
-    },
-    {
-     "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
-     "link": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
-     "desc": "ConnectWise on Saturday said it has disabled seven ConnectWise application identities as it continues its investigation into an incident in which unknown threat actors obtained unauthorized access to the application iden",
-     "date": "2026-10-18T08:23:02.000Z"
-    },
-    {
-     "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
-     "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-     "desc": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package, named \"imgdecode,\" was uploaded to the package regis",
-     "date": "2026-10-17T11:11:56.000Z"
-    },
-    {
-     "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-     "link": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-     "desc": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyK",
-     "date": "2026-10-17T06:16:46.000Z"
-    },
-    {
-     "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
-     "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
-     "desc": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its",
-     "date": "2026-10-16T17:48:45.000Z"
-    },
-    {
-     "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
-     "link": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
-     "desc": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup prog",
-     "date": "2026-10-16T16:43:39.000Z"
-    },
-    {
-     "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
-     "link": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
-     "desc": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversar",
-     "date": "2026-10-16T16:16:44.000Z"
-    },
-    {
-     "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
-     "link": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
-     "desc": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, sp",
-     "date": "2026-10-16T14:03:04.000Z"
     }
    ]
   },
@@ -595,6 +595,12 @@
      "date": "2026-10-20T06:46:58.000Z"
     },
     {
+     "title": "EMudhra Intermediate CA Compromise",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
+     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
+     "date": "2026-10-20T18:51:51.000Z"
+    },
+    {
      "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
      "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
@@ -607,22 +613,16 @@
      "date": "2026-10-17T16:53:35.000Z"
     },
     {
-     "title": "EMudhra Intermediate CA Compromise",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
-     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
-     "date": "2026-10-20T18:51:51.000Z"
+     "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xao2jm/difficulty_spotting_cheaters_during_interviews/",
+     "desc": "I’m in the process of interviewing candidates for a Jr. security analyst role and am running into the dilemma that I don’t trust all the candidates. I’m getting individuals with resumes with garbage formats but somewhat ",
+     "date": "2026-10-20T10:01:32.000Z"
     },
     {
      "title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x7hirp/justice_department_announces_coordinated_actions/",
      "desc": "submitted by /u/foodie_2598 [link] [comments]",
      "date": "2026-10-16T14:20:17.000Z"
-    },
-    {
-     "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xao2jm/difficulty_spotting_cheaters_during_interviews/",
-     "desc": "I’m in the process of interviewing candidates for a Jr. security analyst role and am running into the dilemma that I don’t trust all the candidates. I’m getting individuals with resumes with garbage formats but somewhat ",
-     "date": "2026-10-20T10:01:32.000Z"
     },
     {
      "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
@@ -643,16 +643,22 @@
      "date": "2026-10-19T20:21:37.000Z"
     },
     {
+     "title": "Blocking the Entire Internet",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xauxhj/blocking_the_entire_internet/",
+     "desc": "Some members of my team are throwing around the idea of blocking the entire internet and whitelisting what we need. The idea kind of seems like a nightmare to me, having to allowlist potentially thousands of domains, API",
+     "date": "2026-10-20T15:19:02.000Z"
+    },
+    {
      "title": "Update from Krebs: Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xa19ua/update_from_krebs_feds_suspect_ransom_negotiator/",
      "desc": "I know someone last week or so said the FBI grab on this guy was basically like a SWAT. But Krebs doesn't seem to think so. \"On October 9, KrebsOnSecurity broke the news that the FBI arrested a 54-year-old Canadian cyber",
      "date": "2026-10-19T16:17:37.000Z"
     },
     {
-     "title": "Blocking the Entire Internet",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xauxhj/blocking_the_entire_internet/",
-     "desc": "Some members of my team are throwing around the idea of blocking the entire internet and whitelisting what we need. The idea kind of seems like a nightmare to me, having to allowlist potentially thousands of domains, API",
-     "date": "2026-10-20T15:19:02.000Z"
+     "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
+     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
+     "date": "2026-10-21T03:13:08.000Z"
     },
     {
      "title": "Germany issues guidance on switching to post-quantum cryptography",
@@ -677,12 +683,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x713gc/proofpoint_to_acquire_varonis_is_the_vision_to/",
      "desc": "This year seriously feels like the year of the mega platform. Sign up with one vendor and say “good enough” for firewall, end point, DLP, email security, AI security, data security, etc etc etc submitted by /u/Hmm_would_",
      "date": "2026-10-15T23:39:27.000Z"
-    },
-    {
-     "title": "Major security vulnerability in Linux has just been published — CycleOS is already patched",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x6yqui/major_security_vulnerability_in_linux_has_just/",
-     "desc": "Update to my post from a few days ago. That thread got a lot more attention than I expected, so thanks to everyone who jumped in. Full disclosure is out now. PWN.AI published their writeup today on CVE-2026-99999, which ",
-     "date": "2026-10-15T21:54:01.000Z"
     }
    ]
   },
