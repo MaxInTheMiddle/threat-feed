@@ -1,9 +1,21 @@
 {
- "updated": "2026-10-22T19:18:10.390Z",
+ "updated": "2026-10-22T22:30:48.183Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "Railway warns devs to rotate secrets after potential breach",
+     "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+     "desc": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]",
+     "date": "2026-10-22T21:25:31.000Z"
+    },
+    {
+     "title": "Capcom confirms data breach affecting 11.7 million accounts",
+     "link": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+     "desc": "Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information. [...]",
+     "date": "2026-10-22T20:22:45.000Z"
+    },
     {
      "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
      "link": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
@@ -81,24 +93,24 @@
      "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
      "desc": "The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell. [...]",
      "date": "2026-10-21T14:07:05.000Z"
-    },
-    {
-     "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
-     "link": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
-     "desc": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines how these attacks evade traditi",
-     "date": "2026-10-21T14:00:10.000Z"
-    },
-    {
-     "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
-     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
-     "desc": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements. [...]",
-     "date": "2026-10-21T12:20:34.000Z"
     }
    ]
   },
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+     "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+     "desc": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its ",
+     "date": "2026-10-22T19:05:35.000Z"
+    },
+    {
+     "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+     "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+     "desc": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22. The flaw lets a",
+     "date": "2026-10-22T19:05:17.000Z"
+    },
     {
      "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
      "link": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
@@ -128,12 +140,6 @@
      "link": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
      "desc": "INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds. In tandem, the effort saw law enforcement agencies f",
      "date": "2026-10-22T13:38:22.000Z"
-    },
-    {
-     "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
-     "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
-     "desc": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its ",
-     "date": "2026-10-22T11:45:00.000Z"
     },
     {
      "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
@@ -272,18 +278,30 @@
      "link": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
      "desc": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by Russian cybersecurity firm Solar, the activity has been attributed to ",
      "date": "2026-10-21T06:05:15.000Z"
-    },
-    {
-     "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
-     "link": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
-     "desc": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20. An intermediate CA signs the certificates that webs",
-     "date": "2026-10-20T17:09:53.000Z"
     }
    ]
   },
   "darkreading": {
    "ok": true,
    "items": [
+    {
+     "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
+     "desc": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
+     "date": "2026-10-22T20:42:17.000Z"
+    },
+    {
+     "title": "What We Missed: Feds Lasso Texas Laptop Farms",
+     "link": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
+     "desc": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from busting up North Korea's stateside infrastructure in \"Operation Lonestar Justice\" to Staples' gift card bonanza.",
+     "date": "2026-10-22T20:33:10.000Z"
+    },
+    {
+     "title": "Les supermarchés de l'UE paient d'un firmware de réfrigérateur non mis à jour",
+     "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
+     "desc": "Des centaines de magasins ont subi des pertes se chiffrant en millions d'euros parce qu'ils avaient fait appel à des tiers pour gérer le micrologiciel OT obsolète qui pilotait leurs systèmes de climatisation.",
+     "date": "2026-10-22T19:30:20.000Z"
+    },
     {
      "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
      "link": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
@@ -445,24 +463,6 @@
      "link": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
      "desc": "Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.",
      "date": "2026-10-15T21:55:07.000Z"
-    },
-    {
-     "title": "AI Slop Isn't Just for Social Media; It's Ruining Cyberattacks, Too",
-     "link": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
-     "desc": "Don't buy the hype! AI has been dumbing down cyberattacks, and serious threat actors are barely touching it.",
-     "date": "2026-10-15T20:43:20.000Z"
-    },
-    {
-     "title": "Vulnerability Management Isn't About the Score — It's About How It Applies to You",
-     "link": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
-     "desc": "Organizations need to move away from vendor-assigned, theoretical scores toward real exploit data specific to their environments.",
-     "date": "2026-10-15T15:17:18.000Z"
-    },
-    {
-     "title": "EU Grocers Pay a Steep Price for Unpatched Fridge Firmware",
-     "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
-     "desc": "Hundreds of stores lost millions of euros because they hired third parties to manage the outdated OT firmware running their cooling systems.",
-     "date": "2026-10-15T07:00:00.000Z"
     }
    ]
   },
@@ -559,6 +559,12 @@
      "date": "2026-10-16T19:06:46.000Z"
     },
     {
+     "title": "Someone Knew About PHP's Critical Flaws Four Days Before the Public Did and Amazon Can't Explain How",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xckw05/someone_knew_about_phps_critical_flaws_four_days/",
+     "desc": "Who is this someone... and how the hell did they know lol submitted by /u/Popular_Dimension939 [link] [comments]",
+     "date": "2026-10-22T14:58:22.000Z"
+    },
+    {
      "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
      "desc": "submitted by /u/propublica_ [link] [comments]",
@@ -571,12 +577,6 @@
      "date": "2026-10-17T11:09:34.000Z"
     },
     {
-     "title": "Someone Knew About PHP's Critical Flaws Four Days Before the Public Did and Amazon Can't Explain How",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xckw05/someone_knew_about_phps_critical_flaws_four_days/",
-     "desc": "Who is this someone... and how the hell did they know lol submitted by /u/Popular_Dimension939 [link] [comments]",
-     "date": "2026-10-22T14:58:22.000Z"
-    },
-    {
      "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xcedw4/critical_gitlab_flaw_cvss_100_could_allow/",
      "desc": "I know everyone's preoccupied with the PHP CVEs, but this is also BIG NEWS submitted by /u/One_Paint8721 [link] [comments]",
@@ -587,12 +587,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbzne3/cve2026110264_gitlab_unauthenticated_rce_cvss_10/",
      "desc": "submitted by /u/radcorp [link] [comments]",
      "date": "2026-10-21T21:13:44.000Z"
-    },
-    {
-     "title": "Israeli firm used online ads to run vast spy operation, researchers say",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x6uyy4/israeli_firm_used_online_ads_to_run_vast_spy/",
-     "desc": "submitted by /u/israelavila [link] [comments]",
-     "date": "2026-10-15T19:23:04.000Z"
     },
     {
      "title": "PHP: Critical remote code execution vulnerabilities, update now",
@@ -625,6 +619,12 @@
      "date": "2026-10-21T14:10:44.000Z"
     },
     {
+     "title": "Checking in",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
+     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
+     "date": "2026-10-22T09:51:03.000Z"
+    },
+    {
      "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
      "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
@@ -643,12 +643,6 @@
      "date": "2026-10-22T10:03:10.000Z"
     },
     {
-     "title": "Checking in",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
-     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
-     "date": "2026-10-22T09:51:03.000Z"
-    },
-    {
      "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xao2jm/difficulty_spotting_cheaters_during_interviews/",
      "desc": "I’m in the process of interviewing candidates for a Jr. security analyst role and am running into the dilemma that I don’t trust all the candidates. I’m getting individuals with resumes with garbage formats but somewhat ",
@@ -661,10 +655,10 @@
      "date": "2026-10-17T16:53:35.000Z"
     },
     {
-     "title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7hirp/justice_department_announces_coordinated_actions/",
-     "desc": "submitted by /u/foodie_2598 [link] [comments]",
-     "date": "2026-10-16T14:20:17.000Z"
+     "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
+     "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
+     "date": "2026-10-22T12:14:42.000Z"
     },
     {
      "title": "Blocking the Entire Internet",
@@ -673,16 +667,22 @@
      "date": "2026-10-20T15:19:02.000Z"
     },
     {
+     "title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7hirp/justice_department_announces_coordinated_actions/",
+     "desc": "submitted by /u/foodie_2598 [link] [comments]",
+     "date": "2026-10-16T14:20:17.000Z"
+    },
+    {
      "title": "What was the most useful certificate for your career?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x94za0/what_was_the_most_useful_certificate_for_your/",
      "desc": "As mentioned in the title, I'm actually curious on what the most useful was in terms of: Learning new concepts and apply them to your job Advance in your career by opening more doors to better paying positions In the pas",
      "date": "2026-10-18T14:46:04.000Z"
     },
     {
-     "title": "Anyone else feel like they’re just a glorified spreadsheet administrator at this point?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xa7x8b/anyone_else_feel_like_theyre_just_a_glorified/",
-     "desc": "I got into cybersecurity because I actually liked the technical side of things. Troubleshooting, figuring out how systems break, and stopping bad things from happening. Fast forward to today, & I swear 80% of my week is ",
-     "date": "2026-10-19T20:21:37.000Z"
+     "title": "Wiz got pre-auth RCE on WordPress, Drupal and Joomla through vulnerabilities in PHP itself",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xby6zj/wiz_got_preauth_rce_on_wordpress_drupal_and/",
+     "desc": "Getting pre-auth RCE working across WordPress, Drupal and Joomla through the PHP engine itself is some serious work from Wiz. A lot of companies have PHP buried in older containers and internal services without even know",
+     "date": "2026-10-21T20:17:52.000Z"
     }
    ]
   },
