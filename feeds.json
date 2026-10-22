@@ -1,9 +1,15 @@
 {
- "updated": "2026-10-22T05:05:06.301Z",
+ "updated": "2026-10-22T10:20:38.396Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
+     "link": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
+     "desc": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams. [...]",
+     "date": "2026-10-22T08:27:11.000Z"
+    },
     {
      "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
      "link": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
@@ -87,18 +93,42 @@
      "link": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
      "desc": "Development platform Zeabur has disclosed details of a cybersecurity incident in which an attacker used leaked internal credentials stored in plaintext to compromise its infrastructure and steal over 3.2 million environm",
      "date": "2026-10-20T19:33:02.000Z"
-    },
-    {
-     "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
-     "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/",
-     "desc": "OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages. [...]",
-     "date": "2026-10-20T18:11:03.000Z"
     }
    ]
   },
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
+     "link": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
+     "desc": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a credential stealer and a backdoor. On October 21, 2026",
+     "date": "2026-10-22T08:28:48.000Z"
+    },
+    {
+     "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
+     "link": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
+     "desc": "Node.js released security updates on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the proj",
+     "date": "2026-10-22T07:47:22.000Z"
+    },
+    {
+     "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
+     "link": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
+     "desc": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept code. By sending a small batch of compressed HTTP head",
+     "date": "2026-10-22T06:38:31.000Z"
+    },
+    {
+     "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
+     "link": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+     "desc": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities on October 17, 2026, against its MadPot honeypot service, as the flaws come under broad ",
+     "date": "2026-10-22T06:34:10.000Z"
+    },
+    {
+     "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
+     "link": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+     "desc": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application. During the incident, Storm-0940 used ARTEX, a",
+     "date": "2026-10-22T04:21:26.000Z"
+    },
     {
      "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
      "link": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
@@ -114,7 +144,7 @@
     {
      "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
      "link": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
-     "desc": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The A",
+     "desc": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The AI co",
      "date": "2026-10-21T16:33:47.000Z"
     },
     {
@@ -248,36 +278,6 @@
      "link": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
      "desc": "The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member states of the North Atlantic Treaty Organization (NATO)",
      "date": "2026-10-20T11:06:25.000Z"
-    },
-    {
-     "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
-     "link": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
-     "desc": "ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a securi",
-     "date": "2026-10-20T10:56:08.000Z"
-    },
-    {
-     "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
-     "link": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
-     "desc": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a bu",
-     "date": "2026-10-20T08:21:29.000Z"
-    },
-    {
-     "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-     "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-     "desc": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks. The high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4",
-     "date": "2026-10-20T07:11:45.000Z"
-    },
-    {
-     "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
-     "link": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
-     "desc": "A U.S. court on Monday granted the U.S. government's request to detain a former OpenAI engineer accused of planting a recording device in an executive conference room at the company's San Francisco office to allegedly st",
-     "date": "2026-10-20T05:53:16.000Z"
-    },
-    {
-     "title": "Hackers Use New ROMULUS ClickFix Platform to Deliver LegionLoader and Other Malware",
-     "link": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
-     "desc": "Cybersecurity researchers have disclosed details of a ClickFix delivery platform called ROMULUS that's being used to distribute malware such as Legion Loader. According to Forescout Research - Vedere Labs, ROMULUS is aki",
-     "date": "2026-10-20T04:05:58.000Z"
     }
    ]
   },
@@ -589,6 +589,12 @@
      "date": "2026-10-21T14:34:06.000Z"
     },
     {
+     "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbzne3/cve2026110264_gitlab_unauthenticated_rce_cvss_10/",
+     "desc": "submitted by /u/radcorp [link] [comments]",
+     "date": "2026-10-21T21:13:44.000Z"
+    },
+    {
      "title": "EMudhra Intermediate CA Compromise",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
      "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
@@ -601,16 +607,16 @@
      "date": "2026-10-20T06:46:58.000Z"
     },
     {
-     "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
-     "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
-     "date": "2026-10-19T04:58:33.000Z"
-    },
-    {
      "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
      "desc": "submitted by /u/Dash-Courageous [link] [comments]",
      "date": "2026-10-21T03:13:08.000Z"
+    },
+    {
+     "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
+     "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
+     "date": "2026-10-19T04:58:33.000Z"
     },
     {
      "title": "PHP - As an IT person, what should I be doing?",
@@ -625,34 +631,10 @@
      "date": "2026-10-20T10:01:32.000Z"
     },
     {
-     "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbzne3/cve2026110264_gitlab_unauthenticated_rce_cvss_10/",
-     "desc": "submitted by /u/radcorp [link] [comments]",
-     "date": "2026-10-21T21:13:44.000Z"
-    },
-    {
      "title": "My experience working with Mythos 5.1 on a new attack vector",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x8f595/my_experience_working_with_mythos_51_on_a_new/",
      "desc": "I've applied to Anthropic CVP and received access to Mythos 5.1, with reduced guardrails (defense access). We already know by now it is good at finding vulnerabilities, but I was really interested in seeing if it was any",
      "date": "2026-10-17T16:53:35.000Z"
-    },
-    {
-     "title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7hirp/justice_department_announces_coordinated_actions/",
-     "desc": "submitted by /u/foodie_2598 [link] [comments]",
-     "date": "2026-10-16T14:20:17.000Z"
-    },
-    {
-     "title": "What was the most useful certificate for your career?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x94za0/what_was_the_most_useful_certificate_for_your/",
-     "desc": "As mentioned in the title, I'm actually curious on what the most useful was in terms of: Learning new concepts and apply them to your job Advance in your career by opening more doors to better paying positions In the pas",
-     "date": "2026-10-18T14:46:04.000Z"
-    },
-    {
-     "title": "Blocking the Entire Internet",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xauxhj/blocking_the_entire_internet/",
-     "desc": "Some members of my team are throwing around the idea of blocking the entire internet and whitelisting what we need. The idea kind of seems like a nightmare to me, having to allowlist potentially thousands of domains, API",
-     "date": "2026-10-20T15:19:02.000Z"
     },
     {
      "title": "PHP stuff — what's a regular guy to do?",
@@ -661,10 +643,34 @@
      "date": "2026-10-21T13:11:21.000Z"
     },
     {
+     "title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7hirp/justice_department_announces_coordinated_actions/",
+     "desc": "submitted by /u/foodie_2598 [link] [comments]",
+     "date": "2026-10-16T14:20:17.000Z"
+    },
+    {
+     "title": "Blocking the Entire Internet",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xauxhj/blocking_the_entire_internet/",
+     "desc": "Some members of my team are throwing around the idea of blocking the entire internet and whitelisting what we need. The idea kind of seems like a nightmare to me, having to allowlist potentially thousands of domains, API",
+     "date": "2026-10-20T15:19:02.000Z"
+    },
+    {
+     "title": "What was the most useful certificate for your career?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x94za0/what_was_the_most_useful_certificate_for_your/",
+     "desc": "As mentioned in the title, I'm actually curious on what the most useful was in terms of: Learning new concepts and apply them to your job Advance in your career by opening more doors to better paying positions In the pas",
+     "date": "2026-10-18T14:46:04.000Z"
+    },
+    {
      "title": "Anyone else feel like they’re just a glorified spreadsheet administrator at this point?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xa7x8b/anyone_else_feel_like_theyre_just_a_glorified/",
      "desc": "I got into cybersecurity because I actually liked the technical side of things. Troubleshooting, figuring out how systems break, and stopping bad things from happening. Fast forward to today, & I swear 80% of my week is ",
      "date": "2026-10-19T20:21:37.000Z"
+    },
+    {
+     "title": "Wiz got pre-auth RCE on WordPress, Drupal and Joomla through vulnerabilities in PHP itself",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xby6zj/wiz_got_preauth_rce_on_wordpress_drupal_and/",
+     "desc": "Getting pre-auth RCE working across WordPress, Drupal and Joomla through the PHP engine itself is some serious work from Wiz. A lot of companies have PHP buried in older containers and internal services without even know",
+     "date": "2026-10-21T20:17:52.000Z"
     },
     {
      "title": "Update from Krebs: Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
@@ -677,12 +683,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbfah6/two_critical_vulnerabilities_in_php_presumably/",
      "desc": "The PHP security team is giving advance notice: Upcoming security release Wed, Oct 21st 2026, 14:00UTC, two critical vulnerabilities, both rated CVSSv4 9.2. PHP users are encouraged to prepare to update. Earlier release ",
      "date": "2026-10-21T06:06:46.000Z"
-    },
-    {
-     "title": "Palo Alto's firewall OS has been under attack from multiple ransomware groups since June",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xazkke/palo_altos_firewall_os_has_been_under_attack_from/",
-     "desc": "submitted by /u/Much_Preparation_832 [link] [comments]",
-     "date": "2026-10-20T18:10:06.000Z"
     }
    ]
   },
