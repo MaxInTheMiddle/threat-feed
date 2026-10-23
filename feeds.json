@@ -1,9 +1,27 @@
 {
- "updated": "2026-10-23T11:51:58.705Z",
+ "updated": "2026-10-23T15:57:16.342Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "PHP shares mitigation for new RCE vulnerability with no patch",
+     "link": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+     "desc": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch. [...]",
+     "date": "2026-10-23T15:38:05.000Z"
+    },
+    {
+     "title": "You gave your AI agent access, but who is giving it orders?",
+     "link": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
+     "desc": "AI agents can be manipulated through malicious emails, websites, and plugins into executing commands, stealing data, or deleting files using their legitimate permissions. Gen Digital explains how its Agent Trust Hub help",
+     "date": "2026-10-23T14:00:10.000Z"
+    },
+    {
+     "title": "HPE patches eight max severity RCE and auth bypass AOS flaws",
+     "link": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+     "desc": "Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity authentication bypass and code execution issues. [...]",
+     "date": "2026-10-23T12:48:00.000Z"
+    },
     {
      "title": "Railway warns devs to rotate secrets after potential breach",
      "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
@@ -75,24 +93,6 @@
      "link": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
      "desc": "North Korean hackers are using a post-quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine old and new malware. [...]",
      "date": "2026-10-21T20:31:48.000Z"
-    },
-    {
-     "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
-     "link": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
-     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server. [...]",
-     "date": "2026-10-21T18:34:42.000Z"
-    },
-    {
-     "title": "OpenAI agents disabled safety monitoring, one lied about it",
-     "link": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
-     "desc": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]",
-     "date": "2026-10-21T16:26:53.000Z"
-    },
-    {
-     "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-     "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-     "desc": "The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell. [...]",
-     "date": "2026-10-21T14:07:05.000Z"
     }
    ]
   },
@@ -100,7 +100,13 @@
    "ok": true,
    "items": [
     {
-     "title": "URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+     "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+     "link": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+     "desc": "Cybersecurity researchers have disclosed details of a large-scale campaign that has targeted exposed network edge devices such as Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls. \"Artifacts from this in",
+     "date": "2026-10-23T13:50:56.000Z"
+    },
+    {
+     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
      "link": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
      "desc": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue, assigned CVE-2026-115560, affects only web applications",
      "date": "2026-10-23T11:25:43.000Z"
@@ -272,18 +278,30 @@
      "link": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
      "desc": "An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little setup. Sure, the model writes the attacks. But everything that makes those attacks safe to run against production an",
      "date": "2026-10-21T10:32:40.000Z"
-    },
-    {
-     "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
-     "link": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
-     "desc": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher found. Exit relays are the last hop in a Tor circuit,",
-     "date": "2026-10-21T10:30:27.000Z"
     }
    ]
   },
   "darkreading": {
    "ok": true,
    "items": [
+    {
+     "title": "Why Caribbean Threats Cascade Into Global Cyber-Risk",
+     "link": "https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk",
+     "desc": "The region is demonstrating what happens when exploits accelerate but assurance does not.",
+     "date": "2026-10-23T14:00:00.000Z"
+    },
+    {
+     "title": "Cyber Insurance's New Reality: Underwriting Isn't Enough",
+     "link": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
+     "desc": "Rising AI, social engineering, and cloud risks are pushing carriers beyond risk transfer and deeper into cybersecurity itself.",
+     "date": "2026-10-23T13:30:00.000Z"
+    },
+    {
+     "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
+     "link": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
+     "desc": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may multiply — not contain — the risk.",
+     "date": "2026-10-23T11:38:28.000Z"
+    },
     {
      "title": "State Bank of India Suffers a Customer PII Data Leak",
      "link": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
@@ -307,6 +325,12 @@
      "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
      "desc": "Des centaines de magasins ont subi des pertes se chiffrant en millions d'euros parce qu'ils avaient fait appel à des tiers pour gérer le micrologiciel OT obsolète qui pilotait leurs systèmes de climatisation.",
      "date": "2026-10-22T19:30:20.000Z"
+    },
+    {
+     "title": "As AI Risks Grow, Insurers Split on Covering the Damage",
+     "link": "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage",
+     "desc": "Insurers are split on AI risk: some build specialized agentic AI coverage, while major carriers quietly exclude it — leaving enterprises exposed without their knowledge.",
+     "date": "2026-10-22T14:21:22.000Z"
     },
     {
      "title": "UAE Transitions 50% of Government Services to Agentic AI",
@@ -439,30 +463,6 @@
      "link": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
      "desc": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution.",
      "date": "2026-10-16T19:13:59.000Z"
-    },
-    {
-     "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
-     "link": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
-     "desc": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
-     "date": "2026-10-16T18:37:50.000Z"
-    },
-    {
-     "title": "When Your Ransomware Negotiator Works for the Other Side",
-     "link": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
-     "desc": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
-     "date": "2026-10-16T14:00:00.000Z"
-    },
-    {
-     "title": "When AI Agents Commit Breaches, Humans May Not Be Held Liable",
-     "link": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
-     "desc": "As agents escape containment and access external systems, responsibility remains human. Accountability, however, is much less settled.",
-     "date": "2026-10-16T13:00:00.000Z"
-    },
-    {
-     "title": "SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape",
-     "link": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
-     "desc": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
-     "date": "2026-10-15T22:10:08.000Z"
     }
    ]
   },
@@ -547,6 +547,12 @@
      "date": "2026-10-19T10:54:37.000Z"
     },
     {
+     "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xd4atv/disgraced_emudhra_drops_out_of_tls_business_after/",
+     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
+     "date": "2026-10-23T04:28:04.000Z"
+    },
+    {
      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security — The PHP Foundation",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbsyc2/todays_php_security_release_and_how_were/",
      "desc": "On October 21st at 07:41 UTC, more than six hours before the coordinated release, Chainguard unilaterally broke the embargo and published built images containing the fix. Like other distributors, Chainguard had received ",
@@ -565,28 +571,22 @@
      "date": "2026-10-22T14:58:22.000Z"
     },
     {
-     "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xd4atv/disgraced_emudhra_drops_out_of_tls_business_after/",
-     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
-     "date": "2026-10-23T04:28:04.000Z"
-    },
-    {
      "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
      "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
      "date": "2026-10-22T23:32:04.000Z"
     },
     {
-     "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
-     "desc": "submitted by /u/propublica_ [link] [comments]",
-     "date": "2026-10-19T11:42:21.000Z"
-    },
-    {
      "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xcedw4/critical_gitlab_flaw_cvss_100_could_allow/",
      "desc": "I know everyone's preoccupied with the PHP CVEs, but this is also BIG NEWS submitted by /u/One_Paint8721 [link] [comments]",
      "date": "2026-10-22T09:59:47.000Z"
+    },
+    {
+     "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
+     "desc": "submitted by /u/propublica_ [link] [comments]",
+     "date": "2026-10-19T11:42:21.000Z"
     },
     {
      "title": "Windows Defender now works in Linux, because why not",
@@ -625,16 +625,22 @@
      "date": "2026-10-20T06:46:58.000Z"
     },
     {
+     "title": "PHP - As an IT person, what should I be doing?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbo82g/php_as_an_it_person_what_should_i_be_doing/",
+     "desc": "Our sec guy is out and I'm dealing with this. What should I be doing? People are saying just patch your shit, but patch what exactly? Where is the impact likely to be strongest here? Am I throwing patch updates on OS's? ",
+     "date": "2026-10-21T14:10:44.000Z"
+    },
+    {
      "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
      "desc": "submitted by /u/Dash-Courageous [link] [comments]",
      "date": "2026-10-21T03:13:08.000Z"
     },
     {
-     "title": "PHP - As an IT person, what should I be doing?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbo82g/php_as_an_it_person_what_should_i_be_doing/",
-     "desc": "Our sec guy is out and I'm dealing with this. What should I be doing? People are saying just patch your shit, but patch what exactly? Where is the impact likely to be strongest here? Am I throwing patch updates on OS's? ",
-     "date": "2026-10-21T14:10:44.000Z"
+     "title": "eMudhra (a business run by 1 family), passed two audits by BDO after an integrity incident. Is the internet chain of trust broken?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdcl4v/emudhra_a_business_run_by_1_family_passed_two/",
+     "desc": "The more I look into the eMudhra incident, the more concerned I am about the auditors and the governance behind this company. We’ve spent plenty of time talking about the fact that one of their intermediate CA private ke",
+     "date": "2026-10-23T12:25:14.000Z"
     },
     {
      "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
@@ -677,12 +683,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xauxhj/blocking_the_entire_internet/",
      "desc": "Some members of my team are throwing around the idea of blocking the entire internet and whitelisting what we need. The idea kind of seems like a nightmare to me, having to allowlist potentially thousands of domains, API",
      "date": "2026-10-20T15:19:02.000Z"
-    },
-    {
-     "title": "Justice Department Announces Coordinated Actions to Combat North Korean Remote IT Worker Schemes Affecting More than 70 U.S. Companies",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x7hirp/justice_department_announces_coordinated_actions/",
-     "desc": "submitted by /u/foodie_2598 [link] [comments]",
-     "date": "2026-10-16T14:20:17.000Z"
     }
    ]
   },
