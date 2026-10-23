@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T22:30:48.183Z",
+ "updated": "2026-10-23T01:03:03.955Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -571,16 +571,16 @@
      "date": "2026-10-19T11:42:21.000Z"
     },
     {
-     "title": "Windows Defender now works in Linux, because why not",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x87lf2/windows_defender_now_works_in_linux_because_why/",
-     "desc": "submitted by /u/DeepCedarShadow [link] [comments]",
-     "date": "2026-10-17T11:09:34.000Z"
-    },
-    {
      "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xcedw4/critical_gitlab_flaw_cvss_100_could_allow/",
      "desc": "I know everyone's preoccupied with the PHP CVEs, but this is also BIG NEWS submitted by /u/One_Paint8721 [link] [comments]",
      "date": "2026-10-22T09:59:47.000Z"
+    },
+    {
+     "title": "Windows Defender now works in Linux, because why not",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x87lf2/windows_defender_now_works_in_linux_because_why/",
+     "desc": "submitted by /u/DeepCedarShadow [link] [comments]",
+     "date": "2026-10-17T11:09:34.000Z"
     },
     {
      "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
@@ -607,6 +607,12 @@
      "date": "2026-10-20T06:46:58.000Z"
     },
     {
+     "title": "Checking in",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
+     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
+     "date": "2026-10-22T09:51:03.000Z"
+    },
+    {
      "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
      "desc": "submitted by /u/Dash-Courageous [link] [comments]",
@@ -619,16 +625,16 @@
      "date": "2026-10-21T14:10:44.000Z"
     },
     {
-     "title": "Checking in",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
-     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
-     "date": "2026-10-22T09:51:03.000Z"
-    },
-    {
      "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
      "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
      "date": "2026-10-19T04:58:33.000Z"
+    },
+    {
+     "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xceg4u/capcom_confirms_major_data_breach_affecting_more/",
+     "desc": "submitted by /u/Dapper_Order7182 [link] [comments]",
+     "date": "2026-10-22T10:03:10.000Z"
     },
     {
      "title": "PHP stuff — what's a regular guy to do?",
@@ -637,10 +643,10 @@
      "date": "2026-10-21T13:11:21.000Z"
     },
     {
-     "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xceg4u/capcom_confirms_major_data_breach_affecting_more/",
-     "desc": "submitted by /u/Dapper_Order7182 [link] [comments]",
-     "date": "2026-10-22T10:03:10.000Z"
+     "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
+     "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
+     "date": "2026-10-22T12:14:42.000Z"
     },
     {
      "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
@@ -655,12 +661,6 @@
      "date": "2026-10-17T16:53:35.000Z"
     },
     {
-     "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
-     "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
-     "date": "2026-10-22T12:14:42.000Z"
-    },
-    {
      "title": "Blocking the Entire Internet",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xauxhj/blocking_the_entire_internet/",
      "desc": "Some members of my team are throwing around the idea of blocking the entire internet and whitelisting what we need. The idea kind of seems like a nightmare to me, having to allowlist potentially thousands of domains, API",
@@ -673,16 +673,16 @@
      "date": "2026-10-16T14:20:17.000Z"
     },
     {
-     "title": "What was the most useful certificate for your career?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x94za0/what_was_the_most_useful_certificate_for_your/",
-     "desc": "As mentioned in the title, I'm actually curious on what the most useful was in terms of: Learning new concepts and apply them to your job Advance in your career by opening more doors to better paying positions In the pas",
-     "date": "2026-10-18T14:46:04.000Z"
-    },
-    {
      "title": "Wiz got pre-auth RCE on WordPress, Drupal and Joomla through vulnerabilities in PHP itself",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xby6zj/wiz_got_preauth_rce_on_wordpress_drupal_and/",
      "desc": "Getting pre-auth RCE working across WordPress, Drupal and Joomla through the PHP engine itself is some serious work from Wiz. A lot of companies have PHP buried in older containers and internal services without even know",
      "date": "2026-10-21T20:17:52.000Z"
+    },
+    {
+     "title": "What was the most useful certificate for your career?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x94za0/what_was_the_most_useful_certificate_for_your/",
+     "desc": "As mentioned in the title, I'm actually curious on what the most useful was in terms of: Learning new concepts and apply them to your job Advance in your career by opening more doors to better paying positions In the pas",
+     "date": "2026-10-18T14:46:04.000Z"
     }
    ]
   },
