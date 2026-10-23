@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T06:06:32.275Z",
+ "updated": "2026-10-23T11:51:58.705Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -99,6 +99,42 @@
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+     "link": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+     "desc": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue, assigned CVE-2026-115560, affects only web applications",
+     "date": "2026-10-23T11:25:43.000Z"
+    },
+    {
+     "title": "Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+     "link": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
+     "desc": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year. According to ESET, the attack involved UA",
+     "date": "2026-10-23T11:11:23.000Z"
+    },
+    {
+     "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+     "link": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+     "desc": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open. The flaw, CVE-2026-112900, is in the way Pillow handles",
+     "date": "2026-10-23T09:36:00.000Z"
+    },
+    {
+     "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+     "link": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+     "desc": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated. Their \"Node2Shell\" proof of concept ran code on the official No",
+     "date": "2026-10-23T08:40:43.000Z"
+    },
+    {
+     "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
+     "link": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+     "desc": "AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22. The cause was the SDKs' default cl",
+     "date": "2026-10-23T08:35:45.000Z"
+    },
+    {
+     "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+     "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+     "desc": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing th",
+     "date": "2026-10-23T07:40:45.000Z"
+    },
     {
      "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
      "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
@@ -242,42 +278,6 @@
      "link": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
      "desc": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher found. Exit relays are the last hop in a Tor circuit,",
      "date": "2026-10-21T10:30:27.000Z"
-    },
-    {
-     "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
-     "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
-     "desc": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory. PHP will ship an out",
-     "date": "2026-10-21T09:05:17.000Z"
-    },
-    {
-     "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
-     "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
-     "desc": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites. Te",
-     "date": "2026-10-21T09:01:12.000Z"
-    },
-    {
-     "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
-     "link": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
-     "desc": "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using DeepSeek implementations,\" under a Department of Ho",
-     "date": "2026-10-21T08:04:17.000Z"
-    },
-    {
-     "title": "State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web",
-     "link": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
-     "desc": "State Bank of India has identified 3,897 customer records containing personal information in a set of about 375,000 records available on the dark web, and it does not yet know where the data came from. The state-owned ba",
-     "date": "2026-10-21T07:44:22.000Z"
-    },
-    {
-     "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-     "link": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that",
-     "date": "2026-10-21T07:26:49.000Z"
-    },
-    {
-     "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
-     "link": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
-     "desc": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by Russian cybersecurity firm Solar, the activity has been attributed to ",
-     "date": "2026-10-21T06:05:15.000Z"
     }
    ]
   },
@@ -309,7 +309,7 @@
      "date": "2026-10-22T19:30:20.000Z"
     },
     {
-     "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
+     "title": "UAE Transitions 50% of Government Services to Agentic AI",
      "link": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
      "desc": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
      "date": "2026-10-22T05:00:00.000Z"
@@ -317,7 +317,7 @@
     {
      "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
      "link": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
-     "desc": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
+     "desc": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the unseen information comes to light.",
      "date": "2026-10-21T21:15:39.000Z"
     },
     {
@@ -413,7 +413,7 @@
     {
      "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
      "link": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
-     "desc": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+     "desc": "An industry-wide, laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
      "date": "2026-10-19T14:00:00.000Z"
     },
     {
@@ -565,6 +565,18 @@
      "date": "2026-10-22T14:58:22.000Z"
     },
     {
+     "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xd4atv/disgraced_emudhra_drops_out_of_tls_business_after/",
+     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
+     "date": "2026-10-23T04:28:04.000Z"
+    },
+    {
+     "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
+     "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-22T23:32:04.000Z"
+    },
+    {
      "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
      "desc": "submitted by /u/propublica_ [link] [comments]",
@@ -593,12 +605,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbou5n/php_critical_remote_code_execution/",
      "desc": "submitted by /u/ni5arga [link] [comments]",
      "date": "2026-10-21T14:34:06.000Z"
-    },
-    {
-     "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
-     "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-22T23:32:04.000Z"
     },
     {
      "title": "EMudhra Intermediate CA Compromise",
@@ -677,12 +683,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x7hirp/justice_department_announces_coordinated_actions/",
      "desc": "submitted by /u/foodie_2598 [link] [comments]",
      "date": "2026-10-16T14:20:17.000Z"
-    },
-    {
-     "title": "Wiz got pre-auth RCE on WordPress, Drupal and Joomla through vulnerabilities in PHP itself",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xby6zj/wiz_got_preauth_rce_on_wordpress_drupal_and/",
-     "desc": "Getting pre-auth RCE working across WordPress, Drupal and Joomla through the PHP engine itself is some serious work from Wiz. A lot of companies have PHP buried in older containers and internal services without even know",
-     "date": "2026-10-21T20:17:52.000Z"
     }
    ]
   },
