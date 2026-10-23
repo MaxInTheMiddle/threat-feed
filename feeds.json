@@ -1,9 +1,15 @@
 {
- "updated": "2026-10-23T19:40:09.655Z",
+ "updated": "2026-10-23T22:41:05.452Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
+     "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+     "desc": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with",
+     "date": "2026-10-23T20:55:05.000Z"
+    },
     {
      "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
@@ -87,12 +93,6 @@
      "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/",
      "desc": "GitLab has released security patches for a maximum-severity Regular Expression Compiler flaw that can let remote attackers run arbitrary code on vulnerable servers. [...]",
      "date": "2026-10-22T11:41:48.000Z"
-    },
-    {
-     "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
-     "link": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
-     "desc": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams. [...]",
-     "date": "2026-10-22T08:27:11.000Z"
     }
    ]
   },
@@ -285,6 +285,18 @@
    "ok": true,
    "items": [
     {
+     "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
+     "link": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+     "desc": "Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little help from artificial intelligence.",
+     "date": "2026-10-23T20:57:56.000Z"
+    },
+    {
+     "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
+     "link": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+     "desc": "Fixing the critical PHP flaws is not as simple as clicking \"Update.\" Here's how to assess your risk, and what you can do to protect yourself.",
+     "date": "2026-10-23T19:41:23.000Z"
+    },
+    {
      "title": "AI Tools Are Generating Massive Attacks for Little Cost",
      "link": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
      "desc": "One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change.",
@@ -451,18 +463,6 @@
      "link": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
      "desc": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
      "date": "2026-10-16T20:34:37.000Z"
-    },
-    {
-     "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
-     "link": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
-     "desc": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
-     "date": "2026-10-16T19:49:30.000Z"
-    },
-    {
-     "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
-     "link": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
-     "desc": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
-     "date": "2026-10-16T19:22:12.000Z"
     }
    ]
   },
@@ -589,16 +589,22 @@
      "date": "2026-10-17T11:09:34.000Z"
     },
     {
-     "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbzne3/cve2026110264_gitlab_unauthenticated_rce_cvss_10/",
-     "desc": "submitted by /u/radcorp [link] [comments]",
-     "date": "2026-10-21T21:13:44.000Z"
-    },
-    {
      "title": "eMudhra (a business run by 1 family), passed two audits by BDO after an integrity incident. Is the internet chain of trust broken?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdcl4v/emudhra_a_business_run_by_1_family_passed_two/",
      "desc": "The more I look into the eMudhra incident, the more concerned I am about the auditors and the governance behind this company. We’ve spent plenty of time talking about the fact that one of their intermediate CA private ke",
      "date": "2026-10-23T12:25:14.000Z"
+    },
+    {
+     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
+     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-23T16:00:14.000Z"
+    },
+    {
+     "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbzne3/cve2026110264_gitlab_unauthenticated_rce_cvss_10/",
+     "desc": "submitted by /u/radcorp [link] [comments]",
+     "date": "2026-10-21T21:13:44.000Z"
     },
     {
      "title": "PHP: Critical remote code execution vulnerabilities, update now",
@@ -649,22 +655,16 @@
      "date": "2026-10-22T10:03:10.000Z"
     },
     {
-     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
-     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-23T16:00:14.000Z"
+     "title": "PHP stuff — what's a regular guy to do?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbmrsn/php_stuff_whats_a_regular_guy_to_do/",
+     "desc": "Title says it all. I'm not a web developer, I've never coded anything in my life, yadda yadda. I use the internet for personal (including entertainment) and academic stuff. Aside from the obvious (not clicking on weird l",
+     "date": "2026-10-21T13:11:21.000Z"
     },
     {
      "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
      "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
      "date": "2026-10-19T04:58:33.000Z"
-    },
-    {
-     "title": "PHP stuff — what's a regular guy to do?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbmrsn/php_stuff_whats_a_regular_guy_to_do/",
-     "desc": "Title says it all. I'm not a web developer, I've never coded anything in my life, yadda yadda. I use the internet for personal (including entertainment) and academic stuff. Aside from the obvious (not clicking on weird l",
-     "date": "2026-10-21T13:11:21.000Z"
     },
     {
      "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
