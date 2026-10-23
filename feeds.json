@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T01:03:03.955Z",
+ "updated": "2026-10-23T06:06:32.275Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -285,6 +285,12 @@
    "ok": true,
    "items": [
     {
+     "title": "State Bank of India Suffers a Customer PII Data Leak",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
+     "desc": "Relatively small data breaches in India can turn quite serious, thanks to a sophisticated underground market for trading PII.",
+     "date": "2026-10-23T03:30:00.000Z"
+    },
+    {
      "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
      "link": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
      "desc": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
@@ -457,12 +463,6 @@
      "link": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
      "desc": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
      "date": "2026-10-15T22:10:08.000Z"
-    },
-    {
-     "title": "F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud",
-     "link": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
-     "desc": "Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.",
-     "date": "2026-10-15T21:55:07.000Z"
     }
    ]
   },
@@ -595,22 +595,28 @@
      "date": "2026-10-21T14:34:06.000Z"
     },
     {
+     "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
+     "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-22T23:32:04.000Z"
+    },
+    {
      "title": "EMudhra Intermediate CA Compromise",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
      "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
      "date": "2026-10-20T18:51:51.000Z"
     },
     {
-     "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
-     "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
-     "date": "2026-10-20T06:46:58.000Z"
-    },
-    {
      "title": "Checking in",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
      "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
      "date": "2026-10-22T09:51:03.000Z"
+    },
+    {
+     "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
+     "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
+     "date": "2026-10-20T06:46:58.000Z"
     },
     {
      "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
@@ -625,10 +631,10 @@
      "date": "2026-10-21T14:10:44.000Z"
     },
     {
-     "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
-     "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
-     "date": "2026-10-19T04:58:33.000Z"
+     "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
+     "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
+     "date": "2026-10-22T12:14:42.000Z"
     },
     {
      "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
@@ -637,16 +643,16 @@
      "date": "2026-10-22T10:03:10.000Z"
     },
     {
+     "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
+     "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
+     "date": "2026-10-19T04:58:33.000Z"
+    },
+    {
      "title": "PHP stuff — what's a regular guy to do?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbmrsn/php_stuff_whats_a_regular_guy_to_do/",
      "desc": "Title says it all. I'm not a web developer, I've never coded anything in my life, yadda yadda. I use the internet for personal (including entertainment) and academic stuff. Aside from the obvious (not clicking on weird l",
      "date": "2026-10-21T13:11:21.000Z"
-    },
-    {
-     "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
-     "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
-     "date": "2026-10-22T12:14:42.000Z"
     },
     {
      "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
@@ -677,12 +683,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xby6zj/wiz_got_preauth_rce_on_wordpress_drupal_and/",
      "desc": "Getting pre-auth RCE working across WordPress, Drupal and Joomla through the PHP engine itself is some serious work from Wiz. A lot of companies have PHP buried in older containers and internal services without even know",
      "date": "2026-10-21T20:17:52.000Z"
-    },
-    {
-     "title": "What was the most useful certificate for your career?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x94za0/what_was_the_most_useful_certificate_for_your/",
-     "desc": "As mentioned in the title, I'm actually curious on what the most useful was in terms of: Learning new concepts and apply them to your job Advance in your career by opening more doors to better paying positions In the pas",
-     "date": "2026-10-18T14:46:04.000Z"
     }
    ]
   },
