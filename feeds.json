@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T06:01:43.437Z",
+ "updated": "2026-10-24T11:19:10.113Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -99,6 +99,24 @@
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
+     "link": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+     "desc": "Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to ",
+     "date": "2026-10-24T09:04:24.000Z"
+    },
+    {
+     "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+     "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+     "desc": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Trac",
+     "date": "2026-10-24T08:45:56.000Z"
+    },
+    {
+     "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+     "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator (VCO) to its Known Exploited Vulnerab",
+     "date": "2026-10-24T06:25:57.000Z"
+    },
     {
      "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
      "link": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
@@ -260,24 +278,6 @@
      "link": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
      "desc": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The AI co",
      "date": "2026-10-21T16:33:47.000Z"
-    },
-    {
-     "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
-     "link": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
-     "desc": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP ",
-     "date": "2026-10-21T14:00:00.000Z"
-    },
-    {
-     "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
-     "link": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
-     "desc": "Google on Tuesday said it's rolling out improved safeguards in its Chrome browser to secure users against ClickFix attacks when Enhanced Protection is enabled. ClickFix is a popular social engineering technique in which ",
-     "date": "2026-10-21T13:15:09.000Z"
-    },
-    {
-     "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
-     "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
-     "desc": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting organizations in Asia and Africa since mid-2025. \"The",
-     "date": "2026-10-21T12:05:00.000Z"
     }
    ]
   },
@@ -583,22 +583,16 @@
      "date": "2026-10-22T09:59:47.000Z"
     },
     {
-     "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
-     "desc": "submitted by /u/propublica_ [link] [comments]",
-     "date": "2026-10-19T11:42:21.000Z"
-    },
-    {
      "title": "eMudhra (a business run by 1 family), passed two audits by BDO after an integrity incident. Is the internet chain of trust broken?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdcl4v/emudhra_a_business_run_by_1_family_passed_two/",
      "desc": "The more I look into the eMudhra incident, the more concerned I am about the auditors and the governance behind this company. We’ve spent plenty of time talking about the fact that one of their intermediate CA private ke",
      "date": "2026-10-23T12:25:14.000Z"
     },
     {
-     "title": "Windows Defender now works in Linux, because why not",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x87lf2/windows_defender_now_works_in_linux_because_why/",
-     "desc": "submitted by /u/DeepCedarShadow [link] [comments]",
-     "date": "2026-10-17T11:09:34.000Z"
+     "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
+     "desc": "submitted by /u/propublica_ [link] [comments]",
+     "date": "2026-10-19T11:42:21.000Z"
     },
     {
      "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
@@ -613,6 +607,12 @@
      "date": "2026-10-21T14:34:06.000Z"
     },
     {
+     "title": "PYTHON Packages NOW Vulnerable to Node2Shell",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdunkf/python_packages_now_vulnerable_to_node2shell/",
+     "desc": "Turns out that Node2Shell affects more than just Node! Python packages Brotli and brotlicffi are also affected by this vulnerability, but don't have a CVE yet.. submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-24T00:28:13.000Z"
+    },
+    {
      "title": "Checking in",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
      "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
@@ -625,16 +625,16 @@
      "date": "2026-10-20T18:51:51.000Z"
     },
     {
-     "title": "PHP - As an IT person, what should I be doing?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbo82g/php_as_an_it_person_what_should_i_be_doing/",
-     "desc": "Our sec guy is out and I'm dealing with this. What should I be doing? People are saying just patch your shit, but patch what exactly? Where is the impact likely to be strongest here? Am I throwing patch updates on OS's? ",
-     "date": "2026-10-21T14:10:44.000Z"
-    },
-    {
      "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
      "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
      "date": "2026-10-20T06:46:58.000Z"
+    },
+    {
+     "title": "PHP - As an IT person, what should I be doing?",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbo82g/php_as_an_it_person_what_should_i_be_doing/",
+     "desc": "Our sec guy is out and I'm dealing with this. What should I be doing? People are saying just patch your shit, but patch what exactly? Where is the impact likely to be strongest here? Am I throwing patch updates on OS's? ",
+     "date": "2026-10-21T14:10:44.000Z"
     },
     {
      "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
@@ -647,6 +647,12 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
      "desc": "submitted by /u/Dash-Courageous [link] [comments]",
      "date": "2026-10-21T03:13:08.000Z"
+    },
+    {
+     "title": "Node2Shell EVOLVES to HTTP2Shell.",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
+     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-24T07:24:42.000Z"
     },
     {
      "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
@@ -667,22 +673,16 @@
      "date": "2026-10-19T04:58:33.000Z"
     },
     {
-     "title": "PYTHON Packages NOW Vulnerable to Node2Shell",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdunkf/python_packages_now_vulnerable_to_node2shell/",
-     "desc": "Turns out that Node2Shell affects more than just Node! Python packages Brotli and brotlicffi are also affected by this vulnerability, but don't have a CVE yet.. submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-24T00:28:13.000Z"
+     "title": "[MEGATHREAD] October 2026 Cybersecurity Incidents: PHP2Shell, LiteLLM, eMudhra, GitLab, and more",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdx8k7/megathread_october_2026_cybersecurity_incidents/",
+     "desc": "[MEGATHREAD] PHP2Shell (CVE-2026-109618/109619), LiteLLM, eMudhra, GitLab & Other October Security Incidents AKA Black October We've been getting hammered with posts and questions about the wave of vulnerabilities, compr",
+     "date": "2026-10-24T02:41:43.000Z"
     },
     {
      "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xao2jm/difficulty_spotting_cheaters_during_interviews/",
      "desc": "I’m in the process of interviewing candidates for a Jr. security analyst role and am running into the dilemma that I don’t trust all the candidates. I’m getting individuals with resumes with garbage formats but somewhat ",
      "date": "2026-10-20T10:01:32.000Z"
-    },
-    {
-     "title": "Blocking the Entire Internet",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xauxhj/blocking_the_entire_internet/",
-     "desc": "Some members of my team are throwing around the idea of blocking the entire internet and whitelisting what we need. The idea kind of seems like a nightmare to me, having to allowlist potentially thousands of domains, API",
-     "date": "2026-10-20T15:19:02.000Z"
     }
    ]
   },
