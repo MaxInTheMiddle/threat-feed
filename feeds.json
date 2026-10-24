@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T17:40:50.830Z",
+ "updated": "2026-10-24T19:52:29.589Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -571,28 +571,28 @@
      "date": "2026-10-22T23:32:04.000Z"
     },
     {
-     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
-     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-23T16:00:14.000Z"
-    },
-    {
      "title": "Node2Shell EVOLVES to HTTP2Shell.",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
      "desc": "submitted by /u/One_Paint8721 [link] [comments]",
      "date": "2026-10-24T07:24:42.000Z"
     },
     {
-     "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcedw4/critical_gitlab_flaw_cvss_100_could_allow/",
-     "desc": "I know everyone's preoccupied with the PHP CVEs, but this is also BIG NEWS submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-22T09:59:47.000Z"
+     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
+     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-23T16:00:14.000Z"
     },
     {
      "title": "eMudhra (a business run by 1 family), passed two audits by BDO after an integrity incident. Is the internet chain of trust broken?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdcl4v/emudhra_a_business_run_by_1_family_passed_two/",
      "desc": "The more I look into the eMudhra incident, the more concerned I am about the auditors and the governance behind this company. We’ve spent plenty of time talking about the fact that one of their intermediate CA private ke",
      "date": "2026-10-23T12:25:14.000Z"
+    },
+    {
+     "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcedw4/critical_gitlab_flaw_cvss_100_could_allow/",
+     "desc": "I know everyone's preoccupied with the PHP CVEs, but this is also BIG NEWS submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-22T09:59:47.000Z"
     },
     {
      "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
@@ -619,16 +619,16 @@
      "date": "2026-10-21T14:34:06.000Z"
     },
     {
-     "title": "Checking in",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
-     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
-     "date": "2026-10-22T09:51:03.000Z"
-    },
-    {
      "title": "[MEGATHREAD] October 2026 Cybersecurity Incidents: PHP2Shell, LiteLLM, eMudhra, GitLab, and more",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdx8k7/megathread_october_2026_cybersecurity_incidents/",
      "desc": "[MEGATHREAD] PHP2Shell (CVE-2026-109618/109619), LiteLLM, eMudhra, GitLab & Other October Security Incidents AKA Black October We've been getting hammered with posts and questions about the wave of vulnerabilities, compr",
      "date": "2026-10-24T02:41:43.000Z"
+    },
+    {
+     "title": "Checking in",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
+     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
+     "date": "2026-10-22T09:51:03.000Z"
     },
     {
      "title": "EMudhra Intermediate CA Compromise",
@@ -661,6 +661,12 @@
      "date": "2026-10-22T12:14:42.000Z"
     },
     {
+     "title": "Knicks reportedly duped employees with championship ring email that was actually a phishing test",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdxvpe/knicks_reportedly_duped_employees_with/",
+     "desc": "submitted by /u/Blaaamo [link] [comments]",
+     "date": "2026-10-24T03:15:47.000Z"
+    },
+    {
      "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xceg4u/capcom_confirms_major_data_breach_affecting_more/",
      "desc": "submitted by /u/Dapper_Order7182 [link] [comments]",
@@ -677,12 +683,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
      "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
      "date": "2026-10-19T04:58:33.000Z"
-    },
-    {
-     "title": "Knicks reportedly duped employees with championship ring email that was actually a phishing test",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdxvpe/knicks_reportedly_duped_employees_with/",
-     "desc": "submitted by /u/Blaaamo [link] [comments]",
-     "date": "2026-10-24T03:15:47.000Z"
     }
    ]
   },
