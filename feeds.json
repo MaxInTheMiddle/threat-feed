@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T01:12:05.342Z",
+ "updated": "2026-10-24T06:01:43.437Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -571,6 +571,12 @@
      "date": "2026-10-22T23:32:04.000Z"
     },
     {
+     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
+     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-23T16:00:14.000Z"
+    },
+    {
      "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xcedw4/critical_gitlab_flaw_cvss_100_could_allow/",
      "desc": "I know everyone's preoccupied with the PHP CVEs, but this is also BIG NEWS submitted by /u/One_Paint8721 [link] [comments]",
@@ -581,12 +587,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
      "desc": "submitted by /u/propublica_ [link] [comments]",
      "date": "2026-10-19T11:42:21.000Z"
-    },
-    {
-     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
-     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-23T16:00:14.000Z"
     },
     {
      "title": "eMudhra (a business run by 1 family), passed two audits by BDO after an integrity incident. Is the internet chain of trust broken?",
@@ -625,16 +625,16 @@
      "date": "2026-10-20T18:51:51.000Z"
     },
     {
-     "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
-     "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
-     "date": "2026-10-20T06:46:58.000Z"
-    },
-    {
      "title": "PHP - As an IT person, what should I be doing?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbo82g/php_as_an_it_person_what_should_i_be_doing/",
      "desc": "Our sec guy is out and I'm dealing with this. What should I be doing? People are saying just patch your shit, but patch what exactly? Where is the impact likely to be strongest here? Am I throwing patch updates on OS's? ",
      "date": "2026-10-21T14:10:44.000Z"
+    },
+    {
+     "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
+     "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
+     "date": "2026-10-20T06:46:58.000Z"
     },
     {
      "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
@@ -667,16 +667,16 @@
      "date": "2026-10-19T04:58:33.000Z"
     },
     {
+     "title": "PYTHON Packages NOW Vulnerable to Node2Shell",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdunkf/python_packages_now_vulnerable_to_node2shell/",
+     "desc": "Turns out that Node2Shell affects more than just Node! Python packages Brotli and brotlicffi are also affected by this vulnerability, but don't have a CVE yet.. submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-24T00:28:13.000Z"
+    },
+    {
      "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xao2jm/difficulty_spotting_cheaters_during_interviews/",
      "desc": "I’m in the process of interviewing candidates for a Jr. security analyst role and am running into the dilemma that I don’t trust all the candidates. I’m getting individuals with resumes with garbage formats but somewhat ",
      "date": "2026-10-20T10:01:32.000Z"
-    },
-    {
-     "title": "My experience working with Mythos 5.1 on a new attack vector",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x8f595/my_experience_working_with_mythos_51_on_a_new/",
-     "desc": "I've applied to Anthropic CVP and received access to Mythos 5.1, with reduced guardrails (defense access). We already know by now it is good at finding vulnerabilities, but I was really interested in seeing if it was any",
-     "date": "2026-10-17T16:53:35.000Z"
     },
     {
      "title": "Blocking the Entire Internet",
