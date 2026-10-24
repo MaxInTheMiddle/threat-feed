@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T14:40:55.920Z",
+ "updated": "2026-10-24T17:40:50.830Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -577,6 +577,12 @@
      "date": "2026-10-23T16:00:14.000Z"
     },
     {
+     "title": "Node2Shell EVOLVES to HTTP2Shell.",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
+     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-24T07:24:42.000Z"
+    },
+    {
      "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xcedw4/critical_gitlab_flaw_cvss_100_could_allow/",
      "desc": "I know everyone's preoccupied with the PHP CVEs, but this is also BIG NEWS submitted by /u/One_Paint8721 [link] [comments]",
@@ -595,22 +601,16 @@
      "date": "2026-10-19T11:42:21.000Z"
     },
     {
-     "title": "Node2Shell EVOLVES to HTTP2Shell.",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
-     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-24T07:24:42.000Z"
+     "title": "PYTHON Packages NOW Vulnerable to Node2Shell",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdunkf/python_packages_now_vulnerable_to_node2shell/",
+     "desc": "Turns out that Node2Shell affects more than just Node! Python packages Brotli and brotlicffi are also affected by this vulnerability, but don't have a CVE yet.. submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-24T00:28:13.000Z"
     },
     {
      "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbzne3/cve2026110264_gitlab_unauthenticated_rce_cvss_10/",
      "desc": "submitted by /u/radcorp [link] [comments]",
      "date": "2026-10-21T21:13:44.000Z"
-    },
-    {
-     "title": "PYTHON Packages NOW Vulnerable to Node2Shell",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdunkf/python_packages_now_vulnerable_to_node2shell/",
-     "desc": "Turns out that Node2Shell affects more than just Node! Python packages Brotli and brotlicffi are also affected by this vulnerability, but don't have a CVE yet.. submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-24T00:28:13.000Z"
     },
     {
      "title": "PHP: Critical remote code execution vulnerabilities, update now",
@@ -623,6 +623,12 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
      "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
      "date": "2026-10-22T09:51:03.000Z"
+    },
+    {
+     "title": "[MEGATHREAD] October 2026 Cybersecurity Incidents: PHP2Shell, LiteLLM, eMudhra, GitLab, and more",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdx8k7/megathread_october_2026_cybersecurity_incidents/",
+     "desc": "[MEGATHREAD] PHP2Shell (CVE-2026-109618/109619), LiteLLM, eMudhra, GitLab & Other October Security Incidents AKA Black October We've been getting hammered with posts and questions about the wave of vulnerabilities, compr",
+     "date": "2026-10-24T02:41:43.000Z"
     },
     {
      "title": "EMudhra Intermediate CA Compromise",
@@ -643,22 +649,16 @@
      "date": "2026-10-21T14:10:44.000Z"
     },
     {
-     "title": "[MEGATHREAD] October 2026 Cybersecurity Incidents: PHP2Shell, LiteLLM, eMudhra, GitLab, and more",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdx8k7/megathread_october_2026_cybersecurity_incidents/",
-     "desc": "[MEGATHREAD] PHP2Shell (CVE-2026-109618/109619), LiteLLM, eMudhra, GitLab & Other October Security Incidents AKA Black October We've been getting hammered with posts and questions about the wave of vulnerabilities, compr",
-     "date": "2026-10-24T02:41:43.000Z"
+     "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
+     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
+     "date": "2026-10-21T03:13:08.000Z"
     },
     {
      "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
      "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
      "date": "2026-10-22T12:14:42.000Z"
-    },
-    {
-     "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
-     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
-     "date": "2026-10-21T03:13:08.000Z"
     },
     {
      "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
@@ -679,10 +679,10 @@
      "date": "2026-10-19T04:58:33.000Z"
     },
     {
-     "title": "Difficulty spotting cheaters during interviews & techniques to stop it",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xao2jm/difficulty_spotting_cheaters_during_interviews/",
-     "desc": "I’m in the process of interviewing candidates for a Jr. security analyst role and am running into the dilemma that I don’t trust all the candidates. I’m getting individuals with resumes with garbage formats but somewhat ",
-     "date": "2026-10-20T10:01:32.000Z"
+     "title": "Knicks reportedly duped employees with championship ring email that was actually a phishing test",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdxvpe/knicks_reportedly_duped_employees_with/",
+     "desc": "submitted by /u/Blaaamo [link] [comments]",
+     "date": "2026-10-24T03:15:47.000Z"
     }
    ]
   },
