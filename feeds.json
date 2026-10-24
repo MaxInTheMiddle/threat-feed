@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T19:52:29.589Z",
+ "updated": "2026-10-24T22:00:24.672Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -565,16 +565,16 @@
      "date": "2026-10-22T14:58:22.000Z"
     },
     {
-     "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
-     "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-22T23:32:04.000Z"
-    },
-    {
      "title": "Node2Shell EVOLVES to HTTP2Shell.",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
      "desc": "submitted by /u/One_Paint8721 [link] [comments]",
      "date": "2026-10-24T07:24:42.000Z"
+    },
+    {
+     "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
+     "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-22T23:32:04.000Z"
     },
     {
      "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
