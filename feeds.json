@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T22:41:05.452Z",
+ "updated": "2026-10-24T01:12:05.342Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -583,10 +583,10 @@
      "date": "2026-10-19T11:42:21.000Z"
     },
     {
-     "title": "Windows Defender now works in Linux, because why not",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x87lf2/windows_defender_now_works_in_linux_because_why/",
-     "desc": "submitted by /u/DeepCedarShadow [link] [comments]",
-     "date": "2026-10-17T11:09:34.000Z"
+     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
+     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-23T16:00:14.000Z"
     },
     {
      "title": "eMudhra (a business run by 1 family), passed two audits by BDO after an integrity incident. Is the internet chain of trust broken?",
@@ -595,10 +595,10 @@
      "date": "2026-10-23T12:25:14.000Z"
     },
     {
-     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
-     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-23T16:00:14.000Z"
+     "title": "Windows Defender now works in Linux, because why not",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x87lf2/windows_defender_now_works_in_linux_because_why/",
+     "desc": "submitted by /u/DeepCedarShadow [link] [comments]",
+     "date": "2026-10-17T11:09:34.000Z"
     },
     {
      "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
@@ -637,16 +637,16 @@
      "date": "2026-10-21T14:10:44.000Z"
     },
     {
-     "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
-     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
-     "date": "2026-10-21T03:13:08.000Z"
-    },
-    {
      "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
      "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
      "date": "2026-10-22T12:14:42.000Z"
+    },
+    {
+     "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
+     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
+     "date": "2026-10-21T03:13:08.000Z"
     },
     {
      "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
