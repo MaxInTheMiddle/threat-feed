@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T04:58:24.396Z",
+ "updated": "2026-10-25T09:32:32.060Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -99,6 +99,12 @@
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+     "link": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+     "desc": "OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models. \"Based on the current ",
+     "date": "2026-10-25T06:54:29.000Z"
+    },
     {
      "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
      "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
@@ -272,12 +278,6 @@
      "link": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
      "desc": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application. During the incident, Storm-0940 used ARTEX, a",
      "date": "2026-10-22T04:21:26.000Z"
-    },
-    {
-     "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
-     "link": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
-     "desc": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014. The fix matters",
-     "date": "2026-10-21T18:57:34.000Z"
     }
    ]
   },
@@ -571,16 +571,16 @@
      "date": "2026-10-22T14:58:22.000Z"
     },
     {
-     "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
-     "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-22T23:32:04.000Z"
-    },
-    {
      "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
      "desc": "submitted by /u/One_Paint8721 [link] [comments]",
      "date": "2026-10-23T16:00:14.000Z"
+    },
+    {
+     "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
+     "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-22T23:32:04.000Z"
     },
     {
      "title": "eMudhra (a business run by 1 family), passed two audits by BDO after an integrity incident. Is the internet chain of trust broken?",
@@ -667,22 +667,22 @@
      "date": "2026-10-22T12:14:42.000Z"
     },
     {
-     "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xceg4u/capcom_confirms_major_data_breach_affecting_more/",
-     "desc": "submitted by /u/Dapper_Order7182 [link] [comments]",
-     "date": "2026-10-22T10:03:10.000Z"
-    },
-    {
      "title": "More CVEs in Q3 2026 than in any full year before 2024",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdrxa7/more_cves_in_q3_2026_than_in_any_full_year_before/",
      "desc": "submitted by /u/PRNG123 [link] [comments]",
      "date": "2026-10-23T22:22:49.000Z"
     },
     {
-     "title": "PHP stuff — what's a regular guy to do?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbmrsn/php_stuff_whats_a_regular_guy_to_do/",
-     "desc": "Title says it all. I'm not a web developer, I've never coded anything in my life, yadda yadda. I use the internet for personal (including entertainment) and academic stuff. Aside from the obvious (not clicking on weird l",
-     "date": "2026-10-21T13:11:21.000Z"
+     "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xceg4u/capcom_confirms_major_data_breach_affecting_more/",
+     "desc": "submitted by /u/Dapper_Order7182 [link] [comments]",
+     "date": "2026-10-22T10:03:10.000Z"
+    },
+    {
+     "title": "Startup Cracks Google's Classified Quantum Cryptography",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
+     "desc": "submitted by /u/donutloop [link] [comments]",
+     "date": "2026-10-24T08:09:52.000Z"
     }
    ]
   },
