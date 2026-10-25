@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T19:47:09.043Z",
+ "updated": "2026-10-25T22:07:11.579Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -643,6 +643,12 @@
      "date": "2026-10-20T18:51:51.000Z"
     },
     {
+     "title": "Startup Cracks Google's Classified Quantum Cryptography",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
+     "desc": "submitted by /u/donutloop [link] [comments]",
+     "date": "2026-10-24T08:09:52.000Z"
+    },
+    {
      "title": "PHP - As an IT person, what should I be doing?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbo82g/php_as_an_it_person_what_should_i_be_doing/",
      "desc": "Our sec guy is out and I'm dealing with this. What should I be doing? People are saying just patch your shit, but patch what exactly? Where is the impact likely to be strongest here? Am I throwing patch updates on OS's? ",
@@ -661,10 +667,10 @@
      "date": "2026-10-21T03:13:08.000Z"
     },
     {
-     "title": "Startup Cracks Google's Classified Quantum Cryptography",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
-     "desc": "submitted by /u/donutloop [link] [comments]",
-     "date": "2026-10-24T08:09:52.000Z"
+     "title": "Bye Bye Brotli? Google's Compression Library Is a Security Mess",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xezxb6/bye_bye_brotli_googles_compression_library_is_a/",
+     "desc": "submitted by /u/klaasvanschelven [link] [comments]",
+     "date": "2026-10-25T11:25:58.000Z"
     },
     {
      "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
@@ -677,12 +683,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdrxa7/more_cves_in_q3_2026_than_in_any_full_year_before/",
      "desc": "submitted by /u/PRNG123 [link] [comments]",
      "date": "2026-10-23T22:22:49.000Z"
-    },
-    {
-     "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xceg4u/capcom_confirms_major_data_breach_affecting_more/",
-     "desc": "submitted by /u/Dapper_Order7182 [link] [comments]",
-     "date": "2026-10-22T10:03:10.000Z"
     }
    ]
   },
