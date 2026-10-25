@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T09:32:32.060Z",
+ "updated": "2026-10-25T13:58:52.652Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -595,16 +595,16 @@
      "date": "2026-10-22T09:59:47.000Z"
     },
     {
-     "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
-     "desc": "submitted by /u/propublica_ [link] [comments]",
-     "date": "2026-10-19T11:42:21.000Z"
-    },
-    {
      "title": "PYTHON Packages NOW Vulnerable to Node2Shell",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdunkf/python_packages_now_vulnerable_to_node2shell/",
      "desc": "Turns out that Node2Shell affects more than just Node! Python packages Brotli and brotlicffi are also affected by this vulnerability, but don't have a CVE yet.. submitted by /u/One_Paint8721 [link] [comments]",
      "date": "2026-10-24T00:28:13.000Z"
+    },
+    {
+     "title": "DHS Officials Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9ulu4/dhs_officials_asked_a_federal_cybersecurity/",
+     "desc": "submitted by /u/propublica_ [link] [comments]",
+     "date": "2026-10-19T11:42:21.000Z"
     },
     {
      "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
@@ -625,16 +625,16 @@
      "date": "2026-10-21T14:34:06.000Z"
     },
     {
-     "title": "Checking in",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
-     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
-     "date": "2026-10-22T09:51:03.000Z"
-    },
-    {
      "title": "Knicks reportedly duped employees with championship ring email that was actually a phishing test",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdxvpe/knicks_reportedly_duped_employees_with/",
      "desc": "submitted by /u/Blaaamo [link] [comments]",
      "date": "2026-10-24T03:15:47.000Z"
+    },
+    {
+     "title": "Checking in",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
+     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
+     "date": "2026-10-22T09:51:03.000Z"
     },
     {
      "title": "EMudhra Intermediate CA Compromise",
@@ -673,16 +673,16 @@
      "date": "2026-10-23T22:22:49.000Z"
     },
     {
-     "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xceg4u/capcom_confirms_major_data_breach_affecting_more/",
-     "desc": "submitted by /u/Dapper_Order7182 [link] [comments]",
-     "date": "2026-10-22T10:03:10.000Z"
-    },
-    {
      "title": "Startup Cracks Google's Classified Quantum Cryptography",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
      "desc": "submitted by /u/donutloop [link] [comments]",
      "date": "2026-10-24T08:09:52.000Z"
+    },
+    {
+     "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xceg4u/capcom_confirms_major_data_breach_affecting_more/",
+     "desc": "submitted by /u/Dapper_Order7182 [link] [comments]",
+     "date": "2026-10-22T10:03:10.000Z"
     }
    ]
   },
