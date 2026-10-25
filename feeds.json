@@ -1,9 +1,15 @@
 {
- "updated": "2026-10-25T13:58:52.652Z",
+ "updated": "2026-10-25T17:23:06.320Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+     "link": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+     "desc": "Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm package. [...]",
+     "date": "2026-10-25T15:49:38.000Z"
+    },
     {
      "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
      "link": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
@@ -87,12 +93,6 @@
      "link": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
      "desc": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA p",
      "date": "2026-10-22T14:02:12.000Z"
-    },
-    {
-     "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
-     "link": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
-     "desc": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday. [...]",
-     "date": "2026-10-22T13:09:12.000Z"
     }
    ]
   },
@@ -547,16 +547,16 @@
      "date": "2026-10-23T04:28:04.000Z"
     },
     {
-     "title": "Russians locked out of bank accounts and apartments as Ukraine hits data centers",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9tp6l/russians_locked_out_of_bank_accounts_and/",
-     "desc": "submitted by /u/nbcnews [link] [comments]",
-     "date": "2026-10-19T10:54:37.000Z"
-    },
-    {
      "title": "Node2Shell EVOLVES to HTTP2Shell.",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
      "desc": "submitted by /u/One_Paint8721 [link] [comments]",
      "date": "2026-10-24T07:24:42.000Z"
+    },
+    {
+     "title": "Russians locked out of bank accounts and apartments as Ukraine hits data centers",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9tp6l/russians_locked_out_of_bank_accounts_and/",
+     "desc": "submitted by /u/nbcnews [link] [comments]",
+     "date": "2026-10-19T10:54:37.000Z"
     },
     {
      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security — The PHP Foundation",
@@ -667,16 +667,16 @@
      "date": "2026-10-22T12:14:42.000Z"
     },
     {
-     "title": "More CVEs in Q3 2026 than in any full year before 2024",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdrxa7/more_cves_in_q3_2026_than_in_any_full_year_before/",
-     "desc": "submitted by /u/PRNG123 [link] [comments]",
-     "date": "2026-10-23T22:22:49.000Z"
-    },
-    {
      "title": "Startup Cracks Google's Classified Quantum Cryptography",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
      "desc": "submitted by /u/donutloop [link] [comments]",
      "date": "2026-10-24T08:09:52.000Z"
+    },
+    {
+     "title": "More CVEs in Q3 2026 than in any full year before 2024",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdrxa7/more_cves_in_q3_2026_than_in_any_full_year_before/",
+     "desc": "submitted by /u/PRNG123 [link] [comments]",
+     "date": "2026-10-23T22:22:49.000Z"
     },
     {
      "title": "Capcom confirms major data breach affecting more than 11.7 million Capcom ID accounts worldwide",
