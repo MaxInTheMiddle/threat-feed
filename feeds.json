@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T00:23:44.195Z",
+ "updated": "2026-10-25T04:58:24.396Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -553,6 +553,12 @@
      "date": "2026-10-19T10:54:37.000Z"
     },
     {
+     "title": "Node2Shell EVOLVES to HTTP2Shell.",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
+     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
+     "date": "2026-10-24T07:24:42.000Z"
+    },
+    {
      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security — The PHP Foundation",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbsyc2/todays_php_security_release_and_how_were/",
      "desc": "On October 21st at 07:41 UTC, more than six hours before the coordinated release, Chainguard unilaterally broke the embargo and published built images containing the fix. Like other distributors, Chainguard had received ",
@@ -563,12 +569,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xckw05/someone_knew_about_phps_critical_flaws_four_days/",
      "desc": "Who is this someone... and how the hell did they know lol submitted by /u/Popular_Dimension939 [link] [comments]",
      "date": "2026-10-22T14:58:22.000Z"
-    },
-    {
-     "title": "Node2Shell EVOLVES to HTTP2Shell.",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
-     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-24T07:24:42.000Z"
     },
     {
      "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
@@ -613,16 +613,16 @@
      "date": "2026-10-21T21:13:44.000Z"
     },
     {
-     "title": "PHP: Critical remote code execution vulnerabilities, update now",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbou5n/php_critical_remote_code_execution/",
-     "desc": "submitted by /u/ni5arga [link] [comments]",
-     "date": "2026-10-21T14:34:06.000Z"
-    },
-    {
      "title": "[MEGATHREAD] October 2026 Cybersecurity Incidents: PHP2Shell, LiteLLM, eMudhra, GitLab, and more",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdx8k7/megathread_october_2026_cybersecurity_incidents/",
      "desc": "[MEGATHREAD] PHP2Shell (CVE-2026-109618/109619), LiteLLM, eMudhra, GitLab & Other October Security Incidents AKA Black October We've been getting hammered with posts and questions about the wave of vulnerabilities, compr",
      "date": "2026-10-24T02:41:43.000Z"
+    },
+    {
+     "title": "PHP: Critical remote code execution vulnerabilities, update now",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbou5n/php_critical_remote_code_execution/",
+     "desc": "submitted by /u/ni5arga [link] [comments]",
+     "date": "2026-10-21T14:34:06.000Z"
     },
     {
      "title": "Checking in",
@@ -631,16 +631,16 @@
      "date": "2026-10-22T09:51:03.000Z"
     },
     {
-     "title": "EMudhra Intermediate CA Compromise",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
-     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
-     "date": "2026-10-20T18:51:51.000Z"
-    },
-    {
      "title": "Knicks reportedly duped employees with championship ring email that was actually a phishing test",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xdxvpe/knicks_reportedly_duped_employees_with/",
      "desc": "submitted by /u/Blaaamo [link] [comments]",
      "date": "2026-10-24T03:15:47.000Z"
+    },
+    {
+     "title": "EMudhra Intermediate CA Compromise",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
+     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
+     "date": "2026-10-20T18:51:51.000Z"
     },
     {
      "title": "PHP - As an IT person, what should I be doing?",
@@ -673,16 +673,16 @@
      "date": "2026-10-22T10:03:10.000Z"
     },
     {
+     "title": "More CVEs in Q3 2026 than in any full year before 2024",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdrxa7/more_cves_in_q3_2026_than_in_any_full_year_before/",
+     "desc": "submitted by /u/PRNG123 [link] [comments]",
+     "date": "2026-10-23T22:22:49.000Z"
+    },
+    {
      "title": "PHP stuff — what's a regular guy to do?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbmrsn/php_stuff_whats_a_regular_guy_to_do/",
      "desc": "Title says it all. I'm not a web developer, I've never coded anything in my life, yadda yadda. I use the internet for personal (including entertainment) and academic stuff. Aside from the obvious (not clicking on weird l",
      "date": "2026-10-21T13:11:21.000Z"
-    },
-    {
-     "title": "Hacker Claims Password '123456' Enabled Access to Denmark's National Registry, Affecting 8.8M People",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1x9nwzw/hacker_claims_password_123456_enabled_access_to/",
-     "desc": "submitted by /u/Lonely_Astronaut_684 [link] [comments]",
-     "date": "2026-10-19T04:58:33.000Z"
     }
    ]
   },
