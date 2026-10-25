@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T17:23:06.320Z",
+ "updated": "2026-10-25T19:47:09.043Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -99,6 +99,18 @@
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+     "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+     "desc": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week. The attack requires two things: Tailsc",
+     "date": "2026-10-25T17:44:09.000Z"
+    },
+    {
+     "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+     "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+     "desc": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619. \"I",
+     "date": "2026-10-25T17:19:46.000Z"
+    },
     {
      "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
      "link": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
@@ -266,18 +278,6 @@
      "link": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
      "desc": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept code. By sending a small batch of compressed HTTP head",
      "date": "2026-10-22T06:38:31.000Z"
-    },
-    {
-     "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
-     "link": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
-     "desc": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026, against its MadPot honeypot service, as the flaws come ",
-     "date": "2026-10-22T06:34:10.000Z"
-    },
-    {
-     "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
-     "link": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
-     "desc": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application. During the incident, Storm-0940 used ARTEX, a",
-     "date": "2026-10-22T04:21:26.000Z"
     }
    ]
   },
@@ -661,16 +661,16 @@
      "date": "2026-10-21T03:13:08.000Z"
     },
     {
-     "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
-     "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
-     "date": "2026-10-22T12:14:42.000Z"
-    },
-    {
      "title": "Startup Cracks Google's Classified Quantum Cryptography",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
      "desc": "submitted by /u/donutloop [link] [comments]",
      "date": "2026-10-24T08:09:52.000Z"
+    },
+    {
+     "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
+     "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
+     "date": "2026-10-22T12:14:42.000Z"
     },
     {
      "title": "More CVEs in Q3 2026 than in any full year before 2024",
