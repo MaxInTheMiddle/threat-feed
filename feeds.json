@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T22:07:11.579Z",
+ "updated": "2026-10-26T00:29:37.035Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -643,6 +643,12 @@
      "date": "2026-10-20T18:51:51.000Z"
     },
     {
+     "title": "Bye Bye Brotli? Google's Compression Library Is a Security Mess",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xezxb6/bye_bye_brotli_googles_compression_library_is_a/",
+     "desc": "submitted by /u/klaasvanschelven [link] [comments]",
+     "date": "2026-10-25T11:25:58.000Z"
+    },
+    {
      "title": "Startup Cracks Google's Classified Quantum Cryptography",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
      "desc": "submitted by /u/donutloop [link] [comments]",
@@ -665,12 +671,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
      "desc": "submitted by /u/Dash-Courageous [link] [comments]",
      "date": "2026-10-21T03:13:08.000Z"
-    },
-    {
-     "title": "Bye Bye Brotli? Google's Compression Library Is a Security Mess",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xezxb6/bye_bye_brotli_googles_compression_library_is_a/",
-     "desc": "submitted by /u/klaasvanschelven [link] [comments]",
-     "date": "2026-10-25T11:25:58.000Z"
     },
     {
      "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
