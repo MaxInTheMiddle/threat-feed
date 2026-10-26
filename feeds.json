@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T00:29:37.035Z",
+ "updated": "2026-10-26T05:08:23.607Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -106,9 +106,9 @@
      "date": "2026-10-25T17:44:09.000Z"
     },
     {
-     "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+     "title": "PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity",
      "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-     "desc": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619. \"I",
+     "desc": "In an update, Palo Alto Networks Unit 42 said it's retracting its earlier assessment that the post-compromise activity targeting the European government agency involved the exploitation of the PHP2Shell flaws. \"What rese",
      "date": "2026-10-25T17:19:46.000Z"
     },
     {
@@ -637,16 +637,16 @@
      "date": "2026-10-22T09:51:03.000Z"
     },
     {
-     "title": "EMudhra Intermediate CA Compromise",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
-     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
-     "date": "2026-10-20T18:51:51.000Z"
-    },
-    {
      "title": "Bye Bye Brotli? Google's Compression Library Is a Security Mess",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xezxb6/bye_bye_brotli_googles_compression_library_is_a/",
      "desc": "submitted by /u/klaasvanschelven [link] [comments]",
      "date": "2026-10-25T11:25:58.000Z"
+    },
+    {
+     "title": "EMudhra Intermediate CA Compromise",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
+     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
+     "date": "2026-10-20T18:51:51.000Z"
     },
     {
      "title": "Startup Cracks Google's Classified Quantum Cryptography",
@@ -679,10 +679,10 @@
      "date": "2026-10-22T12:14:42.000Z"
     },
     {
-     "title": "More CVEs in Q3 2026 than in any full year before 2024",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdrxa7/more_cves_in_q3_2026_than_in_any_full_year_before/",
-     "desc": "submitted by /u/PRNG123 [link] [comments]",
-     "date": "2026-10-23T22:22:49.000Z"
+     "title": "PHP2Shell: Google and Mandiant Warn That PHP Servers May Remain Vulnerable After Installing Patches",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xf3i0w/php2shell_google_and_mandiant_warn_that_php/",
+     "desc": "Google cloud updated its PHP2Shell security advisory on October 23 with additional guidance from Mandiant Consulting. CVE-2026-109618 and CVE-2026-109619 Both are critical remote-code-execution vulnerabilities affecting ",
+     "date": "2026-10-25T14:16:06.000Z"
     }
    ]
   },
