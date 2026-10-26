@@ -1,9 +1,27 @@
 {
- "updated": "2026-10-26T17:28:51.820Z",
+ "updated": "2026-10-26T21:45:45.195Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
+     "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
+     "desc": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the attacks. [...]",
+     "date": "2026-10-26T21:08:28.000Z"
+    },
+    {
+     "title": "OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing",
+     "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/",
+     "desc": "OpenAI has launched GPT-6.1 Terra, a new model focused on computer use, visual reasoning, coding, and everyday work, while costing significantly less than its larger models. [...]",
+     "date": "2026-10-26T20:46:49.000Z"
+    },
+    {
+     "title": "DreamHost forces password resets in ongoing \"incident\"",
+     "link": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
+     "desc": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]",
+     "date": "2026-10-26T19:26:20.000Z"
+    },
     {
      "title": "Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches",
      "link": "https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/",
@@ -75,30 +93,30 @@
      "link": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
      "desc": "American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM system. [...]",
      "date": "2026-10-23T16:40:07.000Z"
-    },
-    {
-     "title": "PHP shares mitigation for new RCE vulnerability with no patch",
-     "link": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-     "desc": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch. [...]",
-     "date": "2026-10-23T15:38:05.000Z"
-    },
-    {
-     "title": "You gave your AI agent access, but who is giving it orders?",
-     "link": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
-     "desc": "AI agents can be manipulated through malicious emails, websites, and plugins into executing commands, stealing data, or deleting files using their legitimate permissions. Gen Digital explains how its Agent Trust Hub help",
-     "date": "2026-10-23T14:00:10.000Z"
-    },
-    {
-     "title": "HPE patches eight max severity RCE and auth bypass AOS flaws",
-     "link": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-     "desc": "Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity authentication bypass and code execution issues. [...]",
-     "date": "2026-10-23T12:48:00.000Z"
     }
    ]
   },
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
+     "link": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
+     "desc": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025. According to Dutch e-commerce security company Sansec, the activity is desi",
+     "date": "2026-10-26T18:12:22.000Z"
+    },
+    {
+     "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+     "link": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+     "desc": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentiall",
+     "date": "2026-10-26T17:45:57.000Z"
+    },
+    {
+     "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
+     "link": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
+     "desc": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct ",
+     "date": "2026-10-26T15:52:40.000Z"
+    },
     {
      "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
      "link": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
@@ -260,30 +278,24 @@
      "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
      "desc": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22. The flaw lets a",
      "date": "2026-10-22T19:05:17.000Z"
-    },
-    {
-     "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
-     "link": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
-     "desc": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days after a researcher reported recovering the private key",
-     "date": "2026-10-22T18:12:43.000Z"
-    },
-    {
-     "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
-     "link": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
-     "desc": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw, a hacked LiteLLM release, and hundreds of hijacked",
-     "date": "2026-10-22T17:45:44.000Z"
-    },
-    {
-     "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-     "link": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
-     "desc": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One ",
-     "date": "2026-10-22T17:01:53.000Z"
     }
    ]
   },
   "darkreading": {
    "ok": true,
    "items": [
+    {
+     "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
+     "link": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
+     "desc": "A new AI agent prompt injection technique exploits how coding assistants consume local instruction files, blurring the line between text documents and executable actions.",
+     "date": "2026-10-26T20:59:26.000Z"
+    },
+    {
+     "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
+     "link": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+     "desc": "An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.",
+     "date": "2026-10-26T18:01:40.000Z"
+    },
     {
      "title": "10 Software Security Practices Built for the Next 250 Years",
      "link": "https://www.darkreading.com/cyberattacks-data-breaches/10-software-security-practices-built-250-years",
@@ -451,18 +463,6 @@
      "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
      "desc": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
      "date": "2026-10-19T19:19:33.000Z"
-    },
-    {
-     "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
-     "link": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
-     "desc": "Copyright takedown requests tied to OnlyFans and other adult content creators are revealing how attackers exploit vulnerable university and government websites to manipulate search results. UpGuard's Greg Pollock explain",
-     "date": "2026-10-19T14:28:11.000Z"
-    },
-    {
-     "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
-     "link": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
-     "desc": "An industry-wide, laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
-     "date": "2026-10-19T14:00:00.000Z"
     }
    ]
   },
@@ -541,6 +541,12 @@
      "date": "2026-10-20T22:03:58.000Z"
     },
     {
+     "title": "Microsoft announces a massive 25% voluntary buyout layoffs program. This is an absolute bombshell in the tech sector",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xg2ez2/microsoft_announces_a_massive_25_voluntary_buyout/",
+     "desc": "This is not another 10k layoffs at Amazon which is like not even 3% of its employee This is not 5% of Netflix This is 25% of all employees at Microsoft. Absolute bombshell. submitted by /u/Exact-Advantage-3190 [link] [co",
+     "date": "2026-10-26T16:54:47.000Z"
+    },
+    {
      "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xd4atv/disgraced_emudhra_drops_out_of_tls_business_after/",
      "desc": "submitted by /u/Dash-Courageous [link] [comments]",
@@ -607,16 +613,16 @@
      "date": "2026-10-24T02:41:43.000Z"
     },
     {
-     "title": "PHP: Critical remote code execution vulnerabilities, update now",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbou5n/php_critical_remote_code_execution/",
-     "desc": "submitted by /u/ni5arga [link] [comments]",
-     "date": "2026-10-21T14:34:06.000Z"
-    },
-    {
      "title": "Anthropic's Claude AI Bypassed Georgia Vote Data Paywall Without Human Authorisation Ahead of US Midterms",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xfm0eq/anthropics_claude_ai_bypassed_georgia_vote_data/",
      "desc": "submitted by /u/Superb-Molasses-9363 [link] [comments]",
      "date": "2026-10-26T03:21:56.000Z"
+    },
+    {
+     "title": "PHP: Critical remote code execution vulnerabilities, update now",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbou5n/php_critical_remote_code_execution/",
+     "desc": "submitted by /u/ni5arga [link] [comments]",
+     "date": "2026-10-21T14:34:06.000Z"
     },
     {
      "title": "Knicks reportedly duped employees with championship ring email that was actually a phishing test",
@@ -631,22 +637,16 @@
      "date": "2026-10-25T11:25:58.000Z"
     },
     {
-     "title": "Checking in",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
-     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
-     "date": "2026-10-22T09:51:03.000Z"
-    },
-    {
      "title": "Startup Cracks Google's Classified Quantum Cryptography",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
      "desc": "submitted by /u/donutloop [link] [comments]",
      "date": "2026-10-24T08:09:52.000Z"
     },
     {
-     "title": "EMudhra Intermediate CA Compromise",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
-     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
-     "date": "2026-10-20T18:51:51.000Z"
+     "title": "Checking in",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
+     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
+     "date": "2026-10-22T09:51:03.000Z"
     },
     {
      "title": "PHP2Shell: Google and Mandiant Warn That PHP Servers May Remain Vulnerable After Installing Patches",
@@ -655,16 +655,22 @@
      "date": "2026-10-25T14:16:06.000Z"
     },
     {
+     "title": "EMudhra Intermediate CA Compromise",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
+     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
+     "date": "2026-10-20T18:51:51.000Z"
+    },
+    {
+     "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xfywmh/php2shell_security_flaws_now_sucessfully/",
+     "desc": "There is an important development in the PHP2Shell story we've been discussing. Until recently, researchers had observed scanning and exploitation attempts, but convincing evidence of successful attacks was limited. That",
+     "date": "2026-10-26T14:48:43.000Z"
+    },
+    {
      "title": "PHP - As an IT person, what should I be doing?",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xbo82g/php_as_an_it_person_what_should_i_be_doing/",
      "desc": "Our sec guy is out and I'm dealing with this. What should I be doing? People are saying just patch your shit, but patch what exactly? Where is the impact likely to be strongest here? Am I throwing patch updates on OS's? ",
      "date": "2026-10-21T14:10:44.000Z"
-    },
-    {
-     "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
-     "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
-     "date": "2026-10-20T06:46:58.000Z"
     },
     {
      "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
@@ -673,16 +679,10 @@
      "date": "2026-10-21T03:13:08.000Z"
     },
     {
-     "title": "Several Critical Linux Kernel Vulnerabilities Accidentally Posted To Public Kernel Mailing List",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcgxf7/several_critical_linux_kernel_vulnerabilities/",
-     "desc": "submitted by /u/Itz_Raj69_ [link] [comments]",
-     "date": "2026-10-22T12:14:42.000Z"
-    },
-    {
-     "title": "More CVEs in Q3 2026 than in any full year before 2024",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdrxa7/more_cves_in_q3_2026_than_in_any_full_year_before/",
-     "desc": "submitted by /u/PRNG123 [link] [comments]",
-     "date": "2026-10-23T22:22:49.000Z"
+     "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
+     "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
+     "date": "2026-10-20T06:46:58.000Z"
     }
    ]
   },
