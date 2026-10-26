@@ -1,9 +1,21 @@
 {
- "updated": "2026-10-26T05:08:23.607Z",
+ "updated": "2026-10-26T11:18:34.603Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "Kali Linux 2026.3 released with 6 new tools, desktop updates",
+     "link": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+     "desc": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more. [...]",
+     "date": "2026-10-26T10:26:52.000Z"
+    },
+    {
+     "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+     "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+     "desc": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]",
+     "date": "2026-10-26T09:19:57.000Z"
+    },
     {
      "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
      "link": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
@@ -81,24 +93,36 @@
      "link": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
      "desc": "Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments. [...]",
      "date": "2026-10-22T17:18:22.000Z"
-    },
-    {
-     "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
-     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
-     "desc": "Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working. [...]",
-     "date": "2026-10-22T15:49:32.000Z"
-    },
-    {
-     "title": "Machine speed attacks require machine speed detection and response",
-     "link": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-     "desc": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA p",
-     "date": "2026-10-22T14:02:12.000Z"
     }
    ]
   },
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
+     "link": "https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html",
+     "desc": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampe",
+     "date": "2026-10-26T09:54:02.000Z"
+    },
+    {
+     "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
+     "link": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+     "desc": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into emai",
+     "date": "2026-10-26T08:35:51.000Z"
+    },
+    {
+     "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
+     "link": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
+     "desc": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeede",
+     "date": "2026-10-26T07:49:46.000Z"
+    },
+    {
+     "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
+     "link": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
+     "desc": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week. The c",
+     "date": "2026-10-26T06:03:48.000Z"
+    },
     {
      "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
      "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
@@ -120,7 +144,7 @@
     {
      "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
      "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-     "desc": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Trac",
+     "desc": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, Microsoft's .NET, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decom",
      "date": "2026-10-24T11:09:29.000Z"
     },
     {
@@ -254,30 +278,6 @@
      "link": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
      "desc": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further investigation, the company found that an unauthorized t",
      "date": "2026-10-22T11:15:42.000Z"
-    },
-    {
-     "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
-     "link": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
-     "desc": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) server",
-     "date": "2026-10-22T10:44:05.000Z"
-    },
-    {
-     "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
-     "link": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
-     "desc": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a credential stealer and a backdoor. On October 21, 2026",
-     "date": "2026-10-22T08:28:48.000Z"
-    },
-    {
-     "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
-     "link": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
-     "desc": "Node.js released security updates on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the proj",
-     "date": "2026-10-22T07:47:22.000Z"
-    },
-    {
-     "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
-     "link": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
-     "desc": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept code. By sending a small batch of compressed HTTP head",
-     "date": "2026-10-22T06:38:31.000Z"
     }
    ]
   },
@@ -532,7 +532,7 @@
    ]
   },
   "r-cybersecurity": {
-   "ok": true,
+   "ok": false,
    "items": [
     {
      "title": "The Internet goes on high alert after discovery of 8 compromised TLS certs",
