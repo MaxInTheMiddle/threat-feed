@@ -384,10 +384,6 @@
   </main>
 
   <aside class="side">
-    <div class="panel">
-      <h2>CISA KEV · latest additions</h2>
-      <div id="kevList"><p class="panel-note">Loading…</p></div>
-    </div>
     <details class="panel watch-panel">
       <summary><h2>Watchlist <span id="watchCount"></span></h2></summary>
       <form class="watch-form" id="watchForm">
@@ -397,6 +393,10 @@
       <div class="watch-terms" id="watchTerms"></div>
       <p class="panel-note">Matches get a ★ and float to the top. Saved in this browser only.</p>
     </details>
+    <div class="panel">
+      <h2>CISA KEV · latest additions</h2>
+      <div id="kevList"><p class="panel-note">Loading…</p></div>
+    </div>
     <div class="panel">
       <h2>Channel status</h2>
       <div id="sourceStatusList"></div>
@@ -494,7 +494,7 @@ typeLine('Fetching feeds...');
   // (scripts/fetch-feeds.mjs), so the page only ever talks to its own origin.
   const FEED_FILE = '/feeds.json';
   const PAGE_SIZE = 40;
-  const DEFAULT_WATCH = ['ICS', 'SCADA', 'OT', 'zero-day'];
+  const DEFAULT_WATCH = [];
   const sourceMap = Object.fromEntries(SOURCES.map(s=>[s.id,s]));
 
   let allItems = [];
