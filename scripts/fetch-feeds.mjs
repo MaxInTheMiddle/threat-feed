@@ -11,9 +11,6 @@ const SOURCES = [
   { id: 'thn',              rss: 'https://feeds.feedburner.com/TheHackersNews' },
   { id: 'darkreading',      rss: 'https://www.darkreading.com/rss.xml' },
   { id: 'krebs',            rss: 'https://krebsonsecurity.com/feed/' },
-  { id: 'r-cybersecurity',  rss: 'https://www.reddit.com/r/cybersecurity/top/.rss?t=week' },
-  { id: 'r-netsec',         rss: 'https://www.reddit.com/r/netsec/top/.rss?t=week' },
-  { id: 'r-sysadmin',       rss: 'https://www.reddit.com/r/sysadmin/top/.rss?t=week' },
 ];
 
 const OUT_FILE = 'feeds.json';
