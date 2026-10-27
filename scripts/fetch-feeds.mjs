@@ -11,6 +11,9 @@ const SOURCES = [
   { id: 'thn',              rss: 'https://feeds.feedburner.com/TheHackersNews' },
   { id: 'darkreading',      rss: 'https://www.darkreading.com/rss.xml' },
   { id: 'krebs',            rss: 'https://krebsonsecurity.com/feed/' },
+  { id: 'theregister',      rss: 'https://www.theregister.com/security/headlines.atom' },
+  { id: 'riskybiz',         rss: 'https://risky.biz/feeds/risky-business/' },
+  { id: 'cyberwire',        rss: 'https://feeds.megaphone.fm/cyberwire-daily-podcast' },
 ];
 
 const OUT_FILE = 'feeds.json';
@@ -38,7 +41,8 @@ for (const src of SOURCES) {
       ok: true,
       items: feed.items.slice(0, MAX_ITEMS).map(it => ({
         title: clean(it.title, 200),
-        link: it.link || '',
+        // podcast feeds sometimes omit <link>; fall back to a URL guid, then the audio file
+        link: it.link || (/^https?:/.test(it.guid || '') ? it.guid : '') || it.enclosure?.url || '',
         desc: clean(it.contentSnippet || it.summary || '', 220),
         date: it.isoDate || it.pubDate || '',
       })),
