@@ -96,7 +96,7 @@ async function fetchKev() {
           name: clean(v.vulnerabilityName, 160),
           added: clean(v.dateAdded, 10),
           due: clean(v.dueDate, 10),
-          ransomware: /known/i.test(v.knownRansomwareCampaignUse || ''),
+          ransomware: String(v.knownRansomwareCampaignUse || '').trim().toLowerCase() === 'known',   // field is 'Known' or 'Unknown'
         }));
       // Every CVE ID in the catalog, so the page can flag KEV CVEs inside articles.
       const ids = vulns.map(v => clean(v.cveID, 30)).filter(Boolean).sort();
