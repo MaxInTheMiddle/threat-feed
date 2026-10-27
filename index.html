@@ -9,7 +9,7 @@
 <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
-<meta name="description" content="Live aggregated cybersecurity news from BleepingComputer, The Hacker News, Dark Reading, CISA, Krebs on Security, r/cybersecurity, r/netsec, r/sysadmin.">
+<meta name="description" content="Live aggregated cybersecurity news from BleepingComputer, The Hacker News, Dark Reading, and Krebs on Security.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -298,7 +298,7 @@
     <div class="panel">
       <h2>About this feed</h2>
       <p class="about-txt">
-        <b>maxarmstrong.io</b> pulls live RSS from the sources I read daily: BleepingComputer, The Hacker News, Dark Reading, and Krebs on Security. Plus the top posts of the week from r/cybersecurity, r/netsec, and r/sysadmin. Feeds are collected automatically every 30 minutes.
+        <b>maxarmstrong.io</b> pulls live RSS from the sources I read daily: BleepingComputer, The Hacker News, Dark Reading, and Krebs on Security. Feeds are collected automatically every 30 minutes.
       </p>
     </div>
   </aside>
@@ -365,9 +365,6 @@
     { id:'thn', name:'The Hacker News', color:'#3FC1B0', rss:'https://feeds.feedburner.com/TheHackersNews' },
     { id:'darkreading', name:'Dark Reading', color:'#E5484D', rss:'https://www.darkreading.com/rss.xml' },
     { id:'krebs', name:'Krebs on Security', color:'#D98CD9', rss:'https://krebsonsecurity.com/feed/' },
-    { id:'r-cybersecurity', name:'r/cybersecurity', color:'#FF7A45', rss:'https://www.reddit.com/r/cybersecurity/top/.rss?t=week' },
-    { id:'r-netsec', name:'r/netsec', color:'#7FD1FF', rss:'https://www.reddit.com/r/netsec/top/.rss?t=week' },
-    { id:'r-sysadmin', name:'r/sysadmin', color:'#C9E86B', rss:'https://www.reddit.com/r/sysadmin/top/.rss?t=week' },
   ];
   // feeds.json is written into the repo by the "Update feeds" GitHub Action
   // (scripts/fetch-feeds.mjs), so the page only ever talks to its own origin.
