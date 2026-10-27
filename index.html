@@ -167,7 +167,31 @@
     display:grid; grid-template-columns:1fr 280px; gap:0;
     max-width:1320px; margin:0 auto;
   }
-  @media (max-width:900px){ .layout{grid-template-columns:1fr;} .side{order:-1;} }
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;}
+    /* news first; status + about move below the articles */
+    .layout .side{padding:0 clamp(16px,4vw,32px) 28px;}
+  }
+  @media (max-width:640px){
+    /* compact, non-sticky controls so articles get the screen */
+    .controls{position:static; padding:12px 16px; gap:10px;}
+    /* source chips scroll sideways in one row instead of wrapping */
+    .chip-row{flex-wrap:nowrap; overflow-x:auto; margin:0 -16px; padding:0 16px 2px;
+      scrollbar-width:none; -webkit-overflow-scrolling:touch;}
+    .chip-row::-webkit-scrollbar{display:none;}
+    .chip{flex:none; white-space:nowrap; padding:7px 12px;}
+    .util-row{flex-wrap:nowrap; gap:8px;}
+    .search-wrap{min-width:0; max-width:none;}
+    .search-wrap input{font-size:16px;} /* stops iOS zooming in on tap */
+    .right-controls{flex-wrap:nowrap; flex:none;}
+    .right-controls select{width:auto; padding:9px 6px;}
+    .btn{padding:9px 11px;}
+    .btn .btn-label{display:none;}
+    .btn svg{margin-right:0;}
+    .feed{padding:14px 16px; gap:10px;}
+    .card{gap:12px; padding:14px 14px 14px 0;}
+    .headline{font-size:16px;}
+  }
 
   .feed{padding:22px clamp(16px,4vw,32px); display:flex; flex-direction:column; gap:12px;}
 
@@ -277,9 +301,9 @@
         <option value="new">Sort: Newest</option>
         <option value="source">Sort: By source</option>
       </select>
-      <button class="btn primary" id="refreshBtn">
+      <button class="btn primary" id="refreshBtn" aria-label="Refresh">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
-        Refresh
+        <span class="btn-label">Refresh</span>
       </button>
     </div>
   </div>
