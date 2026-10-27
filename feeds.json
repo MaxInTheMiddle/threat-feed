@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T05:13:10.227Z",
+ "updated": "2026-10-27T05:48:58.441Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -99,6 +99,12 @@
   "thn": {
    "ok": true,
    "items": [
+    {
+     "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+     "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+     "desc": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog. The PH",
+     "date": "2026-10-27T04:37:59.000Z"
+    },
     {
      "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
      "link": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
@@ -272,12 +278,6 @@
      "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
      "desc": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its ",
      "date": "2026-10-22T19:05:35.000Z"
-    },
-    {
-     "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
-     "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-     "desc": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22. The flaw lets a",
-     "date": "2026-10-22T19:05:17.000Z"
     }
    ]
   },
