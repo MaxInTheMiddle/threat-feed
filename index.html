@@ -393,7 +393,7 @@
       <div class="watch-terms" id="watchTerms"></div>
       <p class="panel-note">Matches get a ★ and float to the top. Saved in this browser only.</p>
     </details>
-    <div class="panel">
+    <div class="panel kev-panel">
       <h2>CISA KEV · latest additions</h2>
       <div id="kevList"><p class="panel-note">Loading…</p></div>
     </div>
@@ -512,6 +512,9 @@ typeLine('Fetching feeds...');
   const statusText = document.getElementById('statusText');
   const refreshBtn = document.getElementById('refreshBtn');
   const kevEl = document.getElementById('kevList');
+  const watchPanel = document.querySelector('.watch-panel');
+  const kevPanel = document.querySelector('.kev-panel');
+  const sidePanels = [...watchPanel.parentElement.children];   // original sidebar order
 
   // ---------- storage (per-browser only; page works fine without it) ----------
   function getStore(store, key){ try{ return store.getItem(key); }catch(e){ return null; } }
@@ -609,6 +612,11 @@ typeLine('Fetching feeds...');
     return m ? m[3] + ' ' + MONTHS[Number(m[2]) - 1] : '';
   }
   const ts = d => { const t = new Date(d).getTime(); return isNaN(t) ? 0 : t; };
+
+  function mentionsKev(it){
+    const ids = (it.title + ' ' + it.desc).match(CVE_RE);
+    return !!ids && ids.some(id => kevIds.has(id.toUpperCase()));
+  }
 
   // ---------- watchlist ----------
   function termRegex(term){
@@ -781,6 +789,7 @@ typeLine('Fetching feeds...');
     const watchCount = allItems.filter(it => it.watch).length;
     let html = '<div class="chip' + (activeSource==='all'?' active':'') + '" data-src="all">All <span class="count">' + allItems.length + '</span></div>';
     html += '<div class="chip' + (activeSource==='watch'?' active':'') + '" data-src="watch">★ Watchlist <span class="count">' + watchCount + '</span></div>';
+    html += '<div class="chip' + (activeSource==='kev'?' active':'') + '" data-src="kev"><span class="swatch" style="background:var(--red)"></span>KEV <span class="count">' + allItems.filter(mentionsKev).length + '</span></div>';
     SOURCES.forEach(s => {
       html += '<div class="chip' + (activeSource===s.id?' active':'') + '" data-src="' + s.id + '">' +
         '<span class="swatch" style="background:' + s.color + '"></span>' + s.name +
@@ -872,7 +881,7 @@ typeLine('Fetching feeds...');
 
   function render(){
     let items = allItems.filter(it =>
-      activeSource === 'all' || (activeSource === 'watch' ? !!it.watch : it.sourceId === activeSource));
+      activeSource === 'all' || (activeSource === 'watch' ? !!it.watch : activeSource === 'kev' ? mentionsKev(it) : it.sourceId === activeSource));
     if(query.trim()){
       const q = query.trim().toLowerCase();
       items = items.filter(it => it.title.toLowerCase().includes(q) || it.desc.toLowerCase().includes(q));
@@ -888,18 +897,33 @@ typeLine('Fetching feeds...');
       entries.sort((a,b) => pinned(b) - pinned(a) || b.t - a.t);
     }
 
+    // keep the watchlist panel out of the way before the feed is redrawn
+    const hadFocus = watchPanel.contains(document.activeElement);
+    const side = document.querySelector('.side');
+    sidePanels.forEach(el => side.appendChild(el));
+
     if(entries.length === 0){
       feedEl.innerHTML = '<div class="empty">' + (activeSource === 'watch'
-        ? 'Nothing in the last 7 days matches your watchlist. Add terms in the Watchlist panel.'
+        ? (watchTerms.length ? 'Nothing in the last 7 days matches your watchlist yet.' : 'Add a term above to start watching for it.')
+        : activeSource === 'kev' ? 'No stories in the last 7 days mention a CVE on the KEV list.'
         : 'No signal matches these filters. Try clearing the search or picking another channel.') + '</div>';
-      return;
+    } else {
+      const left = entries.length - shown;
+      feedEl.innerHTML = entries.slice(0, shown).map(cardHtml).join('') +
+        (left > 0 ? '<button class="btn more-btn" id="moreBtn" type="button">Show ' + Math.min(left, PAGE_SIZE) + ' more · ' + left + ' left</button>' : '');
+      const more = document.getElementById('moreBtn');
+      if(more) more.addEventListener('click', () => { shown += PAGE_SIZE; render(); });
     }
 
-    const left = entries.length - shown;
-    feedEl.innerHTML = entries.slice(0, shown).map(cardHtml).join('') +
-      (left > 0 ? '<button class="btn more-btn" id="moreBtn" type="button">Show ' + Math.min(left, PAGE_SIZE) + ' more · ' + left + ' left</button>' : '');
-    const more = document.getElementById('moreBtn');
-    if(more) more.addEventListener('click', () => { shown += PAGE_SIZE; render(); });
+    // On the ★ Watchlist chip, the editor opens at the top of the feed,
+    // so it's reachable on a phone without scrolling past every story.
+    if(activeSource === 'watch'){
+      watchPanel.open = true;
+      feedEl.prepend(watchPanel);
+    } else if(activeSource === 'kev'){
+      feedEl.prepend(kevPanel);
+    }
+    if(hadFocus) document.getElementById('watchInput').focus();
   }
 
   document.getElementById('searchBox').addEventListener('input', e => { query = e.target.value; shown = PAGE_SIZE; render(); });
