@@ -9,7 +9,7 @@
 <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
-<meta name="description" content="Live aggregated cybersecurity news from BleepingComputer, The Hacker News, Dark Reading, and Krebs on Security.">
+<meta name="description" content="Live aggregated cybersecurity news from BleepingComputer, The Hacker News, Dark Reading, Krebs on Security, The Register, Risky Business, and CyberWire Daily.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -322,7 +322,7 @@
     <div class="panel">
       <h2>About this feed</h2>
       <p class="about-txt">
-        <b>maxarmstrong.io</b> pulls live RSS from the sources I read daily: BleepingComputer, The Hacker News, Dark Reading, and Krebs on Security. Feeds are collected automatically every 30 minutes.
+        <b>maxarmstrong.io</b> pulls live RSS from the sources I read daily: BleepingComputer, The Hacker News, Dark Reading, Krebs on Security, and The Register, plus the Risky Business and CyberWire Daily podcasts. Feeds are collected automatically every 30 minutes.
       </p>
     </div>
   </aside>
@@ -389,6 +389,9 @@
     { id:'thn', name:'The Hacker News', color:'#3FC1B0', rss:'https://feeds.feedburner.com/TheHackersNews' },
     { id:'darkreading', name:'Dark Reading', color:'#E5484D', rss:'https://www.darkreading.com/rss.xml' },
     { id:'krebs', name:'Krebs on Security', color:'#D98CD9', rss:'https://krebsonsecurity.com/feed/' },
+    { id:'theregister', name:'The Register', color:'#7FD1FF', rss:'https://www.theregister.com/security/headlines.atom' },
+    { id:'riskybiz', name:'Risky Business', color:'#FF7A45', rss:'https://risky.biz/feeds/risky-business/' },
+    { id:'cyberwire', name:'CyberWire Daily', color:'#C9E86B', rss:'https://feeds.megaphone.fm/cyberwire-daily-podcast' },
   ];
   // feeds.json is written into the repo by the "Update feeds" GitHub Action
   // (scripts/fetch-feeds.mjs), so the page only ever talks to its own origin.
@@ -455,7 +458,9 @@
   function stamp(dateStr){
     const dt = new Date(dateStr);
     if(isNaN(dt.getTime())) return '';
-    return dt.toISOString().slice(11,19).replace(/:/g,'') + 'Z';
+    const mon = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][dt.getUTCMonth()];
+    const p2 = n => String(n).padStart(2,'0');
+    return p2(dt.getUTCDate()) + ' ' + mon + ' ' + p2(dt.getUTCHours()) + ':' + p2(dt.getUTCMinutes()) + ' UTC';
   }
 
   async function loadAll(){
@@ -566,7 +571,7 @@
         '<span class="card-body">' +
           '<span class="card-meta">' +
             '<span class="src-tag" style="color:' + src.color + '; background:' + src.color + '1a;">' + src.name + '</span>' +
-            '<span>RECV ' + stamp(it.date) + '</span>' +
+            '<span>' + stamp(it.date) + '</span>' +
             '<span>' + timeAgo(it.date) + '</span>' +
           '</span>' +
           '<span class="headline">' + escapeHtml(it.title) + '</span>' +
