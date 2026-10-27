@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Max's Threat Feed</title>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0B0F14">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Threat Feed">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
 <meta name="description" content="Live aggregated cybersecurity news from BleepingComputer, The Hacker News, Dark Reading, Krebs on Security, The Register, Risky Business, and CyberWire Daily.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +38,7 @@
     --font-body:'Inter', sans-serif;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
+  body{padding-top:env(safe-area-inset-top); padding-bottom:env(safe-area-inset-bottom);}
   html{background:var(--bg);}
   body{
     background:var(--bg);
@@ -235,6 +242,68 @@
   }
   .card-foot svg{opacity:.6;}
 
+  /* whole card is clickable via the headline link; inner links sit above it */
+  .headline-link{color:inherit; text-decoration:none;}
+  .headline-link::after{content:''; position:absolute; inset:0; z-index:0;}
+  .card .lift{position:relative; z-index:1;}
+  .card.watch{border-color:var(--amber-dim); box-shadow:inset 0 0 0 1px rgba(255,185,46,0.12);}
+  .tag{
+    font-weight:600; letter-spacing:.05em; padding:2px 6px; border-radius:3px;
+    font-size:10px; text-transform:uppercase; border:1px solid currentColor;
+  }
+  .tag.new{color:var(--teal);}
+  .tag.watch{color:var(--amber);}
+  .tag.multi{color:var(--text-dim);}
+  .cve{
+    font-family:var(--font-mono); font-size:.92em; color:var(--teal);
+    text-decoration:none; border-bottom:1px dotted currentColor; white-space:nowrap;
+  }
+  .cve:hover{color:var(--text);}
+  .cve.kev{color:var(--red);}
+  .cve.kev::after{content:' KEV'; font-size:.8em; font-weight:600; letter-spacing:.04em;}
+  .also{display:flex; flex-direction:column; gap:4px; margin-top:4px; padding-top:8px; border-top:1px solid var(--border-soft);}
+  .also a{
+    display:flex; align-items:baseline; gap:8px; text-decoration:none;
+    font-size:12.5px; color:var(--text-dim); line-height:1.4;
+  }
+  .also a:hover{color:var(--amber);}
+  .also .src-tag{font-size:9.5px; flex:none;}
+  .more-btn{width:100%; padding:12px; text-align:center;}
+
+  /* KEV + watchlist panels */
+  .kev-row{display:block; text-decoration:none; padding:6px 0; border-bottom:1px solid var(--border-soft);}
+  .kev-row:last-of-type{border-bottom:none;}
+  .kev-row:hover .kev-id{color:var(--text);}
+  .kev-top{display:flex; align-items:center; justify-content:space-between; gap:8px; font-family:var(--font-mono); font-size:12px;}
+  .kev-id{color:var(--red); font-weight:600; white-space:nowrap;}
+  .kev-date{color:var(--text-faint); font-size:11px; white-space:nowrap;}
+  .kev-what{font-size:11.5px; color:var(--text-dim); line-height:1.35; margin-top:1px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .kev-rw{color:var(--amber); font-family:var(--font-mono); font-size:10px; letter-spacing:.05em; margin-left:6px; white-space:nowrap;}
+  .panel-link{display:inline-block; margin-top:10px; font-family:var(--font-mono); font-size:11px; color:var(--teal); text-decoration:none;}
+  .panel-link:hover{color:var(--text);}
+  .watch-panel{padding:12px 16px;}
+  .watch-panel summary{list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:space-between;}
+  .watch-panel summary::-webkit-details-marker{display:none;}
+  .watch-panel summary::after{content:'+'; font-family:var(--font-mono); color:var(--text-faint); font-size:14px;}
+  .watch-panel[open] summary::after{content:'–';}
+  .watch-panel summary h2{margin:0;}
+  .watch-panel[open] summary{margin-bottom:12px;}
+  #watchCount{color:var(--amber-dim); letter-spacing:0;}
+  .watch-form{display:flex; gap:6px;}
+  .watch-form input{
+    flex:1; min-width:0; background:var(--bg); border:1px solid var(--border); border-radius:6px;
+    color:var(--text); font-family:var(--font-mono); font-size:12px; padding:7px 9px; outline:none;
+  }
+  .watch-form input:focus{border-color:var(--amber-dim);}
+  .watch-terms{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;}
+  .watch-term{
+    display:flex; align-items:center; gap:6px; font-family:var(--font-mono); font-size:11.5px;
+    color:var(--amber); border:1px solid var(--amber-dim); border-radius:14px; padding:3px 6px 3px 10px;
+  }
+  .watch-term button{background:none; border:none; color:var(--text-faint); cursor:pointer; font-size:14px; line-height:1; padding:0 2px;}
+  .watch-term button:hover{color:var(--red);}
+  .panel-note{font-size:11.5px; color:var(--text-faint); margin-top:10px; line-height:1.5;}
+
   /* ---------- SIDEBAR ---------- */
   .side{
     padding:22px clamp(16px,4vw,24px) 22px 8px;
@@ -316,13 +385,26 @@
 
   <aside class="side">
     <div class="panel">
+      <h2>CISA KEV · latest additions</h2>
+      <div id="kevList"><p class="panel-note">Loading…</p></div>
+    </div>
+    <details class="panel watch-panel">
+      <summary><h2>Watchlist <span id="watchCount"></span></h2></summary>
+      <form class="watch-form" id="watchForm">
+        <input id="watchInput" type="text" placeholder="add a term…" maxlength="40" autocomplete="off">
+        <button class="btn primary" type="submit">Add</button>
+      </form>
+      <div class="watch-terms" id="watchTerms"></div>
+      <p class="panel-note">Matches get a ★ and float to the top. Saved in this browser only.</p>
+    </details>
+    <div class="panel">
       <h2>Channel status</h2>
       <div id="sourceStatusList"></div>
     </div>
     <div class="panel">
       <h2>About this feed</h2>
       <p class="about-txt">
-        <b>maxarmstrong.io</b> pulls live RSS from the sources I read daily: BleepingComputer, The Hacker News, Dark Reading, Krebs on Security, and The Register, plus the Risky Business and CyberWire Daily podcasts. Feeds are collected automatically every 30 minutes.
+        <b>maxarmstrong.io</b> pulls live RSS from the sources I read daily: BleepingComputer, The Hacker News, Dark Reading, Krebs on Security, and The Register, plus the Risky Business and CyberWire Daily podcasts. Feeds and the CISA KEV catalog are collected automatically every 30 minutes, and the last 7 days are kept. When several outlets cover the same story, they're grouped into one card.
       </p>
     </div>
   </aside>
@@ -334,12 +416,14 @@
 
 <script>
 // ---------- matrix rain (masthead easter egg) ----------
+// Pauses while the masthead is scrolled off screen or the tab is hidden.
 (function(){
   const canvas = document.getElementById('matrixRain');
   if(!canvas) return;
   const ctx = canvas.getContext('2d');
   const chars = 'アイウエオカキクケコサシスセソ01337BEEFDEADH4CK';
   let cols, drops, w, h;
+  let onScreen = true, timer = null;
 
   function size(){
     const rect = canvas.parentElement.getBoundingClientRect();
@@ -352,6 +436,8 @@
   window.addEventListener('resize', size);
 
   function draw(){
+    timer = null;
+    if(!onScreen || document.hidden) return;   // stopped; resume() restarts it
     ctx.fillStyle = 'rgba(11,15,20,0.15)';
     ctx.fillRect(0, 0, w, h);
     ctx.font = '14px "IBM Plex Mono", monospace';
@@ -363,46 +449,61 @@
       if(y > h && Math.random() > 0.975) drops[i] = 0;
       drops[i]++;
     }
-    setTimeout(() => requestAnimationFrame(draw), 110);
+    timer = setTimeout(() => requestAnimationFrame(draw), 110);
   }
+  function resume(){ if(!timer && onScreen && !document.hidden) draw(); }
+
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(entries => {
+      onScreen = entries[0].isIntersecting;
+      resume();
+    }).observe(canvas.parentElement);
+  }
+  document.addEventListener('visibilitychange', resume);
   draw();
 })();
 
-// ---------- typed line (types once, no cycling) ----------
-(function(){
+// ---------- typed line ----------
+const typeLine = (function(){
   const el = document.getElementById('typedLine');
-  if(!el) return;
-  const full = 'Fetching feeds...';
-  let i = 0;
-
-  function tick(){
-    i++;
-    el.textContent = full.slice(0, i);
-    if(i < full.length) setTimeout(tick, 65);
-  }
-  tick();
+  let timer = null;
+  return function(full){
+    if(!el) return;
+    clearTimeout(timer);
+    let i = 0;
+    (function tick(){
+      i++;
+      el.textContent = full.slice(0, i);
+      if(i < full.length) timer = setTimeout(tick, 45);
+    })();
+  };
 })();
+typeLine('Fetching feeds...');
 
 (function(){
   const SOURCES = [
-    { id:'bleepingcomputer', name:'BleepingComputer', color:'#FFB92E', rss:'https://www.bleepingcomputer.com/feed/' },
-    { id:'thn', name:'The Hacker News', color:'#3FC1B0', rss:'https://feeds.feedburner.com/TheHackersNews' },
-    { id:'darkreading', name:'Dark Reading', color:'#E5484D', rss:'https://www.darkreading.com/rss.xml' },
-    { id:'krebs', name:'Krebs on Security', color:'#D98CD9', rss:'https://krebsonsecurity.com/feed/' },
-    { id:'theregister', name:'The Register', color:'#7FD1FF', rss:'https://www.theregister.com/security/headlines.atom' },
-    { id:'riskybiz', name:'Risky Business', color:'#FF7A45', rss:'https://risky.biz/feeds/risky-business/' },
-    { id:'cyberwire', name:'CyberWire Daily', color:'#C9E86B', rss:'https://feeds.megaphone.fm/cyberwire-daily-podcast' },
+    { id:'bleepingcomputer', name:'BleepingComputer', color:'#FFB92E' },
+    { id:'thn', name:'The Hacker News', color:'#3FC1B0' },
+    { id:'darkreading', name:'Dark Reading', color:'#E5484D' },
+    { id:'krebs', name:'Krebs on Security', color:'#D98CD9' },
+    { id:'theregister', name:'The Register', color:'#7FD1FF' },
+    { id:'riskybiz', name:'Risky Business', color:'#FF7A45', podcast:true },
+    { id:'cyberwire', name:'CyberWire Daily', color:'#C9E86B', podcast:true },
   ];
   // feeds.json is written into the repo by the "Update feeds" GitHub Action
   // (scripts/fetch-feeds.mjs), so the page only ever talks to its own origin.
   const FEED_FILE = '/feeds.json';
+  const PAGE_SIZE = 40;
+  const DEFAULT_WATCH = ['ICS', 'SCADA', 'OT', 'zero-day'];
   const sourceMap = Object.fromEntries(SOURCES.map(s=>[s.id,s]));
 
   let allItems = [];
+  let kevIds = new Set();
   let activeSource = 'all';
   let sortMode = 'new';
   let query = '';
-  const sourceState = {}; // id -> 'ok' | 'err' | 'pending'
+  let shown = PAGE_SIZE;
+  const sourceState = {}; // id -> 'ok' | 'err' | 'stale' | 'pending'
 
   const feedEl = document.getElementById('feed');
   const chipsEl = document.getElementById('sourceChips');
@@ -410,7 +511,33 @@
   const statusDot = document.getElementById('statusDot');
   const statusText = document.getElementById('statusText');
   const refreshBtn = document.getElementById('refreshBtn');
+  const kevEl = document.getElementById('kevList');
 
+  // ---------- storage (per-browser only; page works fine without it) ----------
+  function getStore(store, key){ try{ return store.getItem(key); }catch(e){ return null; } }
+  function setStore(store, key, val){ try{ store.setItem(key, val); }catch(e){} }
+
+  // "New since last visit": the cutoff is pinned for this tab session, so
+  // hitting Refresh doesn't wipe the NEW tags you haven't read yet.
+  const lastVisit = (function(){
+    let since = getStore(window.sessionStorage, 'since');
+    if(since === null){
+      since = getStore(window.localStorage, 'lastVisit') || '';
+      setStore(window.sessionStorage, 'since', since);
+    }
+    setStore(window.localStorage, 'lastVisit', String(Date.now()));
+    return Number(since) || 0;   // 0 = first visit, nothing marked new
+  })();
+
+  let watchTerms = (function(){
+    try{
+      const v = JSON.parse(getStore(window.localStorage, 'watchTerms.v2'));
+      if(Array.isArray(v)) return v.filter(t => typeof t === 'string' && t.trim()).slice(0, 30);
+    }catch(e){}
+    return DEFAULT_WATCH.slice();
+  })();
+
+  // ---------- safety helpers ----------
   function stripHtml(html){
     // DOMParser produces a fully detached document that is never attached
     // to the page's browsing context, so <img>/<svg>/etc inside untrusted
@@ -442,6 +569,21 @@
     return '#';
   }
 
+  // Escapes text, then turns CVE IDs into NVD links (red + "KEV" if CISA lists it).
+  // The regex only ever matches CVE-digits-digits, so nothing else can be injected.
+  const CVE_RE = /\bCVE-\d{4}-\d{4,7}\b/gi;
+  // asLink=false inside the headline, which is already a link (no nested <a>).
+  function withCveLinks(text, asLink = true){
+    return escapeHtml(text).replace(CVE_RE, m => {
+      const id = m.toUpperCase();
+      const kev = kevIds.has(id);
+      if(!asLink) return '<span class="cve' + (kev ? ' kev' : '') + '">' + id + '</span>';
+      return '<a class="cve lift' + (kev ? ' kev' : '') + '" href="https://nvd.nist.gov/vuln/detail/' + id +
+        '" target="_blank" rel="noopener noreferrer"' + (kev ? ' title="On the CISA Known Exploited Vulnerabilities list"' : '') + '>' + id + '</a>';
+    });
+  }
+
+  // ---------- time ----------
   function timeAgo(dateStr){
     const t = new Date(dateStr).getTime();
     if(isNaN(t)) return '';
@@ -455,19 +597,118 @@
     return d + 'd ago';
   }
 
+  const MONTHS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  const p2 = n => String(n).padStart(2,'0');
   function stamp(dateStr){
     const dt = new Date(dateStr);
     if(isNaN(dt.getTime())) return '';
-    const mon = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][dt.getUTCMonth()];
-    const p2 = n => String(n).padStart(2,'0');
-    return p2(dt.getUTCDate()) + ' ' + mon + ' ' + p2(dt.getUTCHours()) + ':' + p2(dt.getUTCMinutes()) + ' UTC';
+    return p2(dt.getUTCDate()) + ' ' + MONTHS[dt.getUTCMonth()] + ' ' + p2(dt.getUTCHours()) + ':' + p2(dt.getUTCMinutes()) + ' UTC';
+  }
+  function dayStamp(ymd){
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(ymd || '');
+    return m ? m[3] + ' ' + MONTHS[Number(m[2]) - 1] : '';
+  }
+  const ts = d => { const t = new Date(d).getTime(); return isNaN(t) ? 0 : t; };
+
+  // ---------- watchlist ----------
+  function termRegex(term){
+    const esc = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp('(^|[^A-Za-z0-9])' + esc + '(?![A-Za-z0-9])', 'i');
+  }
+  let watchRegexes = [];
+  function buildWatch(){ watchRegexes = watchTerms.map(t => ({ term:t, re:termRegex(t) })); }
+  function watchMatch(it){
+    const text = it.title + ' ' + it.desc;
+    const hit = watchRegexes.find(w => w.re.test(text));
+    return hit ? hit.term : '';
+  }
+  function saveWatch(){
+    setStore(window.localStorage, 'watchTerms.v2', JSON.stringify(watchTerms));
+    buildWatch();
+    allItems.forEach(it => it.watch = watchMatch(it));
+    renderWatch(); renderChips(); render();
   }
 
+  // ---------- duplicate-story grouping ----------
+  // Headlines about the same story share their rare words (names, products,
+  // CVE IDs). Each word is weighted by how rare it is across all headlines,
+  // so generic words like "hackers" or "flaw" barely count.
+  const STOP = new Set(('the a an and or of to in on for with by from at as is are was were be been it its this that these those ' +
+    'new now after over into via up out how why what who your you our we they their has have had will can may could says said ' +
+    'than more most about amid against under amid not but just also one two first latest report reports week').split(' '));
+  function tokens(title){
+    const cves = (title.match(CVE_RE) || []).map(c => c.toUpperCase());
+    const words = title.toLowerCase().replace(/cve-\d{4}-\d{4,7}/g, ' ').replace(/[’']s\b/g, '')
+      .replace(/[^a-z0-9]+/g, ' ').split(' ')
+      .filter(w => w.length >= 3 && !STOP.has(w))
+      .map(w => w.length > 4 && w.endsWith('s') ? w.slice(0, -1) : w);
+    return { set:new Set(words), cves };
+  }
+
+  function groupStories(items){
+    const news = items.filter(it => !sourceMap[it.sourceId].podcast);
+    const toks = news.map(it => {
+      const t = tokens(it.title);
+      t.cves = [...new Set([...t.cves, ...((it.desc.match(CVE_RE) || []).map(c => c.toUpperCase()))])];
+      return t;
+    });
+    const df = new Map();
+    toks.forEach(t => t.set.forEach(w => df.set(w, (df.get(w)||0) + 1)));
+    const N = news.length || 1;
+    const weight = w => Math.log(1 + N / (df.get(w) || 1));
+
+    const parent = news.map((_, i) => i);
+    const find = i => parent[i] === i ? i : (parent[i] = find(parent[i]));
+    const WINDOW = 72 * 3600e3;
+    for(let i = 0; i < news.length; i++){
+      for(let j = i + 1; j < news.length; j++){
+        const a = news[i], b = news[j];
+        if(a.sourceId === b.sourceId) continue;
+        if(Math.abs(a.t - b.t) > WINDOW) continue;
+        const A = toks[i], B = toks[j];
+        let same = A.cves.some(c => B.cves.includes(c));
+        if(!same){
+          let inter = 0, union = 0;
+          A.set.forEach(w => { const x = weight(w); union += x; if(B.set.has(w)) inter += x; });
+          B.set.forEach(w => { if(!A.set.has(w)) union += weight(w); });
+          same = union > 0 && inter / union >= 0.25;   // real dupes score ~0.3+, unrelated <0.2
+        }
+        if(same) parent[find(i)] = find(j);
+      }
+    }
+
+    const groups = new Map();
+    news.forEach((it, i) => {
+      const r = find(i);
+      if(!groups.has(r)) groups.set(r, []);
+      groups.get(r).push(it);
+    });
+    const out = [];
+    groups.forEach(members => {
+      // first outlet to report leads; everyone else is listed under it
+      members.sort((a, b) => a.t - b.t);
+      out.push(makeEntry(members));
+    });
+    items.filter(it => sourceMap[it.sourceId].podcast).forEach(it => out.push(makeEntry([it])));
+    return out;
+  }
+  function makeEntry(members){
+    const lead = members[0];
+    return {
+      sources: new Set(members.map(m => m.sourceId)).size,
+      lead, others: members.slice(1),
+      t: Math.max(...members.map(m => m.t)),
+      isNew: members.some(m => m.isNew),
+      watch: (members.find(m => m.watch) || {}).watch || '',
+    };
+  }
+
+  // ---------- load ----------
   async function loadAll(){
     statusDot.className = 'dot busy';
     statusText.textContent = 'SYNCING…';
     refreshBtn.querySelector('svg').classList.add('spin');
-    feedEl.innerHTML = '<div class="loading-msg">Pulling signal from ' + SOURCES.length + ' sources…</div>';
+    if(!allItems.length) feedEl.innerHTML = '<div class="loading-msg">Pulling signal from ' + SOURCES.length + ' sources…</div>';
     SOURCES.forEach(s => sourceState[s.id] = 'pending');
     renderSourceStatus();
 
@@ -478,6 +719,9 @@
       data = await res.json();
     }catch(e){ data = null; }
 
+    const kev = data && data.kev;
+    kevIds = new Set((kev && Array.isArray(kev.ids)) ? kev.ids.map(String) : []);
+
     allItems = [];
     SOURCES.forEach(src => {
       const s = data && data.sources && data.sources[src.id];
@@ -485,19 +729,26 @@
       // 'stale' = the last collection run failed for this source, but we
       // still have its items from an earlier successful run.
       sourceState[src.id] = !s ? 'err' : s.ok ? 'ok' : (items.length ? 'stale' : 'err');
-      items.forEach(it => allItems.push({
-        title: stripHtml(it.title).slice(0, 200),
-        link: it.link,
-        desc: stripHtml(it.desc || '').slice(0, 220),
-        date: it.date,
-        sourceId: src.id
-      }));
+      items.forEach(it => {
+        const item = {
+          title: stripHtml(it.title).slice(0, 200),
+          link: it.link,
+          desc: stripHtml(it.desc || '').slice(0, 220),
+          date: it.date,
+          t: ts(it.date),
+          sourceId: src.id
+        };
+        item.isNew = lastVisit > 0 && item.t > lastVisit;
+        item.watch = watchMatch(item);
+        allItems.push(item);
+      });
     });
     allItems = allItems.filter(it => it.title && it.link);
-    allItems.sort((a,b) => new Date(b.date) - new Date(a.date));
 
+    shown = PAGE_SIZE;
     renderChips();
     renderSourceStatus();
+    renderKev(kev);
     render();
 
     refreshBtn.querySelector('svg').classList.remove('spin');
@@ -506,7 +757,10 @@
     if(!data){
       statusDot.className = 'dot down';
       statusText.textContent = 'FEED FILE UNREACHABLE';
-    } else if(okCount === SOURCES.length){
+      typeLine('Signal lost. Try refresh.');
+      return;
+    }
+    if(okCount === SOURCES.length){
       statusDot.className = 'dot';
       statusText.textContent = 'LIVE · updated ' + updated;
     } else if(okCount === 0){
@@ -516,12 +770,17 @@
       statusDot.className = 'dot busy';
       statusText.textContent = okCount + '/' + SOURCES.length + ' sources OK';
     }
+    const newCount = allItems.filter(it => it.isNew).length;
+    typeLine(allItems.length + ' stories · last 7 days' + (newCount ? ' · ' + newCount + ' new since last visit' : ''));
   }
 
+  // ---------- render ----------
   function renderChips(){
     const counts = {};
     allItems.forEach(it => counts[it.sourceId] = (counts[it.sourceId]||0)+1);
+    const watchCount = allItems.filter(it => it.watch).length;
     let html = '<div class="chip' + (activeSource==='all'?' active':'') + '" data-src="all">All <span class="count">' + allItems.length + '</span></div>';
+    html += '<div class="chip' + (activeSource==='watch'?' active':'') + '" data-src="watch">★ Watchlist <span class="count">' + watchCount + '</span></div>';
     SOURCES.forEach(s => {
       html += '<div class="chip' + (activeSource===s.id?' active':'') + '" data-src="' + s.id + '">' +
         '<span class="swatch" style="background:' + s.color + '"></span>' + s.name +
@@ -531,6 +790,7 @@
     chipsEl.querySelectorAll('.chip').forEach(chip => {
       chip.addEventListener('click', () => {
         activeSource = chip.getAttribute('data-src');
+        shown = PAGE_SIZE;
         renderChips();
         render();
       });
@@ -547,48 +807,117 @@
     }).join('');
   }
 
+  function renderKev(kev){
+    const list = (kev && Array.isArray(kev.latest)) ? kev.latest.slice(0, 5) : [];
+    if(!list.length){
+      kevEl.innerHTML = '<p class="panel-note">KEV data not available yet. It fills in on the next collection run.</p>';
+      return;
+    }
+    kevEl.innerHTML = list.map(v => {
+      const id = /^CVE-\d{4}-\d{4,7}$/i.test(v.cve || '') ? v.cve.toUpperCase() : '';
+      const what = [v.vendor, v.product].filter(Boolean).join(' ');
+      return '<a class="kev-row" href="' + (id ? 'https://nvd.nist.gov/vuln/detail/' + id : 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog') +
+        '" target="_blank" rel="noopener noreferrer" title="' + escapeHtml(v.name || '') + (v.due ? ' · federal fix-by ' + escapeHtml(v.due) : '') + '">' +
+        '<span class="kev-top"><span><span class="kev-id">' + escapeHtml(v.cve || '') + '</span>' +
+        (v.ransomware ? '<span class="kev-rw">RANSOMWARE</span>' : '') + '</span>' +
+        '<span class="kev-date">' + dayStamp(v.added) + '</span></span>' +
+        '<span class="kev-what" style="display:block">' + escapeHtml(what) + '</span></a>';
+    }).join('') +
+      '<a class="panel-link" href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">Full catalog' +
+      (kev.count ? ' (' + Number(kev.count) + ')' : '') + ' →</a>';
+  }
+
+  function renderWatch(){
+    document.getElementById('watchCount').textContent = watchTerms.length ? '· ' + watchTerms.length : '';
+    const el = document.getElementById('watchTerms');
+    el.innerHTML = watchTerms.map((t, i) =>
+      '<span class="watch-term">' + escapeHtml(t) + '<button type="button" data-i="' + i + '" aria-label="Remove ' + escapeHtml(t) + '">×</button></span>'
+    ).join('') || '<span class="panel-note" style="margin:0">No terms yet.</span>';
+    el.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+      watchTerms.splice(Number(b.getAttribute('data-i')), 1);
+      saveWatch();
+    }));
+  }
+
+  const ICON_OUT = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
+  const ICON_LISTEN = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1v-6h3zM3 19a2 2 0 002 2h1v-6H3z"/></svg>';
+
+  function srcTag(src){
+    return '<span class="src-tag" style="color:' + src.color + '; background:' + src.color + '1a;">' + src.name + '</span>';
+  }
+
+  function cardHtml(e){
+    const it = e.lead, src = sourceMap[it.sourceId];
+    const n = 1 + e.others.length;
+    return '<div class="card' + (e.watch ? ' watch' : '') + '">' +
+      '<span class="card-bar" style="background:' + src.color + '"></span>' +
+      '<span class="card-body">' +
+        '<span class="card-meta">' +
+          srcTag(src) +
+          (e.sources > 1 ? '<span class="tag multi">' + e.sources + ' sources</span>' : '') +
+          (e.isNew ? '<span class="tag new">New</span>' : '') +
+          (e.watch ? '<span class="tag watch">★ ' + escapeHtml(e.watch) + '</span>' : '') +
+          '<span>' + stamp(it.date) + '</span>' +
+          '<span>' + timeAgo(it.date) + '</span>' +
+        '</span>' +
+        '<a class="headline headline-link" href="' + escapeHtml(safeUrl(it.link)) + '" target="_blank" rel="noopener noreferrer">' + withCveLinks(it.title, false) + '</a>' +
+        (it.desc ? '<span class="snippet">' + withCveLinks(it.desc) + '</span>' : '') +
+        (n > 1 ? '<span class="also lift">' + e.others.map(o =>
+          '<a href="' + escapeHtml(safeUrl(o.link)) + '" target="_blank" rel="noopener noreferrer">' + srcTag(sourceMap[o.sourceId]) +
+          '<span>' + escapeHtml(o.title) + '</span></a>').join('') + '</span>' : '') +
+        '<span class="card-foot">' + (src.podcast ? ICON_LISTEN + 'listen' : ICON_OUT + 'open transmission') + '</span>' +
+      '</span>' +
+    '</div>';
+  }
+
   function render(){
-    let items = allItems.filter(it => activeSource === 'all' || it.sourceId === activeSource);
+    let items = allItems.filter(it =>
+      activeSource === 'all' || (activeSource === 'watch' ? !!it.watch : it.sourceId === activeSource));
     if(query.trim()){
       const q = query.trim().toLowerCase();
       items = items.filter(it => it.title.toLowerCase().includes(q) || it.desc.toLowerCase().includes(q));
     }
+
+    let entries = groupStories(items);
     if(sortMode === 'source'){
-      items = [...items].sort((a,b) => sourceMap[a.sourceId].name.localeCompare(sourceMap[b.sourceId].name) || new Date(b.date)-new Date(a.date));
+      entries.sort((a,b) => sourceMap[a.lead.sourceId].name.localeCompare(sourceMap[b.lead.sourceId].name) || b.t - a.t);
     } else {
-      items = [...items].sort((a,b) => new Date(b.date) - new Date(a.date));
+      // watchlist hits from the last 48h float to the top
+      const pinCut = Date.now() - 48 * 3600e3;
+      const pinned = e => (e.watch && e.t > pinCut) ? 1 : 0;
+      entries.sort((a,b) => pinned(b) - pinned(a) || b.t - a.t);
     }
 
-    if(items.length === 0){
-      feedEl.innerHTML = '<div class="empty">No signal matches these filters. Try clearing the search or picking another channel.</div>';
+    if(entries.length === 0){
+      feedEl.innerHTML = '<div class="empty">' + (activeSource === 'watch'
+        ? 'Nothing in the last 7 days matches your watchlist. Add terms in the Watchlist panel.'
+        : 'No signal matches these filters. Try clearing the search or picking another channel.') + '</div>';
       return;
     }
 
-    feedEl.innerHTML = items.slice(0, 120).map(it => {
-      const src = sourceMap[it.sourceId];
-      return '<a class="card" href="' + escapeHtml(safeUrl(it.link)) + '" target="_blank" rel="noopener noreferrer">' +
-        '<span class="card-bar" style="background:' + src.color + '"></span>' +
-        '<span class="card-body">' +
-          '<span class="card-meta">' +
-            '<span class="src-tag" style="color:' + src.color + '; background:' + src.color + '1a;">' + src.name + '</span>' +
-            '<span>' + stamp(it.date) + '</span>' +
-            '<span>' + timeAgo(it.date) + '</span>' +
-          '</span>' +
-          '<span class="headline">' + escapeHtml(it.title) + '</span>' +
-          (it.desc ? '<span class="snippet">' + escapeHtml(it.desc) + '</span>' : '') +
-          '<span class="card-foot">' +
-            '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
-            'open transmission' +
-          '</span>' +
-        '</span>' +
-      '</a>';
-    }).join('');
+    const left = entries.length - shown;
+    feedEl.innerHTML = entries.slice(0, shown).map(cardHtml).join('') +
+      (left > 0 ? '<button class="btn more-btn" id="moreBtn" type="button">Show ' + Math.min(left, PAGE_SIZE) + ' more · ' + left + ' left</button>' : '');
+    const more = document.getElementById('moreBtn');
+    if(more) more.addEventListener('click', () => { shown += PAGE_SIZE; render(); });
   }
 
-  document.getElementById('searchBox').addEventListener('input', e => { query = e.target.value; render(); });
+  document.getElementById('searchBox').addEventListener('input', e => { query = e.target.value; shown = PAGE_SIZE; render(); });
   document.getElementById('sortSelect').addEventListener('change', e => { sortMode = e.target.value; render(); });
+  document.getElementById('watchForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const input = document.getElementById('watchInput');
+    const term = input.value.trim().slice(0, 40);
+    if(term && !watchTerms.some(t => t.toLowerCase() === term.toLowerCase())){
+      watchTerms.push(term);
+      saveWatch();
+    }
+    input.value = '';
+  });
   refreshBtn.addEventListener('click', loadAll);
 
+  buildWatch();
+  renderWatch();
   renderChips();
   renderSourceStatus();
   loadAll();
