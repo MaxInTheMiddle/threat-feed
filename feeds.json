@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T00:56:51.541Z",
+ "updated": "2026-10-27T05:13:10.227Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
@@ -531,168 +531,560 @@
     }
    ]
   },
-  "r-cybersecurity": {
+  "theregister": {
    "ok": true,
    "items": [
     {
-     "title": "The Internet goes on high alert after discovery of 8 compromised TLS certs",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb5m8v/the_internet_goes_on_high_alert_after_discovery/",
-     "desc": "submitted by /u/OkVast2122 [link] [comments]",
-     "date": "2026-10-20T22:03:58.000Z"
+     "title": "Japanese virtual desktop cloud hacked so hard it asks to be banned",
+     "link": "https://www.theregister.com/security/2026/10/27/japanese-virtual-desktop-cloud-hacked-so-hard-it-asks-to-be-banned/5305610",
+     "desc": "CEO admits service used for foreign exchange trading had holes company was slow to fix",
+     "date": "2026-10-27T01:06:22.000Z"
     },
     {
-     "title": "Microsoft announces a massive 25% voluntary buyout layoffs program. This is an absolute bombshell in the tech sector",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xg2ez2/microsoft_announces_a_massive_25_voluntary_buyout/",
-     "desc": "This is not another 10k layoffs at Amazon which is like not even 3% of its employee This is not 5% of Netflix This is 25% of all employees at Microsoft. Absolute bombshell. submitted by /u/Exact-Advantage-3190 [link] [co",
-     "date": "2026-10-26T16:54:47.000Z"
+     "title": "Worm armed 42 GitHub repos by hiding a payload too big to fail",
+     "link": "https://www.theregister.com/security/2026/10/26/worm-armed-42-github-repos-by-hiding-a-payload-too-big-to-fail/5305570",
+     "desc": "Payload blobs measuring 12.9 to 13.7 MB were large enough to evade GitHub code search",
+     "date": "2026-10-26T22:29:01.000Z"
     },
     {
-     "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xd4atv/disgraced_emudhra_drops_out_of_tls_business_after/",
-     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
-     "date": "2026-10-23T04:28:04.000Z"
+     "title": "Alibaba's Qwen AI caught trying to contact server in China",
+     "link": "https://www.theregister.com/ai-and-ml/2026/10/26/alibabas-qwen-ai-caught-trying-to-contact-server-in-china/5305561",
+     "desc": "But there's not much evidence this is anything more than echoes of unsanitized training data",
+     "date": "2026-10-26T21:27:37.000Z"
     },
     {
-     "title": "Node2Shell EVOLVES to HTTP2Shell.",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe28vv/node2shell_evolves_to_http2shell/",
-     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-24T07:24:42.000Z"
+     "title": "LiteLLM supply chain attack started with an exposed master key",
+     "link": "https://www.theregister.com/security/2026/10/26/litellm-supply-chain-attack-started-with-an-exposed-master-key/5305544",
+     "desc": "A 'strong illustration of the risks associated with failing to rotate a potentially exposed key'",
+     "date": "2026-10-26T20:30:53.000Z"
     },
     {
-     "title": "Today's PHP Security Release, and How We're Strengthening PHP Security — The PHP Foundation",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbsyc2/todays_php_security_release_and_how_were/",
-     "desc": "On October 21st at 07:41 UTC, more than six hours before the coordinated release, Chainguard unilaterally broke the embargo and published built images containing the fix. Like other distributors, Chainguard had received ",
-     "date": "2026-10-21T17:06:48.000Z"
+     "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
+     "link": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515",
+     "desc": "Redmond joins growing list of software maintainers scrambling to patch compression flaw",
+     "date": "2026-10-26T17:58:00.000Z"
     },
     {
-     "title": "Someone Knew About PHP's Critical Flaws Four Days Before the Public Did and Amazon Can't Explain How",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xckw05/someone_knew_about_phps_critical_flaws_four_days/",
-     "desc": "Who is this someone... and how the hell did they know lol submitted by /u/Popular_Dimension939 [link] [comments]",
-     "date": "2026-10-22T14:58:22.000Z"
+     "title": "UK pentester 'killa' claims $2K Bitcoin prize in PHP2Shell capture-the-flag contest",
+     "link": "https://www.theregister.com/security/2026/10/26/uk-pentester-killa-claims-2k-bitcoin-prize-in-php2shell-capture-the-flag-contest/5305429",
+     "desc": "Jaydip Modhwadia beats challenge designed to test real-world exploitability of PHP2Shell in around 3 hours",
+     "date": "2026-10-26T16:14:00.000Z"
     },
     {
-     "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdi195/php_warns_of_another_unpatched_rce_risk_two_days/",
-     "desc": "submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-23T16:00:14.000Z"
+     "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
+     "link": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456",
+     "desc": "Claude maker reveals financials and warns investors its AI models could blackmail humans, resist shutdown, or go rogue",
+     "date": "2026-10-26T15:47:05.000Z"
     },
     {
-     "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution (CVE-2026-111497)",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcy96b/node2shell_nodejs_brotli_vulnerability_allows/",
-     "desc": "First PHP. Now NodeJS. submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-22T23:32:04.000Z"
+     "title": "We shouldn't be surprised about the PHPocalypse, as the internet is built on sticks and glue",
+     "link": "https://www.theregister.com/security/2026/10/26/we-shouldnt-be-surprised-about-the-phpocalypse-as-the-internet-is-built-on-sticks-and-glue/5305186",
+     "desc": "What better way to celebrate Cybersecurity Awareness Month than warning that three-quarters of the web is about to be set on fire?",
+     "date": "2026-10-26T13:14:00.000Z"
     },
     {
-     "title": "eMudhra (a business run by 1 family), passed two audits by BDO after an integrity incident. Is the internet chain of trust broken?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdcl4v/emudhra_a_business_run_by_1_family_passed_two/",
-     "desc": "The more I look into the eMudhra incident, the more concerned I am about the auditors and the governance behind this company. We’ve spent plenty of time talking about the fact that one of their intermediate CA private ke",
-     "date": "2026-10-23T12:25:14.000Z"
+     "title": "UK Biobank back online soon, months after someone tried to sell 500k people's data on Alibaba",
+     "link": "https://www.theregister.com/security/2026/10/26/uk-biobank-back-online-soon-months-after-someone-tried-to-sell-500k-peoples-data-on-alibaba/5305363",
+     "desc": "Charity confirms slew of security improvements as it waits for UK.gov's go-ahead",
+     "date": "2026-10-26T12:38:00.000Z"
     },
     {
-     "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xcedw4/critical_gitlab_flaw_cvss_100_could_allow/",
-     "desc": "I know everyone's preoccupied with the PHP CVEs, but this is also BIG NEWS submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-22T09:59:47.000Z"
+     "title": "Britain bets big on AI to defend against the threats AI is helping create",
+     "link": "https://www.theregister.com/security/2026/10/26/britain-bets-big-on-ai-to-defend-against-the-threats-ai-is-helping-create/5305319",
+     "desc": "Whitehall wants agents guarding critical infrastructure as part of a wider £600M spending spree",
+     "date": "2026-10-26T11:00:00.000Z"
     },
     {
-     "title": "PYTHON Packages NOW Vulnerable to Node2Shell",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdunkf/python_packages_now_vulnerable_to_node2shell/",
-     "desc": "Turns out that Node2Shell affects more than just Node! Python packages Brotli and brotlicffi are also affected by this vulnerability, but don't have a CVE yet.. submitted by /u/One_Paint8721 [link] [comments]",
-     "date": "2026-10-24T00:28:13.000Z"
+     "title": "PHP2Shell: No login, no app code, no warning. What next?",
+     "link": "https://www.theregister.com/security/2026/10/26/partner-content-no-login-no-app-code-no-warning-what-next/5305336",
+     "desc": "PARTNER CONTENT: Learn what the flaws are, how far exploitation has gone, and how to get to full coverage fast with Tanium",
+     "date": "2026-10-26T08:00:00.000Z"
     },
     {
-     "title": "CVE-2026-110264 GitLab Unauthenticated RCE (CVSS 10)",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbzne3/cve2026110264_gitlab_unauthenticated_rce_cvss_10/",
-     "desc": "submitted by /u/radcorp [link] [comments]",
-     "date": "2026-10-21T21:13:44.000Z"
+     "title": "Work to protect DNS from quantum decryption attacks is speeding up",
+     "link": "https://www.theregister.com/networks/2026/10/26/work-to-protect-dns-from-quantum-decryption-attacks-is-speeding-up/5305274",
+     "desc": "PLUS: Regional internet registry reform nears; Trustworthy-sounding domains attract scammers",
+     "date": "2026-10-26T04:08:23.000Z"
     },
     {
-     "title": "[MEGATHREAD] October 2026 Cybersecurity Incidents: PHP2Shell, LiteLLM, eMudhra, GitLab, and more",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdx8k7/megathread_october_2026_cybersecurity_incidents/",
-     "desc": "[MEGATHREAD] PHP2Shell (CVE-2026-109618/109619), LiteLLM, eMudhra, GitLab & Other October Security Incidents AKA Black October We've been getting hammered with posts and questions about the wave of vulnerabilities, compr",
-     "date": "2026-10-24T02:41:43.000Z"
+     "title": "Autonomous attack agent in 'Skynet mode' hijacks other models to carry out its evil deeds",
+     "link": "https://www.theregister.com/security/2026/10/24/autonomous-attack-agent-in-skynet-mode-hijacks-other-models-to-carry-out-its-evil-deeds/5305215",
+     "desc": "Designed to carry out 100,000 steps without human approval",
+     "date": "2026-10-24T13:02:00.000Z"
     },
     {
-     "title": "Anthropic's Claude AI Bypassed Georgia Vote Data Paywall Without Human Authorisation Ahead of US Midterms",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xfm0eq/anthropics_claude_ai_bypassed_georgia_vote_data/",
-     "desc": "submitted by /u/Superb-Molasses-9363 [link] [comments]",
-     "date": "2026-10-26T03:21:56.000Z"
+     "title": "There's a third PHP2Shell bug, but it won't get an emergency fix",
+     "link": "https://www.theregister.com/security/2026/10/23/theres-a-third-php2shell-bug-but-it-wont-get-an-emergency-fix/5305208",
+     "desc": "Bad things (and software bugs?) come in threes",
+     "date": "2026-10-23T20:04:40.000Z"
     },
     {
-     "title": "PHP: Critical remote code execution vulnerabilities, update now",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbou5n/php_critical_remote_code_execution/",
-     "desc": "submitted by /u/ni5arga [link] [comments]",
-     "date": "2026-10-21T14:34:06.000Z"
+     "title": "Red-team report found OpenAI utterly failed to monitor its agents during Hugging Face attack",
+     "link": "https://www.theregister.com/ai-and-ml/2026/10/23/red-team-report-found-openai-utterly-failed-to-monitor-its-agents-during-hugging-face-attack/5305200",
+     "desc": "Monitoring was only partial and was easily bypassed",
+     "date": "2026-10-23T19:14:57.000Z"
     },
     {
-     "title": "Knicks reportedly duped employees with championship ring email that was actually a phishing test",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xdxvpe/knicks_reportedly_duped_employees_with/",
-     "desc": "submitted by /u/Blaaamo [link] [comments]",
-     "date": "2026-10-24T03:15:47.000Z"
+     "title": "Torvalds: AI is fine for competent devs, but spare us the 'drive-by' patches",
+     "link": "https://www.theregister.com/columnists/2026/10/23/torvalds-ai-is-fine-for-competent-devs-but-spare-us-the-drive-by-patches/5304357",
+     "desc": "Kernel maintainers stop asking who used AI, as long as the code is good",
+     "date": "2026-10-23T11:31:00.000Z"
     },
     {
-     "title": "Bye Bye Brotli? Google's Compression Library Is a Security Mess",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xezxb6/bye_bye_brotli_googles_compression_library_is_a/",
-     "desc": "submitted by /u/klaasvanschelven [link] [comments]",
-     "date": "2026-10-25T11:25:58.000Z"
+     "title": "UK threatens subsea cable saboteurs with 14 years behind bars",
+     "link": "https://www.theregister.com/networks/2026/10/23/uk-threatens-subsea-cable-saboteurs-with-14-years-behind-bars/5304794",
+     "desc": "Whitehall wants tougher penalties and new powers over telecoms operators as Russian activity raises alarm",
+     "date": "2026-10-23T09:29:00.000Z"
     },
     {
-     "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xfywmh/php2shell_security_flaws_now_sucessfully/",
-     "desc": "There is an important development in the PHP2Shell story we've been discussing. Until recently, researchers had observed scanning and exploitation attempts, but convincing evidence of successful attacks was limited. That",
-     "date": "2026-10-26T14:48:43.000Z"
+     "title": "PHP2Shell exploit bypasses protections designed to stop remote code execution",
+     "link": "https://www.theregister.com/security/2026/10/22/php2shell-exploit-bypasses-protections-designed-to-stop-remote-code-execution/5304883",
+     "desc": "“Adversaries are clearly spending time (and tokens) on this bug,” researcher says.",
+     "date": "2026-10-22T20:37:52.000Z"
     },
     {
-     "title": "Startup Cracks Google's Classified Quantum Cryptography",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
-     "desc": "submitted by /u/donutloop [link] [comments]",
-     "date": "2026-10-24T08:09:52.000Z"
+     "title": "Max-severity GitLab bug allows remote code execution over 12 years of releases",
+     "link": "https://www.theregister.com/security/2026/10/22/max-severity-gitlab-bug-allows-remote-code-execution-over-12-years-of-releases/5304854",
+     "desc": "Vendor 'strongly recommends' upgrading to a fixed version 'as soon as possible'",
+     "date": "2026-10-22T17:36:30.000Z"
     },
     {
-     "title": "Checking in",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xce8q0/checking_in/",
-     "desc": "The internet is a dumpster fire right now, how is everyone holding up? The past 48 hours have just been insane, getting hit with absolutely everything all at once. I work with vulns and all I can say is…yikes. Good luck ",
-     "date": "2026-10-22T09:51:03.000Z"
+     "title": "Disgraced Indian cert issuer leaves the cert issuing business",
+     "link": "https://www.theregister.com/security/2026/10/22/disgraced-indian-cert-issuer-leaves-the-cert-issuing-business/5304848",
+     "desc": "We didn't want to issue SSL/TLS certs anyway, eMudhra suggests after one private key turns out to be the number 4",
+     "date": "2026-10-22T16:58:25.000Z"
     },
     {
-     "title": "PHP2Shell: Google and Mandiant Warn That PHP Servers May Remain Vulnerable After Installing Patches",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xf3i0w/php2shell_google_and_mandiant_warn_that_php/",
-     "desc": "Google cloud updated its PHP2Shell security advisory on October 23 with additional guidance from Mandiant Consulting. CVE-2026-109618 and CVE-2026-109619 Both are critical remote-code-execution vulnerabilities affecting ",
-     "date": "2026-10-25T14:16:06.000Z"
+     "title": "PHP2Shell puts dozens of UK government services out of service",
+     "link": "https://www.theregister.com/security/2026/10/22/php2shell-puts-dozens-of-uk-government-services-out-of-service/5304840",
+     "desc": "Ministers report 32 unavailable and four partly disrupted, but no confirmed compromise",
+     "date": "2026-10-22T16:05:53.000Z"
     },
     {
-     "title": "EMudhra Intermediate CA Compromise",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
-     "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
-     "date": "2026-10-20T18:51:51.000Z"
+     "title": "When the attacker becomes the user: Rethinking account takeover",
+     "link": "https://www.theregister.com/security/2026/10/22/sponsored-when-the-attacker-becomes-the-user-rethinking-account-takeover/5303913",
+     "desc": "SPONSORED FEATURE: AI makes phishing easier than ever",
+     "date": "2026-10-22T15:00:00.000Z"
     },
     {
-     "title": "PHP - As an IT person, what should I be doing?",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbo82g/php_as_an_it_person_what_should_i_be_doing/",
-     "desc": "Our sec guy is out and I'm dealing with this. What should I be doing? People are saying just patch your shit, but patch what exactly? Where is the impact likely to be strongest here? Am I throwing patch updates on OS's? ",
-     "date": "2026-10-21T14:10:44.000Z"
+     "title": "Hackers pile on PHP2Shell as AWS reveals attacks began before disclosure",
+     "link": "https://www.theregister.com/cyber-crime/2026/10/22/hackers-pile-on-php2shell-as-aws-reveals-attacks-began-before-disclosure/5304749",
+     "desc": "Cloudflare reports millions of exploit attempts, while Amazon spotted attackers trying their luck four days before patches landed",
+     "date": "2026-10-22T12:15:00.000Z"
     },
     {
-     "title": "Millions of routers can be hijacked over Wi-Fi thanks to a 16-year-old bug",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xbc6pd/millions_of_routers_can_be_hijacked_over_wifi/",
-     "desc": "submitted by /u/Dash-Courageous [link] [comments]",
-     "date": "2026-10-21T03:13:08.000Z"
+     "title": "Microsoft says ConnectWise breach let Chinese spies loose on 2,250 cloud tenants",
+     "link": "https://www.theregister.com/security/2026/10/22/microsoft-says-connectwise-breach-let-chinese-spies-loose-on-2250-cloud-tenants/5304687",
+     "desc": "AI agents did the dirty work, with hackers gaining privileged access in some environments in under three hours",
+     "date": "2026-10-22T11:28:00.000Z"
     },
     {
-     "title": "The US Army wants AI agents that hack its enemies with almost no human oversight",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xal05n/the_us_army_wants_ai_agents_that_hack_its_enemies/",
-     "desc": "Public notice: https://sam.gov/opp/35684fa8865240b49a05e64af31237ea/view They want an advanced malware with AI… this won’t end well… submitted by /u/ross2000 [link] [comments]",
-     "date": "2026-10-20T06:46:58.000Z"
+     "title": "IT department and auditors at major pharmacy chain got into a rip-roaring fight about using 'password' on Cisco firewall",
+     "link": "https://www.theregister.com/security/2026/10/22/it-department-and-auditors-at-major-pharmacy-chain-got-into-a-rip-roaring-fight-about-using-password-on-cisco-firewall/5304592",
+     "desc": "Misaligned incentives led to an intractable argument",
+     "date": "2026-10-22T10:00:00.000Z"
+    },
+    {
+     "title": "Certification authority eMudhra defends its laughably weak private keys",
+     "link": "https://www.theregister.com/security/2026/10/22/certification-authority-emudhra-defends-its-laughably-weak-private-keys/5304647",
+     "desc": "Says it passed audits and made just a minor mystery error",
+     "date": "2026-10-22T06:38:14.000Z"
+    },
+    {
+     "title": "PHP blames supply chain security biz Chainguard for putting huge chunks of the web at risk",
+     "link": "https://www.theregister.com/security/2026/10/22/php-blames-supply-chain-security-biz-chainguard-for-putting-huge-chunks-of-the-web-at-risk/5304611",
+     "desc": "'Coordinated vulnerability disclosure, unless there's evidence of active exploits in the wild,' Chainguard CEO tells The Reg",
+     "date": "2026-10-21T23:02:57.000Z"
+    },
+    {
+     "title": "LiteLLM supply chain attack hoovers up passwords and secrets",
+     "link": "https://www.theregister.com/security/2026/10/21/litellm-supply-chain-attack-hoovers-up-passwords-and-secrets/5304548",
+     "desc": "Plus a RAT for good measure - get threat hunting now",
+     "date": "2026-10-21T18:22:20.000Z"
+    },
+    {
+     "title": "Signal bug could keep your mic - and camera - on after hangup",
+     "link": "https://www.theregister.com/security/2026/10/21/signal-bug-could-keep-your-mic-and-camera-on-after-hangup/5304528",
+     "desc": "Careful what you say after goodbye, or better yet, update your messaging app",
+     "date": "2026-10-21T17:00:58.000Z"
+    },
+    {
+     "title": "PHP devs publish critical bug fix as site owners warned: Pull 'em offline if you're unpatched",
+     "link": "https://www.theregister.com/security/2026/10/21/php-devs-publish-critical-bug-fix-as-site-owners-warned-pull-em-offline-if-youre-unpatched/5304519",
+     "desc": "Websites down as precaution as exploits have already been published",
+     "date": "2026-10-21T15:08:51.000Z"
     }
    ]
   },
-  "r-netsec": {
-   "ok": false,
-   "items": []
+  "riskybiz": {
+   "ok": true,
+   "items": [
+    {
+     "title": "Risky Business #856 -- 8-bit encryption, PHP megabugs and more",
+     "link": "https://risky.biz/RB856/",
+     "desc": "On this week’s show Patrick Gray and James Wilson are joined by special guest co-host security engineer Mark El-Khoury to talk through the week’s cybersecurity news, including: The PHP foundation is about to release patc",
+     "date": "2026-10-21T04:43:10.000Z"
+    },
+    {
+     "title": "Risky Business #855 -- ShinyHunters done sowing, enters reaping phase",
+     "link": "https://risky.biz/RB855/",
+     "desc": "On this week’s show Patrick Gray and James Wilson are joined by special guest co-host Brad Arkin to talk through the week’s cybersecurity news, including: Sacré bleu! Hackers turn up the heat at French supermarket freeze",
+     "date": "2026-10-14T04:35:49.000Z"
+    },
+    {
+     "title": "Soap Box: HD Moore talks OT security, frontier fearmongering and more",
+     "link": "https://risky.biz/SOAPBOX111/",
+     "desc": "In this sponsored Soap Box edition of the Risky Business podcast Patrick Gray chats with industry legend HD Moore about how his company runZero wound up being used heavily to discover OT devices in enterprise networks. T",
+     "date": "2026-09-29T22:50:32.000Z"
+    },
+    {
+     "title": "Risky Business #854 -- We're Jevpilled",
+     "link": "https://risky.biz/RB854/",
+     "desc": "THE RISKY BUSINESS WEEKLY SHOW IS NOW ON HIATUS FOR TWO WEEKS AND WILL RETURN OCTOBER 14 On this week’s show Patrick Gray and James Wilson are joined by Adam Boileau to talk through the week’s news, including: Google’s G",
+     "date": "2026-09-23T06:08:30.000Z"
+    },
+    {
+     "title": "Risky Business #853 -- We're all gonna die, apparently",
+     "link": "https://risky.biz/RB853/",
+     "desc": "On this week’s show Patrick Gray and James Wilson are joined by former US Cyber Command executive director turned PwC’s Cyber, Data & Technology Risk leader Morgan Adamski to talk through the week’s news, including: More",
+     "date": "2026-09-16T04:03:29.000Z"
+    },
+    {
+     "title": "Snake Oilers: watchTowr, XBOW and CoreView",
+     "link": "https://risky.biz/SNAKEOILERS24PT1/",
+     "desc": "In this edition of the Snake Oilers podcast three vendors stop by to pitch the audience on their products: watchTowr: We’re all familiar with watchTowr’s research, but what do they actually do? XBOW: The AI pentesting co",
+     "date": "2026-09-11T01:33:50.000Z"
+    },
+    {
+     "title": "Risky Business #852 -- Cyber Command wants to buy shells",
+     "link": "https://risky.biz/RB852/",
+     "desc": "On this week’s show Patrick Gray and James Wilson are joined by guest co-host Robby Winchester from SpecterOps to talk through the week’s news, including: ID verification company IDScan was breached and 153m driver licen",
+     "date": "2026-09-09T05:32:45.000Z"
+    },
+    {
+     "title": "Risky Business #851 -- Agents are just ones and zeros, and tigers are just atoms",
+     "link": "https://risky.biz/RB851/",
+     "desc": "On this week’s show Patrick Gray and James Wilson are joined by guest co-host The Grugq to talk through the week’s news, including: Two alleged TeamPCP hackers got arrested in Australia The White House has a plan to boos",
+     "date": "2026-09-02T02:22:32.000Z"
+    },
+    {
+     "title": "Risky Business #850 -- Widespread AI-enabled attacks target Siemens PLCs",
+     "link": "https://risky.biz/RB850/",
+     "desc": "On this week’s show Patrick Gray and James Wilson are joined by guest co-host Ollie Whitehouse, the CTO of the UK’s NCSC, to talk through the week’s news, including: Iranian hackers take down a small-scale power generato",
+     "date": "2026-08-26T01:53:57.000Z"
+    },
+    {
+     "title": "Risky Business #849 -- Trump will unleash contractors on cybercriminals",
+     "link": "https://risky.biz/RB849/",
+     "desc": "On this week’s show Patrick Gray and James Wilson are joined by guest co-host Dmitri Alperovitch to talk through the week’s news, including: Trump’s memo authorising the private sector to release the cyber hounds is fine",
+     "date": "2026-08-19T03:23:26.000Z"
+    },
+    {
+     "title": "Soap Box: Zero Trust(ish) Networks",
+     "link": "https://risky.biz/SOAPBOX110/",
+     "desc": "In this Soap Box edition of the Risky Business podcast host Patrick Gray chats with Adam Pointon, CEO of Knocknoc, about the failure of Zero Trust as a comprehensive architecture. Most networks look like they were design",
+     "date": "2026-08-14T02:23:43.000Z"
+    },
+    {
+     "title": "Risky Business #848 -- OpenAI comes clean",
+     "link": "https://risky.biz/RB848/",
+     "desc": "On this week’s show Patrick Gray and James Wilson are joined by guest co-host Brad Arkin to talk through the week’s news, including: The AI-agent-hacks-stuff saga continues. This week we have one booting gymgoers from fu",
+     "date": "2026-08-12T05:19:11.000Z"
+    },
+    {
+     "title": "Risky Business #847 -- Oops! Claude's accidental hacking spree",
+     "link": "https://risky.biz/RB847/",
+     "desc": "On this week’s show Patrick Gray, and James Wilson are joined by bearded man of leisure Adam Boileau to discuss the week’s cybersecurity news, including: Accidental AI agent hacking sprees have the world’s media freaking",
+     "date": "2026-08-05T06:10:19.000Z"
+    },
+    {
+     "title": "Risky Business #846 -- OpenAI built a fireplace out of wood",
+     "link": "https://risky.biz/RB846/",
+     "desc": "On this week’s show special guest co-host Pete Ranks, the former director of the CIA’s Centre for Cyber Intelligence, joins Patrick Gray and James Wilson to discuss the week’s cybersecurity news. They cover: Everyone sig",
+     "date": "2026-07-29T06:10:22.000Z"
+    },
+    {
+     "title": "Risky Business #845 -- OpenAI's Skynet moment",
+     "link": "https://risky.biz/RB845/",
+     "desc": "On this week’s show special guest co-host Chris Krebs joins Patrick Gray and James Wilson to discuss the week’s cybersecurity news. They cover: Oopsie daisy! OpenAI agents went rogue and hacked Hugging Face US and China ",
+     "date": "2026-07-22T05:08:13.000Z"
+    },
+    {
+     "title": "Soap Box: Using threat hunting to drive detection",
+     "link": "https://risky.biz/SOAPBOX109/",
+     "desc": "In this wholly sponsored Soap Box edition of the podcast Patrick Gray chats with Damien Lewke, the CEO and founder of Nebulock, about the future of threat hunting and detection. Damien spent a decade in the EDR and MDR s",
+     "date": "2026-07-08T04:51:09.000Z"
+    },
+    {
+     "title": "Risky Business #844 -- China closes AI vulndev gap as USA lifts Fable ban",
+     "link": "https://risky.biz/RB844/",
+     "desc": "On this week’s show Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They cover: Anthropic’s Fable 5 returning while OpenAI’s GPT-5.6 gets thrown in model jail Distillation, cheap tokens",
+     "date": "2026-07-01T06:11:55.000Z"
+    },
+    {
+     "title": "Risky Business #843 -- Fortibleed is kinda awesome, actually",
+     "link": "https://risky.biz/RB843/",
+     "desc": "On this week’s show special guest co-host Rob Joyce joins Patrick Gray and James Wilson to discuss the week’s cybersecurity news. Rob served as an advisor to Donald Trump during his first term as president and also serve",
+     "date": "2026-06-24T05:47:01.000Z"
+    },
+    {
+     "title": "Risky Business #842 -- Anthropic needs an adult in the C suite",
+     "link": "https://risky.biz/RB842/",
+     "desc": "On this week’s show Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They cover: Anthropic’s Fable 5 and Mythos 5 get nuked by the US government four days after launch “because security”",
+     "date": "2026-06-17T04:04:41.000Z"
+    },
+    {
+     "title": "Risky Business #841 -- Microsoft gets owned and 0day'd",
+     "link": "https://risky.biz/RB841/",
+     "desc": "On this week’s show special guest co-host Chris Wade, the founder of Corellium turned Cellebrite CTO, joins Patrick Gray and James Wilson to discuss the week’s cybersecurity news. They cover: Microsoft has repos owned, G",
+     "date": "2026-06-10T06:35:18.000Z"
+    },
+    {
+     "title": "Soap Box: Detection and response in the AI age",
+     "link": "https://risky.biz/SOAPBOX108/",
+     "desc": "In this sponsored Soap Box edition of the Risky Business podcast Patrick Gray chats with Edward Wu, founder of Dropzone, about what AI is doing to detection, response and the SOC more generally. Dropzone makes AI agents ",
+     "date": "2026-06-05T04:41:44.000Z"
+    },
+    {
+     "title": "Risky Business #840 -- Microsoft walks back researcher threats",
+     "link": "https://risky.biz/RB840/",
+     "desc": "On this week’s show special guest co-host Andy Boyd joins Patrick Gray and James Wilson to discuss the week’s cybersecurity news. Andy is the CEO of REDLattice, which makes the Paragon “intelligence collection and reconn",
+     "date": "2026-06-03T04:26:54.000Z"
+    },
+    {
+     "title": "Risky Business #839 -- TeamPCP stole GitHub's internal repos",
+     "link": "https://risky.biz/RB839/",
+     "desc": "On this week’s show Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They cover: TeamPCP breached GitHub’s internal repos. Now what? Some absolute plonker glued Coruna to a hijacked npm ",
+     "date": "2026-05-27T05:45:37.000Z"
+    },
+    {
+     "title": "Risky Business #838 -- GitHub investigates possible breach",
+     "link": "https://risky.biz/RB838/",
+     "desc": "On this week’s show Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They cover: GitHub announced a possible breach CISA leaks important creds, keys in public repo Awful vulnerability in",
+     "date": "2026-05-20T05:22:48.000Z"
+    },
+    {
+     "title": "Soap Box: Where does AI fit into cloud security?",
+     "link": "https://risky.biz/SOAPBOX107/",
+     "desc": "In this sponsored soap box edition of the Risky Business podcast Patrick Gray chats with Toni de la Fuente, the founder of Prowler. Prowler started off as a bunch of scripts in a trenchcoat, then became an open source cl",
+     "date": "2026-05-15T04:55:09.000Z"
+    },
+    {
+     "title": "Risky Business #837 -- GitHub Actions footgun claims TanStack",
+     "link": "https://risky.biz/RB837/",
+     "desc": "On this week’s show Patrick Gray, Adam Boileau and James Wilson discuss the week’s cybersecurity news. They cover: Mini Shai-Hulud and the TanStack compromise using Github Actions Instructure pays Canvas elearning platfo",
+     "date": "2026-05-13T05:08:48.000Z"
+    },
+    {
+     "title": "Risky Business #836 -- You can't patch the bugpocalypse",
+     "link": "https://risky.biz/RB836/",
+     "desc": "On this week’s show, Patrick Gray and James Wilson are joined by special guest co-host Brad Arkin. They discuss the week’s cybersecurity news, including: The US Government says we just have to patch faster, but… Bugs in ",
+     "date": "2026-05-06T05:14:46.000Z"
+    },
+    {
+     "title": "Snake Oilers: Ent AI, Spacewalk and Mondoo",
+     "link": "https://risky.biz/SNAKEOILERS23PT2/",
+     "desc": "In this edition of the Snake Oilers podcast three vendors stop by to pitch the audience on their products: Ent AI: Co-founder Brandon Dixon pitched Ent, an intent-aware, AI-powered endpoint security control. Spacewalk AI",
+     "date": "2026-05-01T00:58:34.000Z"
+    },
+    {
+     "title": "Risky Business #835 -- Why the Fast16 malware is badass",
+     "link": "https://risky.biz/RB835/",
+     "desc": "On this week’s show, Patrick Gray and James Wilson are joined by special guest-host Dmitri Alperovitch. They discuss the week’s cybersecurity news, including: The US government is mad as hell about Chinese firms stealing",
+     "date": "2026-04-29T04:43:51.000Z"
+    },
+    {
+     "title": "Risky Business #834 -- Vercel gets owned, Mozilla dumps hundreds of Mythos bugs",
+     "link": "https://risky.biz/RB834/",
+     "desc": "On this week’s show, Patrick Gray and James Wilson are joined by special guest The Grugq. They discuss the week’s cybersecurity news, including: Vercel got owned, and there’s a few infostealer and compromised employee do",
+     "date": "2026-04-22T09:11:43.000Z"
+    }
+   ]
   },
-  "r-sysadmin": {
-   "ok": false,
-   "items": []
+  "cyberwire": {
+   "ok": true,
+   "items": [
+    {
+     "title": "The breach wasn't in the model.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2664/notes",
+     "desc": "A cybersecurity startup claims to have accessed sensitive internal documents at Anthropic. The Pentagon spins up covert technology programs. AI developers get a crash course in key management. A ransomware recovery execu",
+     "date": "2026-10-26T20:30:00.000Z"
+    },
+    {
+     "title": "The shield in space. [T-Minus: Space-Cyber Briefing]",
+     "link": "https://thecyberwire.com/podcasts/tminus-space-cyber-briefing/730/notes",
+     "desc": "The Ukraine has experienced a second major outage of its Starshield services reigniting questions about relying on a single private provider for critical national security services. Host Maria Varmazis sits down Dave Bit",
+     "date": "2026-10-25T05:00:00.000Z"
+    },
+    {
+     "title": "The middlemen of cyber espionage. [Research Saturday]",
+     "link": "https://thecyberwire.com/podcasts/research-saturday/447/notes",
+     "desc": "Today we have Damon Rouse, Threat Intelligence from Lumen's Black Lotus Labs, discussing their work on \"The infrastructure quartermaster: inside a China-nexus state enablement model.\" Black Lotus Labs identified a China-",
+     "date": "2026-10-24T07:00:00.000Z"
+    },
+    {
+     "title": "The apps are only the beginning.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2663/notes",
+     "desc": "Attackers target critical PHP flaws, and former CISA director Chris Krebs weighs in on AI’s role in the vulnerability surge. Railway confirms a cyberattack. HPE patches critical ArubaOS flaws. Quest Diagnostics investiga",
+     "date": "2026-10-23T20:30:00.000Z"
+    },
+    {
+     "title": "The early bird gets the exploit.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2662/notes",
+     "desc": "Amazon spots PHP exploits before disclosure. GitLab patches a critical flaw. Meta faces a $25 billion penalty. Autonomous AI agents power new cyberattacks. Hackers breach a Japanese cloud provider. CyberCartel unleashes ",
+     "date": "2026-10-22T20:30:00.000Z"
+    },
+    {
+     "title": "No time to PHP around.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2661/notes",
+     "desc": "Critical PHP flaws threaten millions of websites. Weak certificates from an Indian authority spark a global security scramble. Investigators probe a U.S. consulting executive’s alleged ties to ShinyHunters. SafePay ranso",
+     "date": "2026-10-21T20:30:00.000Z"
+    },
+    {
+     "title": "Cloudy with a chance of outages.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2660/notes",
+     "desc": "A Google Cloud outage disrupts UK banks. DHS bans DeepSeek. Shape-shifting ransomware targets Macs. Bank of America hires an army to patch AI-discovered flaws. Canada looks to bypass the U.S. with a transatlantic cable. ",
+     "date": "2026-10-20T20:30:00.000Z"
+    },
+    {
+     "title": "The ballot box meets the bot.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2659/notes",
+     "desc": "State election officials question CISA’s commitment to election security. Stolen credentials force ConnectWise to suspend cloud services. Fake calendar invites steal Microsoft logins. Temu settles Texas privacy allegatio",
+     "date": "2026-10-19T20:30:00.000Z"
+    },
+    {
+     "title": "Cyber Resilience at Machine Speed: Author John Kindervag and contributor Dr. Chase Cunningham. [Special Edition]",
+     "link": "https://thecyberwire.com/podcasts/special-edition/109/notes",
+     "desc": "On this special edition podcast, Dave Bittner is joined by John Kindervag and Dr Chase Cunningham to discuss the principles of zero trust, cyber resilience, and how AI is transforming cybersecurity strategies. They explo",
+     "date": "2026-10-18T05:00:00.000Z"
+    },
+    {
+     "title": "Expanding America’s space capabilities. [T-Minus: Space-Cyber Briefing]",
+     "link": "https://thecyberwire.com/podcasts/tminus-space-cyber-briefing/729/notes",
+     "desc": "Through Executive Orders, the Trump administration is looking ensure that America's space capabilities have the workforce and technological innovation needed for success. Host Maria Varmazis sits down with Producer Ethan",
+     "date": "2026-10-18T05:00:00.000Z"
+    },
+    {
+     "title": "The wrong kind of access. [Research Saturday]",
+     "link": "https://thecyberwire.com/podcasts/research-saturday/446/notes",
+     "desc": "Dan Lisichkin, AI Security Researcher from Pillar Security, discussing their work on \"A WIF Of Fresh Access, How a GitHub Issue on Gemini-CLI Led to GCP Project Compromise.\" Researchers at Pillar Security uncovered a vul",
+     "date": "2026-10-17T07:00:00.000Z"
+    },
+    {
+     "title": "Reboot, rinse, repeat.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2658/notes",
+     "desc": "Chinese spies exploit a BeyondTrust zero-day. Atlassian faces active attacks. Rogue AI agents breach Indian networks. Ransomware gangs turn to threats of violence. A cyber incident disrupts U.S. bankruptcy courts. F5 and",
+     "date": "2026-10-16T20:30:00.000Z"
+    },
+    {
+     "title": "A little too OpenAI.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2657/notes",
+     "desc": "An OpenAI engineer faces charges over an alleged covert recording device. Attackers exploit a PAN-OS firewall flaw and an Ivanti zero-day. Aoki infostealer hunts AI credentials. Researchers uncover critical weaknesses in",
+     "date": "2026-10-15T20:30:00.000Z"
+    },
+    {
+     "title": "Patching up the pieces.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2656/notes",
+     "desc": "Patch Tuesday brings a record-breaking haul of fixes. Ivanti warns of an exploited VPN zero-day. An international crackdown targets West African scam compounds. A cyberattack stops work on a major European tunnel. Percei",
+     "date": "2026-10-14T20:30:00.000Z"
+    },
+    {
+     "title": "Taking the cloud out of the sky.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2655/notes",
+     "desc": "French supermarkets lose their cool in a refrigeration cyberattack. Anthropic pulls the plug on AI agents behaving badly. A Canadian ransomware negotiator is arrested in the FBI’s ShinyHunters investigation. XWorm expand",
+     "date": "2026-10-13T20:30:00.000Z"
+    },
+    {
+     "title": "CyberWire Daily at 10: Examining a decade of public-private partnerships. [Special Edition]",
+     "link": "https://thecyberwire.com/podcasts/special-edition/108/notes",
+     "desc": "Please enjoy this Special Edition podcast while our team is out observing Indigenous Peoples' Day in the United States. In this episode, Dave Bittner joins Maria Varmazis to explore the evolution of public-private partne",
+     "date": "2026-10-12T05:00:00.000Z"
+    },
+    {
+     "title": "Ordering a new space policy. [T-Minus: Space-Cyber Briefing]",
+     "link": "https://thecyberwire.com/podcasts/tminus-space-cyber-briefing/728/notes",
+     "desc": "Since taking office, the Trump administration has signed a series of Executive Orders that aims to boost the US's space presence. Host Maria Varmazis sits down with Producer Ethan Cook to dive into two recent Executive O",
+     "date": "2026-10-11T05:00:00.000Z"
+    },
+    {
+     "title": "Contents may be malicious. [Research Saturday]",
+     "link": "https://thecyberwire.com/podcasts/research-saturday/445/notes",
+     "desc": "Adam Meyers, Head of Counter Adversary Operations at CrowdStrike, is discussing their work on \"PhantomRaven, An LLM-Generated Information Stealer Developed for Bug Bounty Hunting.\" PhantomRaven, a JavaScript-based inform",
+     "date": "2026-10-10T07:00:00.000Z"
+    },
+    {
+     "title": "The Flax Typhoon gets a cold front.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2654/notes",
+     "desc": "An international coalition disrupts Chinese state-backed hacking operations. Officials dismantle cybercrime centers in Ghana. Anthropic launches initiatives aimed at quicker remediation. A maximum-severity SonicWall vuln",
+     "date": "2026-10-09T20:30:00.000Z"
+    },
+    {
+     "title": "You can’t secure what you can’t see.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2653/notes",
+     "desc": "An OT cyber coalition urges CISA to establish baseline security requirements. Another OpenAI safety worker resigns. Maryland lawmakers seek funding for Cyber Command’s mental health initiatives. Hackers compromised count",
+     "date": "2026-10-08T20:30:00.000Z"
+    },
+    {
+     "title": "The door into SonicWall.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2652/notes",
+     "desc": "SonicWall issues emergency patches. European wind and solar sites are exposed online. South Korea warns of AI-powered attacks on banks. Maria Varmazis unpacks the EU’s new Space Threat Response Architecture. Google patch",
+     "date": "2026-10-07T20:30:00.000Z"
+    },
+    {
+     "title": "The pay system needs a patch.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2651/notes",
+     "desc": "Military cyber personnel face pay cuts. A critical RCE threatens banking and government authentication systems. Dell patches a critical update flaw. A missed patch costs Accenture an FBI contract. Hackers hijack a fashio",
+     "date": "2026-10-06T20:30:00.000Z"
+    },
+    {
+     "title": "A new AI task force takes shape.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2650/notes",
+     "desc": "The President launches a new federal AI task force. South Korea investigates financial sector data leaks. AI slop overwhelms a Google bug bounty program. Citrix patches an exploited zero-day. Stealthy malware hides insid",
+     "date": "2026-10-05T20:30:00.000Z"
+    },
+    {
+     "title": "Earth’s expanding attack surface. [T-Minus: Space-Cyber Briefing]",
+     "link": "https://thecyberwire.com/podcasts/tminus-space-cyber-briefing/727/notes",
+     "desc": "As space infrastructure expands, so too does the need for cybersecurity expertise beyond securing traditional spacecraft. Host Maria Varmazis speaks with ⁠Milenk Starcevic⁠, Head of Cybersecurity at ⁠Vision Space⁠, and ⁠",
+     "date": "2026-10-04T05:00:00.000Z"
+    },
+    {
+     "title": "Play to win, pay to lose. [Research Saturday]",
+     "link": "https://thecyberwire.com/podcasts/research-saturday/444/notes",
+     "desc": "Today we are joined by Jean-Pierre Mouton, Senior Threat Intelligence Consultant at GuidePoint Security, discussing their work on \"How Play Achieves Encryption.\" Play ransomware, also known as PlayCrypt, continues to tar",
+     "date": "2026-10-03T07:00:00.000Z"
+    },
+    {
+     "title": "A rough week for safety.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2649/notes",
+     "desc": "OpenAI fires safety researchers for mishandling sensitive information. CISA looks to secure the next 250. Dell patches six critical flaws, while attackers exploit a FortiMail zero-day. Warlock ransomware expands its reac",
+     "date": "2026-10-02T20:30:00.000Z"
+    },
+    {
+     "title": "The Pentagon’s roll call.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2648/notes",
+     "desc": "A Pentagon breach exposes data on millions. ShinyHunters goes dark. MI5 warns universities about Chinese espionage. AI agents find creative ways around their guardrails. A fake Zoom installer delivers macOS malware. Cisc",
+     "date": "2026-10-01T20:30:00.000Z"
+    },
+    {
+     "title": "The guardrails go to court.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2647/notes",
+     "desc": "AI companies sign a voluntary accord aimed at addressing safety concerns. Cybercriminals abuse the CustomGPT feature as part of a ClickFix campaign. The FBI is urging members of ShinyHunters to come forward. A fraud camp",
+     "date": "2026-09-30T20:30:00.000Z"
+    },
+    {
+     "title": "Astra, la vista, baby.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2646/notes",
+     "desc": "OpenAI holds back its newest model over safety concerns. Kiteworks lifts its precautionary shutdown. Apple patches an exploited zero-day. Japanese rail operators disclose cyberattacks. An Anthropic authentication flaw op",
+     "date": "2026-09-29T20:30:00.000Z"
+    },
+    {
+     "title": "The AI hotline.",
+     "link": "https://www.thecyberwire.com/podcasts/daily-podcast/2645/notes",
+     "desc": "The U.S. and China agree on an AI safety channel. Some states say CISA’s election security plan comes too late. Citrix patches critical zero-days under active exploitation. AI agents probed government websites in unexpec",
+     "date": "2026-09-28T20:30:00.000Z"
+    }
+   ]
   }
  }
 }
