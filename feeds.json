@@ -1,9 +1,15 @@
 {
- "updated": "2026-10-26T21:45:45.195Z",
+ "updated": "2026-10-27T00:56:51.541Z",
  "sources": {
   "bleepingcomputer": {
    "ok": true,
    "items": [
+    {
+     "title": "University of Copenhagen data breach exposes data of 525,000 people",
+     "link": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+     "desc": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
+     "date": "2026-10-26T22:20:36.000Z"
+    },
     {
      "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
      "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
@@ -87,12 +93,6 @@
      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
      "desc": "Microsoft says Windows Server 2016 will stop receiving security updates after it reaches the end of support in January 2027. [...]",
      "date": "2026-10-23T17:05:07.000Z"
-    },
-    {
-     "title": "Quest Diagnostics confirms data breach exposed patient records",
-     "link": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
-     "desc": "American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM system. [...]",
-     "date": "2026-10-23T16:40:07.000Z"
     }
    ]
   },
@@ -285,6 +285,18 @@
    "ok": true,
    "items": [
     {
+     "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
+     "link": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
+     "desc": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+     "date": "2026-10-27T00:26:50.000Z"
+    },
+    {
+     "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
+     "link": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
+     "desc": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
+     "date": "2026-10-26T21:44:33.000Z"
+    },
+    {
      "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
      "link": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
      "desc": "A new AI agent prompt injection technique exploits how coding assistants consume local instruction files, blurring the line between text documents and executable actions.",
@@ -451,18 +463,6 @@
      "link": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
      "desc": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare links.",
      "date": "2026-10-19T21:13:41.000Z"
-    },
-    {
-     "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
-     "link": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
-     "desc": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
-     "date": "2026-10-19T19:55:01.000Z"
-    },
-    {
-     "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
-     "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
-     "desc": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
-     "date": "2026-10-19T19:19:33.000Z"
     }
    ]
   },
@@ -637,6 +637,12 @@
      "date": "2026-10-25T11:25:58.000Z"
     },
     {
+     "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+     "link": "https://www.reddit.com/r/cybersecurity/comments/1xfywmh/php2shell_security_flaws_now_sucessfully/",
+     "desc": "There is an important development in the PHP2Shell story we've been discussing. Until recently, researchers had observed scanning and exploitation attempts, but convincing evidence of successful attacks was limited. That",
+     "date": "2026-10-26T14:48:43.000Z"
+    },
+    {
      "title": "Startup Cracks Google's Classified Quantum Cryptography",
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xe2z18/startup_cracks_googles_classified_quantum/",
      "desc": "submitted by /u/donutloop [link] [comments]",
@@ -659,12 +665,6 @@
      "link": "https://www.reddit.com/r/cybersecurity/comments/1xb0onb/emudhra_intermediate_ca_compromise/",
      "desc": "what do you mean the private key is 4. submitted by /u/nexnova06 [link] [comments]",
      "date": "2026-10-20T18:51:51.000Z"
-    },
-    {
-     "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
-     "link": "https://www.reddit.com/r/cybersecurity/comments/1xfywmh/php2shell_security_flaws_now_sucessfully/",
-     "desc": "There is an important development in the PHP2Shell story we've been discussing. Until recently, researchers had observed scanning and exploitation attempts, but convincing evidence of successful attacks was limited. That",
-     "date": "2026-10-26T14:48:43.000Z"
     },
     {
      "title": "PHP - As an IT person, what should I be doing?",
